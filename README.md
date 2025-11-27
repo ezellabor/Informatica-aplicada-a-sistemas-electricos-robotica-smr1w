@@ -4,8 +4,6 @@
 
 ---
 
-## Conceptos introductorios
-
 ### 1. Robot
 _Máquina programable capaz de realizar tareas de forma autónoma o semiautónoma._
 > Ejemplo: Un brazo robótico en una fábrica que ensambla piezas, o un robot aspirador como el Roomba.
