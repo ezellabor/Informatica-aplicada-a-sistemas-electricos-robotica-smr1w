@@ -43,7 +43,7 @@
 
 ---
 
-## **3. Ejemplo Integrado: Sistema de Riego Automático**
+## **3. Ejemplo integrado: Sistema de riego automático**
 
 | **Componente**   | **Tipo**            | **Función**                                                                 |
 |------------------|----------------------|-----------------------------------------------------------------------------|
