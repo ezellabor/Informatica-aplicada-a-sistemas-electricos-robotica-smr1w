@@ -1,5 +1,7 @@
-# Informática aplicada a sistemas electrónicos (Róbotica)
-```SMRI - Profesor: Ezequiel Llarena Borges```  
+# Informática aplicada a sistemas electrónicos 
+
+```Robótica - Profesor: Ezequiel Llarena Borges```
+
 ---
 
 ## Conceptos introductorios
