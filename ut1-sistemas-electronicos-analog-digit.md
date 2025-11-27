@@ -3,7 +3,7 @@
 | **Tipo**      | **Definición**                                      | **Ejemplos**                                                                 |
 |----------------|------------------------------------------------------|------------------------------------------------------------------------------|
 | **Analógico**  | _Trabaja con señales continuas (voltaje, corriente)._ | ```Termómetro de mercurio, amplificador de audio, potenciómetro.```              |
-| **Digital**    | _Trabaja con señales discretas (0 y 1)._              | ´´´Reloj digital, computadora, semáforo inteligente.```                          |
+| **Digital**    | _Trabaja con señales discretas (0 y 1)._              | ```Reloj digital, computadora, semáforo inteligente.```                          |
 
 ---
 
