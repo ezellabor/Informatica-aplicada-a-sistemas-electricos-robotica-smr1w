@@ -1,4 +1,4 @@
-## **1. Sistemas Electrónicos: Analógicos vs. Digitales**
+## 1. Sistemas electrónicos analógicos y digitales
 
 | **Tipo**      | **Definición**                                      | **Ejemplos**                                                                 |
 |----------------|------------------------------------------------------|------------------------------------------------------------------------------|
@@ -7,9 +7,9 @@
 
 ---
 
-## **2. Dispositivos Discretos**
+## 2. Dispositivos discretos
 
-### **Dispositivos Pasivos**
+### 2.1. Pasivos
 
 | **Dispositivo**  | **Definición**                                      | **Ejemplo**                                                                 |
 |------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -17,7 +17,7 @@
 | ```Condensador```      | Almacena energía eléctrica.                         | En el flash de una cámara.                                                 |
 | ```Bobina (Inductor)``` | Filtra señales o almacena energía magnética.       | En fuentes de alimentación.                                               |
 
-### **Dispositivos Activos**
+### 2.2. Activos  
 
 | **Dispositivo**  | **Definición**                                      | **Ejemplo**                                                                 |
 |------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -25,7 +25,7 @@
 | ```Diodo```            | Permite el paso de corriente en un solo sentido.    | En rectificadores de corriente.                                            |
 | ```Circuito Integrado (IC)``` | Contiene múltiples componentes activos.      | Microcontrolador Arduino.                                                  |
 
-### **Sensores**
+### 2.3. Sensores
 
 | **Sensor**        | **Definición**                                      | **Ejemplo**                                                                 |
 |-------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -33,7 +33,7 @@
 | HC-SR04           | Mide distancias usando ultrasonido.                 | En robots para evitar obstáculos.                                         |
 | LDR               | Detecta intensidad de luz.                          | Para encender luces automáticamente de noche.                            |
 
-### **Actuadores**
+### 2.4. Actuadores
 
 | **Actuador**     | **Definición**                                      | **Ejemplo**                                                                 |
 |------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -43,7 +43,7 @@
 
 ---
 
-## **3. Ejemplo integrado: Sistema de riego automático**
+## 3. Ejemplo integrado: Sistema de riego automático
 
 | **Componente**   | **Tipo**            | **Función**                                                                 |
 |------------------|----------------------|-----------------------------------------------------------------------------|
