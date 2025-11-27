@@ -13,17 +13,17 @@
 
 | **Dispositivo**  | **Definición**                                      | **Ejemplo**                                                                 |
 |------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
-| Resistencia      | Limita la corriente eléctrica.                     | En un circuito LED para evitar que se queme.                             |
-| Condensador      | Almacena energía eléctrica.                         | En el flash de una cámara.                                                 |
-| Bobina (Inductor)| Filtra señales o almacena energía magnética.       | En fuentes de alimentación.                                               |
+| ```Resistencia```      | Limita la corriente eléctrica.                     | En un circuito LED para evitar que se queme.                             |
+| ```Condensador```      | Almacena energía eléctrica.                         | En el flash de una cámara.                                                 |
+| ```Bobina (Inductor)``` | Filtra señales o almacena energía magnética.       | En fuentes de alimentación.                                               |
 
 ### **Dispositivos Activos**
 
 | **Dispositivo**  | **Definición**                                      | **Ejemplo**                                                                 |
 |------------------|------------------------------------------------------|-----------------------------------------------------------------------------|
-| Transistor       | Actúa como interruptor o amplificador.             | En un amplificador de audio.                                               |
-| Diodo            | Permite el paso de corriente en un solo sentido.    | En rectificadores de corriente.                                            |
-| Circuito Integrado (IC) | Contiene múltiples componentes activos.      | Microcontrolador Arduino.                                                  |
+| ```Transistor```       | Actúa como interruptor o amplificador.             | En un amplificador de audio.                                               |
+| ```Diodo```            | Permite el paso de corriente en un solo sentido.    | En rectificadores de corriente.                                            |
+| ```Circuito Integrado (IC)``` | Contiene múltiples componentes activos.      | Microcontrolador Arduino.                                                  |
 
 ### **Sensores**
 
