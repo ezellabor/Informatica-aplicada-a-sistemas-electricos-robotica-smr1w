@@ -28,6 +28,7 @@ Ejemplos:
 
 ### 5. Algoritmo
 _Secuencia de pasos lógicos para resolver un problema._  
+
 Ejemplo en robótica: 
 ```
 Si (sensor ultrasónico detecta obstáculo a < 20 cm) entonces
@@ -36,12 +37,14 @@ FinSi
 ```
 
 ### 6. Retroalimentación (Feedback)
-_Proceso donde el robot ajusta su comportamiento basado en datos de sensores._
-Ejemplo: Un dron que ajusta su altura usando un sensor de presión para mantenerse estable.
+_Proceso donde el robot ajusta su comportamiento basado en datos de sensores._  
+Ejemplo:
+- Un dron que ajusta su altura usando un sensor de presión para mantenerse estable.
 
 ### 7. Automatización
 _Realizar tareas sin intervención humana._
-Ejemplo: Una cinta transportadora en una fábrica que clasifica paquetes por peso usando sensores y actuadores.
+Ejemplo: 
+- Una cinta transportadora en una fábrica que clasifica paquetes por peso usando sensores y actuadores.
 
 ### 8. Lenguajes de Programación en Robótica
 Ejemplos:  
