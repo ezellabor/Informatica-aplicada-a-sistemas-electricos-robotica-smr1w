@@ -47,8 +47,8 @@
 
 | **Componente**   | **Tipo**            | **Función**                                                                 |
 |------------------|----------------------|-----------------------------------------------------------------------------|
-| Sensor de humedad| Sensor               | Detecta si el suelo está seco.                                            |
-| Arduino          | Dispositivo activo   | Procesa la señal del sensor.                                               |
-| Bomba de agua    | Actuador             | Riega el suelo si está seco.                                               |
-| Resistencia      | Dispositivo pasivo  | Limita la corriente al sensor.                                             |
+| Sensor de humedad| **Sensor**               | Detecta si el suelo está seco.                                            |
+| Arduino          | **Dispositivo activo**   | Procesa la señal del sensor.                                               |
+| Bomba de agua    | **Actuador**             | Riega el suelo si está seco.                                               |
+| Resistencia      | **Dispositivo pasivo**  | Limita la corriente al sensor.                                             |
 
