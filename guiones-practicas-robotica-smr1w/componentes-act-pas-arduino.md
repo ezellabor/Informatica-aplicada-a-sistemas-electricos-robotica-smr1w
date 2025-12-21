@@ -60,3 +60,35 @@ void loop() {
   digitalWrite(pinActivo, LOW);  // Apagamos (Enviamos 0V)
   delay(1000);                   // Esperamos 1 segundo
 }
+
+## 3. Ejercicios y Cuestionario
+
+### A. Lista de verificación
+| Tarea | Objetivo | Verificado |
+| :--- | :--- | :---: |
+| **Identificación de Componentes** | El alumno distingue visualmente la resistencia (pasivo) del LED (activo). | ☐ |
+| **Montaje de Circuito** | El LED y la resistencia están en serie y el LED tiene la polaridad correcta. | ☐ |
+| **Modificación de Código** | El alumno cambia los valores del `delay` a `200` y observa el parpadeo rápido. | ☐ |
+| **Seguridad Eléctrica** | El circuito nunca se conecta a la placa sin la resistencia limitadora. | ☐ |
+
+---
+
+### 4. Cuestionario de consolidación
+Responde brevemente a las siguientes preguntas para validar los conceptos aprendidos hoy:
+
+1. **Sobre los Componentes Pasivos:** Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$ ($10.000\Omega$), ¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?
+
+2. **Sobre los Componentes Activos:** El LED es un componente semiconductor. Explica con tus palabras qué sucede si intentas que la corriente pase del Cátodo (negativo) al Ánodo (positivo).
+
+3. **Lógica de Control:**
+   En el código de Arduino, ¿qué función realiza el comando `digitalWrite(pin, LOW)` y qué efecto tiene sobre el flujo de electrones hacia el LED?
+
+4. **Análisis de Fallos:**
+   Si el código se carga correctamente pero el LED no enciende, indica los 3 puntos de fallo más comunes que revisarías (Hardware).
+
+---
+
+### 5. Reto extra (Para los que terminan pronto)
+Modifica el circuito y el código para añadir un segundo LED (otro componente activo). 
+* El **LED 1** debe encenderse mientras el **LED 2** está apagado, y viceversa (efecto policía).
+* ¿Has necesitado añadir otra resistencia? Justifica por qué.
