@@ -95,3 +95,63 @@ Responde brevemente a las siguientes preguntas para validar los conceptos aprend
 Modifica el circuito y el código para añadir un segundo LED (otro componente activo). 
 * El **LED 1** debe encenderse mientras el **LED 2** está apagado, y viceversa (efecto policía).
 * ¿Has necesitado añadir otra resistencia? Justifica por qué.
+
+
+# Guía de Soluciones: Práctica de Elementos Activos y Pasivos
+
+Este documento sirve como hoja de corrección para el profesor sobre los ejercicios y el cuestionario de la práctica.
+
+---
+
+### A. Soluciones al Cuestionario de Consolidación
+
+**1. Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$, ¿qué pasará?**
+* **Respuesta:** La luz del LED se volverá muy tenue o incluso imperceptible.
+* **Explicación:** Según la Ley de Ohm ($I = V / R$), al aumentar drásticamente la resistencia (el denominador), la intensidad de la corriente ($I$) disminuye. Menos electrones pasando por segundo por el componente activo equivalen a menos luz.
+
+**2. ¿Qué sucede si la corriente intenta pasar del Cátodo al Ánodo?**
+* **Respuesta:** El LED no se encenderá.
+* **Explicación:** Al ser un componente activo semiconductor (diodo), solo permite el paso de corriente en un sentido. En polarización inversa, el componente actúa como un interruptor abierto (resistencia infinita).
+
+**3. ¿Qué hace `digitalWrite(pin, LOW)`?**
+* **Respuesta:** Pone el voltaje del pin a $0V$ (GND).
+* **Explicación:** Al no haber diferencia de potencial (voltaje) entre los dos extremos del circuito del LED, el flujo de electrones se detiene completamente.
+
+**4. Análisis de fallos (3 puntos comunes):**
+1.  **Polaridad:** El LED está conectado al revés.
+2.  **Mala conexión:** Los componentes no están en la misma fila de la protoboard (falta de continuidad).
+3.  **Pin incorrecto:** El cable está en un pin distinto al definido en el código (ej. está en el 12 en vez del 13).
+
+---
+
+### B. Solución al Reto Extra (Efecto Policía)
+
+Para este reto, el alumno debe comprender que cada componente activo (LED) necesita su propio componente pasivo (resistencia) para estar protegido de forma independiente.
+
+**Esquema lógico:**
+* LED 1 en Pin 13 + Resistencia.
+* LED 2 en Pin 12 + Resistencia.
+
+
+
+**Código corregido:**
+```cpp
+int led1 = 13;
+int led2 = 12;
+
+void setup() {
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(led1, HIGH); 
+  digitalWrite(led2, LOW);
+  delay(200);
+  
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, HIGH);
+  delay(200);
+}
+
+
