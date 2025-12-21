@@ -21,6 +21,7 @@ Ejemplos:
 - Servomotor: Gira el brazo de un robot a una posición exacta (ej: en un robot que clasifica objetos).
 
 ### 4. Microcontrolador
+Un microcontrolador (abreviado µC, UC o mCU) es un **circuito integrado programable,** capaz de ejecutar las órdenes grabadas en su memoria. Está compuesto de varios bloques funcionales que cumplen una tarea específica.
 _"Cerebro" del robot. Procesa datos de sensores y controla actuadores._
 Ejemplos:  
 - Arduino Uno: Usado en proyectos escolares para controlar LEDs, motores, etc.
