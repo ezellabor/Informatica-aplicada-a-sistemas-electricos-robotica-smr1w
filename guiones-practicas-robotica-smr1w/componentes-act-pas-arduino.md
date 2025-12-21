@@ -66,7 +66,7 @@ void loop() {
 
 ## 3. Ejercicios y Cuestionario
 
-### A. Lista de verificación
+### Lista de verificación
 | Tarea | Objetivo | Verificado |
 | :--- | :--- | :---: |
 | **Identificación de Componentes** | El alumno distingue visualmente la resistencia (pasivo) del LED (activo). | ☐ |
@@ -79,14 +79,14 @@ void loop() {
 ### 4. Cuestionario de consolidación
 Responde brevemente a las siguientes preguntas para validar los conceptos aprendidos hoy:
 
-1. **Sobre los Componentes Pasivos:** Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$ ($10.000\Omega$), ¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?
+1. **Sobre los componentes pasivos:** Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$ ($10.000\Omega$), ¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?
 
-2. **Sobre los Componentes Activos:** El LED es un componente semiconductor. Explica con tus palabras qué sucede si intentas que la corriente pase del Cátodo (negativo) al Ánodo (positivo).
+2. **Sobre los componentes activos:** El LED es un componente semiconductor. Explica con tus palabras qué sucede si intentas que la corriente pase del Cátodo (negativo) al Ánodo (positivo).
 
-3. **Lógica de Control:**
+3. **Lógica de control:**
    En el código de Arduino, ¿qué función realiza el comando `digitalWrite(pin, LOW)` y qué efecto tiene sobre el flujo de electrones hacia el LED?
 
-4. **Análisis de Fallos:**
+4. **Análisis de fallos:**
    Si el código se carga correctamente pero el LED no enciende, indica los 3 puntos de fallo más comunes que revisarías (Hardware).
 
 ---
