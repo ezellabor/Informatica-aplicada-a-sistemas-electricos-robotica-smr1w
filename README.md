@@ -28,6 +28,9 @@ Ejemplos:
 
 >Un microcontrolador (abreviado µC, UC o mCU) es un **circuito integrado programable,** capaz de ejecutar las órdenes grabadas en su memoria. Está compuesto de >varios bloques funcionales que cumplen una tarea específica.
 
+![mcu-arduino](/img/microcontrolador-arduino-uno.png)
+
+
 ### 5. Algoritmo
 _Secuencia de pasos lógicos para resolver un problema._  
 
