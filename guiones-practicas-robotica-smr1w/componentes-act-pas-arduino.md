@@ -61,6 +61,9 @@ void loop() {
   delay(1000);                   // Esperamos 1 segundo
 }
 
+```
+
+
 ## 3. Ejercicios y Cuestionario
 
 ### A. Lista de verificación
