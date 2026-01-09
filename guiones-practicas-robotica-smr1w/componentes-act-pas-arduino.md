@@ -96,7 +96,7 @@ Modifica el circuito y el código para añadir un segundo LED (otro componente a
 * El **LED 1** debe encenderse mientras el **LED 2** está apagado, y viceversa (efecto policía).
 * ¿Has necesitado añadir otra resistencia? Justifica por qué.
 
-
+<!--
 # Guía de Soluciones: Práctica de Elementos Activos y Pasivos
 
 Este documento sirve como hoja de corrección para el profesor sobre los ejercicios y el cuestionario de la práctica.
@@ -154,4 +154,4 @@ void loop() {
   delay(200);
 }
 
-
+-->
