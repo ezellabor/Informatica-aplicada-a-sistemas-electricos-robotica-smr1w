@@ -64,7 +64,7 @@ Antes de la invención del transistor (dispositivo activo por excelencia), los d
 ¿Por qué crees que la invención de los dispositivos activos en estado sólido (semiconductores) fue una revolución? (Piensa en tamaño, consumo, fiabilidad y coste comparado con las válvulas).
 
 ---
-
+<!--
 ## Versión resumida para pizarra/PPT
 
 ### 1. Linterna
@@ -89,4 +89,4 @@ Antes de la invención del transistor (dispositivo activo por excelencia), los d
 ### 5. Revolución de semiconductores
 - 3 pasivos comunes
 - 2 activos fundamentales
-- ¿Por qué fue revolucionario?
+- ¿Por qué fue revolucionario? -->
