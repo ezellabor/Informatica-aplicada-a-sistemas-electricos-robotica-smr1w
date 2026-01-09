@@ -1,4 +1,4 @@
-# Ejercicio Introductorio: Dispositivos Discretos - Activos y Pasivos
+# Ejercicio introductorio: Dispositivos Discretos - Activos y Pasivos (Robótica - SMR1)
 
 ## 1. La linterna como laboratorio
 Observa una linterna simple de pilas (sin circuitos electrónicos complejos).
