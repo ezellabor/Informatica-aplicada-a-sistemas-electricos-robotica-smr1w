@@ -20,7 +20,7 @@ No puede controlar por sí mismo la cantidad de corriente que lo atraviesa (nece
 **b) Argumento para ser activo:**  
 Se basa en un fenómeno de la física de semiconductores (unión PN) para funcionar y emite luz, algo que los componentes pasivos típicos (resistencias, condensadores) no hacen. ¿Es válido?
 
-**c) Tu veredicto:**  
+**c) Tu clasificación final:**  
 Basándote en la definición estricta, ¿lo clasificarías como **dispositivo activo** o **pasivo**? ¿Por qué?
 
 ---
