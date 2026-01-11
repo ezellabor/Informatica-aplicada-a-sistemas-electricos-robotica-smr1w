@@ -1,4 +1,6 @@
-# Ejercicios introductorios: Sensores y Actuadores (Robótica - SMR1)
+<code>Informática Aplicada a Sistemas Electrónicos (Robótica) | Prof. Ezequiel Llarena Borges</code>  
+
+# Ejercicios introductorios: Sensores y Actuadores
 
 ## Ejercicio 1. El robot aspirador hipotético
 Imagina que tienes que diseñar el "cerebro" de un robot aspirador doméstico inteligente.
