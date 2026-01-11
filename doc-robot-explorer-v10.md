@@ -1,4 +1,4 @@
-# Características de Robot Explorer 1.0
+# Características de Robot Explorer (Versión 3.3)
 
 ## 1. Grid visual de 10x10
 - Matriz de 10x10 celdas para la simulación
