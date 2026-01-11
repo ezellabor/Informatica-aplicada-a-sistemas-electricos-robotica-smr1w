@@ -1,6 +1,8 @@
-# Ejercicio introductorio: Dispositivos Discretos - Activos y Pasivos (Robótica - SMR1)
+# Ejercicios introductorios - Dispositivos Discretos: Activos y Pasivos  
 
-## 1. La linterna como laboratorio
+<code>Informática Aplicada a Sistemas Electrónicos (Robótica) | Prof. Ezequiel Llarena Borges</code>  
+
+## Ejercicio 1. La linterna como laboratorio
 Observa una linterna simple de pilas (sin circuitos electrónicos complejos).
 
 **a)** Identifica sus componentes principales: pila, bombilla, interruptor, carcasa metálica.
@@ -11,7 +13,7 @@ Observa una linterna simple de pilas (sin circuitos electrónicos complejos).
 
 ---
 
-## 2. ¿Pasivo o activo? El debate del diodo LED
+## Ejercicio 2. ¿Pasivo o activo? El debate del diodo LED
 Un LED es un componente que solo permite el paso de corriente en un sentido y emite luz.
 
 **a) Argumento para ser pasivo:**  
@@ -25,7 +27,7 @@ Basándote en la definición estricta, ¿lo clasificarías como **dispositivo ac
 
 ---
 
-## 3. La evolución del interruptor: De pasivo a "inteligente"
+## Ejercicio 3. La evolución del interruptor: De pasivo a "inteligente"
 Compara dos interruptores:
 - **Interruptor clásico (pulsador mecánico):** Al pulsarlo, un contacto metálico se une físicamente para cerrar el circuito.
 - **Interruptor de transistor (como en una placa Arduino):** Un pequeño voltaje aplicado a una de sus patillas "controla" el paso de una corriente mucho mayor entre las otras dos.
@@ -38,7 +40,7 @@ Compara dos interruptores:
 
 ---
 
-## 4. Análisis de un circuito sencillo
+## Ejercicio 4. Análisis de un circuito sencillo
 Imagina un circuito en una protoboard con:
 1. Una pila de 9V
 2. Una resistencia
@@ -53,7 +55,7 @@ Imagina un circuito en una protoboard con:
 
 ---
 
-## 5. La revolución del semiconductor
+## Ejercicio 5. La revolución del semiconductor
 Antes de la invención del transistor (dispositivo activo por excelencia), los dispositivos pasivos (resistencias, bobinas, condensadores) y las válvulas de vacío (antiguos dispositivos activos) formaban los circuitos.
 
 **a)** Nombra 3 **dispositivos pasivos** comunes en cualquier placa electrónica (ej: de un router, un móvil viejo...).
