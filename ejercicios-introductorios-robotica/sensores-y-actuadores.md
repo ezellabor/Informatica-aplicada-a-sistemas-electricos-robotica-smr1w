@@ -1,6 +1,5 @@
-<code>Informática Aplicada a Sistemas Electrónicos (Robótica) | Prof. Ezequiel Llarena Borges</code>  
-
-# Ejercicios introductorios: Sensores y Actuadores
+# Ejercicios introductorios: Sensores y Actuadores  
+<code>Informática Aplicada a Sistemas Electrónicos (Robótica) | Prof. Ezequiel Llarena Borges</code> 
 
 ## Ejercicio 1. El robot aspirador hipotético
 Imagina que tienes que diseñar el "cerebro" de un robot aspirador doméstico inteligente.
