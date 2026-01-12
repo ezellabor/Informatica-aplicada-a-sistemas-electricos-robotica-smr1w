@@ -26,7 +26,7 @@ Ejemplos:
 - Arduino Uno: Usado en proyectos escolares para controlar LEDs, motores, etc.
 - Raspberry Pi: Para robots más complejos (ej: con visión por computadora).
 
->Un microcontrolador (abreviado µC, UC o mCU) es un **circuito integrado programable,** capaz de ejecutar las órdenes grabadas en su memoria. Está compuesto de >varios bloques funcionales que cumplen una tarea específica.
+>Un microcontrolador (abreviado µC, UC o mCU) es un **circuito integrado programable,** capaz de ejecutar las órdenes grabadas en su memoria. Está compuesto de varios bloques funcionales que cumplen una tarea específica.
 
 ![mcu-arduino](/img/microcontrolador-arduino-uno.png)
 
