@@ -9,7 +9,7 @@ Observa una linterna simple de pilas (sin circuitos electrónicos complejos).
 
 **b)** Clasifica cada componente electrónico (pila, bombilla, interruptor) como **dispositivo pasivo** o **activo**. Razona tu respuesta.
 
-*Pista:* Piensa: ¿Cuál de ellos necesita energía externa para "controlar" o "amplificar" la corriente eléctrica? ¿Y cuál solo la consume o modifica sin control activo?
+*Pista:* Piensa, ¿cuál de ellos necesita energía externa para "controlar" o "amplificar" la corriente eléctrica? ¿Y cuál solo la consume o modifica sin control activo?
 
 ---
 
