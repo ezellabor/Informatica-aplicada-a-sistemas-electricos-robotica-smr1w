@@ -1,9 +1,9 @@
-# 🧠 Conceptos Básicos de Microcontroladores con Arduino
+# Conceptos Básicos de Microcontroladores con Arduino
 ### **Módulo de Robótica - SMR1**
 
 ---
 
-## 📌 Índice
+## Indice
 1. [¿Qué es un Microcontrolador?](#qué-es-un-microcontrolador)
 2. [Introducción a Arduino](#introducción-a-arduino)
 3. [Partes de una Placa Arduino](#partes-de-una-placa-arduino)
@@ -15,298 +15,282 @@
 
 ---
 
-## 🔍 ¿Qué es un Microcontrolador?
+## 1. ¿Qué es un Microcontrolador?
 
-Un **microcontrolador** es un computador completo en un solo chip. Es el **cerebro electrónico** que controla dispositivos.
+Un **microcontrolador** es un computador completo en un solo chip. Integra:
+- **CPU** para procesar instrucciones
+- **Memoria** para almacenar programas
+- **Puertos de E/S** para comunicarse
 
-**Componentes principales:**
-- **CPU** → Procesa instrucciones
-- **Memoria** → Almacena programa y datos
-- **Puertos E/S** → Comunicación exterior
-
-**Analogía simple:**  
-> Imagina un robot:  
-> - **Sensores** = Oídos y ojos (entradas)  
-> - **Microcontrolador** = Cerebro (procesa)  
-> - **Actuadores** = Brazos y piernas (salidas)
+**Analogía:** Es el **cerebro** de un robot. Recibe información de sensores, la procesa, y envía órdenes a actuadores.
 
 ---
 
-## 🎯 Introducción a Arduino
+## 2. ¿Qué es Arduino?
 
-**Arduino** es una plataforma **open-source** que simplifica la programación de microcontroladores.
+**Arduino** es una plataforma de código abierto para programar microcontroladores fácilmente.
 
-**¿Por qué Arduino?**
-- ✅ **Fácil de usar** → IDE simple
-- ✅ **Barato** → Desde 3€
-- ✅ **Gran comunidad** → Miles de proyectos
-- ✅ **Multiplataforma** → Windows, Mac, Linux
+**Ventajas:**
+- Fácil de aprender
+- Bajo costo
+- Gran comunidad
+- Multiplataforma
 
 **Modelos comunes:**
-| Modelo | Pines Digitales | Pines Analógicos | Característica |
-|--------|-----------------|------------------|----------------|
-| Arduino UNO | 14 | 6 | El más usado |
-| Arduino Nano | 14 | 8 | Compacto |
-| Arduino Mega | 54 | 16 | Muchos pines |
+- **Arduino UNO** (el más usado)
+- **Arduino Nano** (compacto)
+- **Arduino Mega** (más pines)
 
 ---
 
-## 🔌 Partes de una Placa Arduino (UNO)
-text
-    ┌─────────────────────────────────┐
-    │         ARDUINO UNO             │
-    │  ┌─────┐                        │
-    │  │ USB │  Conectar a PC         │
-    │  └─────┘                        │
-    │                                 │
-    │  [ ] [ ] [ ] ... [ ] [ ] [ ]    │ ← Pines Digitales (0-13)
-    │  [A0][A1][A2][A3][A4][A5]       │ ← Pines Analógicos
-    │                                 │
-    │  ⬤ Reset   ⬤ Power   ⬤ GND     │ ← Botones y conectores
-    └─────────────────────────────────┘
-text
+## 3. Partes de una Placa Arduino UNO  
+    ARDUINO UNO
+    ┌─────────────────┐
+    │   Microcontrol  │ ← ATmega328P
+    │                 │
+    │ Pines Digitales │ ← 0-13
+    │ Pines Analógicos│ ← A0-A5
+    │                 │
+    │ USB  Power  GND │ ← Conexiones
+    └─────────────────┘  
 
-**Partes clave:**
-1. **Microcontrolador ATmega328P** → El cerebro
-2. **Conector USB** → Programación y alimentación
-3. **Pines Digitales (0-13)** → Entradas/Salidas ON/OFF
-4. **Pines Analógicos (A0-A5)** → Entradas de valores variables
-5. **Alimentación** → 5V, 3.3V, GND
-6. **Botón RESET** → Reinicia el programa
+    
+**Componentes clave:**
+1. **Microcontrolador ATmega328P** - El cerebro
+2. **14 Pines Digitales** - Para señales ON/OFF
+3. **6 Pines Analógicos** - Para valores variables
+4. **Conector USB** - Programación y alimentación
+5. **Alimentación** - 5V, 3.3V, GND
 
 ---
 
-## 📚 Conceptos Esenciales
+## 4. Conceptos Esenciales
 
-### 1. Digital vs Analógico
-| Tipo | Valores | Ejemplo | Uso en Arduino |
-|------|---------|---------|----------------|
-| **Digital** | 0 ó 1 (HIGH/LOW) | Interruptor | `digitalRead()` / `digitalWrite()` |
-| **Analógico** | Rango (ej: 0-1023) | Potenciómetro | `analogRead()` / `analogWrite()` |
+### Digital vs Analógico
+| Tipo | Valores | Ejemplo |
+|------|---------|---------|
+| **Digital** | 0 ó 1 | Interruptor |
+| **Analógico** | 0-1023 | Potenciómetro |
 
-### 2. Voltajes en Arduino
-- **HIGH** = 5V (ó 3.3V en algunos modelos)
-- **LOW** = 0V (GND)
+### Voltajes
+- **HIGH** = 5V (ON)
+- **LOW** = 0V (OFF)
 
-### 3. PULL-UP y PULL-DOWN
+### PWM (Modulación por Ancho de Pulso)
+Permite simular salidas analógicas en pines digitales.
+
+---
+
+## 5. Tu Primer Programa: LED Parpadeante
+
+### Material necesario:
+- Arduino UNO
+- LED
+- Resistencia 220Ω
+- Cables
+
+### Conexión:
+- LED (+) → Pin 13
+- LED (-) → GND (con resistencia)
+
+### Código completo:
+
 ```arduino
-// Resistencia PULL-UP interna
-pinMode(boton, INPUT_PULLUP);
-
-// Sin resistencia interna
-pinMode(boton, INPUT);
-4. PWM (Modulación por Ancho de Pulso)
-Simula salidas analógicas en pines digitales
-
-Pines con PWM en UNO: 3, 5, 6, 9, 10, 11
-
-analogWrite(pin, valor) → valor de 0 a 255
-
-💻 Tu Primer Programa: LED Parpadeante
-🔧 Material necesario:
-Arduino UNO
-
-LED
-
-Resistencia 220Ω
-
-Cables jumper
-
-📝 Código completo:
-arduino
-/*
-  LED Parpadeante
-  Enciende y apaga un LED conectado al pin 13
-*/
-
 void setup() {
-  // Configura el pin 13 como SALIDA
-  pinMode(13, OUTPUT);
+  pinMode(13, OUTPUT);  // Configura pin 13 como salida
 }
 
 void loop() {
-  // Enciende el LED (envía 5V al pin 13)
-  digitalWrite(13, HIGH);
-  
-  // Espera 1000 milisegundos = 1 segundo
-  delay(1000);
-  
-  // Apaga el LED (envía 0V al pin 13)
-  digitalWrite(13, LOW);
-  
-  // Espera otro segundo
-  delay(1000);
+  digitalWrite(13, HIGH);  // Enciende LED
+  delay(1000);             // Espera 1 segundo
+  digitalWrite(13, LOW);   // Apaga LED
+  delay(1000);             // Espera 1 segundo
 }
-🧠 ¿Qué hace cada parte?
-void setup() → Se ejecuta UNA vez al iniciar
+```
 
-pinMode(13, OUTPUT) → Declara pin 13 como salida
+## Explicación de Funciones Básicas:
 
-void loop() → Se repite infinitamente
+**`setup()`** → Se ejecuta una vez al inicio del programa  
+**`pinMode()`** → Configura el pin como entrada o salida  
+**`loop()`** → Se repite continuamente después del setup  
+**`digitalWrite()`** → Escribe HIGH (5V) o LOW (0V) en un pin  
+**`delay()`** → Pausa el programa en milisegundos
 
-digitalWrite(13, HIGH) → Enciende LED (5V)
+## 6. Sensores y Actuadores
 
-delay(1000) → Espera 1000ms
+### Sensores comunes (Entradas):
+- **Pulsador** - Entrada digital simple
+- **Potenciómetro** - Valor variable (analógico)
+- **LDR** - Sensor de luz
+- **HC-SR04** - Sensor de distancia ultrasónico
+- **DHT11** - Sensor de temperatura/humedad
 
-digitalWrite(13, LOW) → Apaga LED (0V)
+### Actuadores comunes (Salidas):
+- **LED** - Indicación visual
+- **Buzzer** - Generador de sonido
+- **Motor DC** - Movimiento continuo
+- **Servomotor** - Control de posición angular
+- **Pantalla LCD** - Visualización de texto
 
-delay(1000) → Espera otros 1000ms
+---
 
-💡 Consejo: Cambia delay(1000) por delay(500) para que parpadee más rápido.
+## 7. Flujo de Trabajo con Arduino
 
-📊 Sensores y Actuadores Comunes
-🔍 SENSORES (Entradas)
-Sensor	Función	Pin Arduino	Código típico
-Pulsador	Detectar presión	Digital	digitalRead()
-Potenciometro	Valor variable	Analógico	analogRead()
-LDR	Luz ambiental	Analógico	analogRead()
-HC-SR04	Distancia	Digital	Librería NewPing
-DHT11	Temperatura/Humedad	Digital	Librería DHT
-🚀 ACTUADORES (Salidas)
-Actuador	Función	Pin Arduino	Código típico
-LED	Indicación visual	Digital/PWM	digitalWrite()
-Buzzer	Sonido	Digital/PWM	tone()
-Motor DC	Movimiento continuo	Digital	digitalWrite()
-Servo	Posición angular	Digital	Librería Servo
-LCD	Mostrar texto	Digital (I2C)	Librería LiquidCrystal
-🛠️ Flujo de Trabajo con Arduino
-📋 Paso a Paso:
-🔧 Instalación rápida:
-Descarga Arduino IDE desde arduino.cc
+### Pasos básicos:
+1. **Conecta** Arduino al PC con cable USB
+2. **Abre** Arduino IDE
+3. **Escribe** tu código
+4. **Verifica** (compila sin errores)
+5. **Sube** el código a la placa
+6. **Observa** el resultado
 
-Instala y abre el programa
+### Configuración necesaria:
+- **Herramientas → Placa → Arduino Uno**
+- **Herramientas → Puerto → COMX** (Windows)
 
-Conecta Arduino por USB
+---
 
-Selecciona:
+## 8. Comunicación Serial
 
-Herramientas → Placa → Arduino Uno
+### Para depurar y ver datos:
 
-Herramientas → Puerto → COMX (Windows) ó /dev/ttyUSBX (Linux/Mac)
-
-🚀 Proyecto Práctico: Semáforo
-🎯 Objetivo:
-Crear un semáforo con 3 LEDs (Rojo, Amarillo, Verde)
-
-📦 Material:
-Arduino UNO
-
-3 LEDs (Rojo, Amarillo, Verde)
-
-3 resistencias 220Ω
-
-Cables jumper
-
-Protoboard
-
-🔌 Conexiones:
-LED	Pin Arduino	Color
-Rojo	2	Largo (+) a pin, corto (-) a GND
-Amarillo	3	Con resistencia 220Ω
-Verde	4	Con resistencia 220Ω
-💻 Código completo:
-arduino
-// SEMÁFORO CON ARDUINO
-// Pines para cada LED
-const int pinRojo = 2;
-const int pinAmarillo = 3;
-const int pinVerde = 4;
-
+```arduino
 void setup() {
-  // Configurar todos los pines como SALIDAS
-  pinMode(pinRojo, OUTPUT);
-  pinMode(pinAmarillo, OUTPUT);
-  pinMode(pinVerde, OUTPUT);
+  Serial.begin(9600);  // Inicia comunicación a 9600 baudios
 }
 
 void loop() {
-  // FASE 1: VERDE (10 segundos)
-  digitalWrite(pinVerde, HIGH);
-  delay(10000);           // 10 segundos
-  digitalWrite(pinVerde, LOW);
-  
-  // FASE 2: AMARILLO (3 segundos)
-  digitalWrite(pinAmarillo, HIGH);
-  delay(3000);            // 3 segundos
-  digitalWrite(pinAmarillo, LOW);
-  
-  // FASE 3: ROJO (10 segundos)
-  digitalWrite(pinRojo, HIGH);
-  delay(10000);           // 10 segundos
-  digitalWrite(pinRojo, LOW);
+  Serial.println("Hola Arduino");  // Envía texto
+  delay(1000);
 }
-🔄 Retos para practicar:
-Añade un pulsador para peatones
+```
 
-Modifica los tiempos con un potenciómetro
 
-Añade un buzzer para sonido en amarillo
+## Configuración del Monitor Serial:
 
-❓ Preguntas Frecuentes
-🤔 ¿Arduino es un microcontrolador?
-NO. Arduino es una plataforma que INCLUYE un microcontrolador (ATmega328P en UNO).
+**En el IDE de Arduino:**
+- **Herramientas → Monitor Serial**
+- **Velocidad → 9600 baudios**
 
-💰 ¿Cuánto cuesta?
-Arduino UNO original: ~20€
+**Para que funcione correctamente:**
+1. El código debe incluir `Serial.begin(9600)` en `setup()`
+2. Seleccionar la misma velocidad en el Monitor Serial
+3. Conectar Arduino al puerto correcto antes de abrir el monitor
 
-Clones: desde 3€
+## 9. Lectura de Sensores Analógicos
 
-Kits iniciales: 20-50€
+### Ejemplo con potenciómetro:
 
-🔧 ¿Qué lenguaje usa?
-Wiring (basado en C/C++), simplificado para principiantes.
+```arduino
+int valor = 0;
 
-📚 ¿Dónde aprender más?
-Ejemplos del IDE → Archivo → Ejemplos
+void setup() {
+  Serial.begin(9600);
+}
 
-Arduino Project Hub → proyectos oficiales
+void loop() {
+  valor = analogRead(A0);
+  Serial.println(valor);
+  delay(100);
+}
+```
 
-Foro de Arduino → comunidad activa
+### Valores analógicos en Arduino:
 
-📈 Próximos Pasos
-🎓 Nivel Básico:
-Controlar múltiples LEDs
+- analogRead() devuelve valores de 0 a 1023
+- 0 corresponde a 0V
+- 1023 corresponde a 5V
+- Valor intermedio = Voltaje proporcional
 
-Leer pulsadores
+### Conversión a voltaje:
 
-Usar potenciómetros
+```arduino
+float voltaje = valor * (5.0 / 1023.0);
+Serial.print("Voltaje: ");
+Serial.println(voltaje);
+```
 
-Trabajar con buzzer
+  ## 10. Uso de Librerías en Arduino
 
-🚀 Nivel Intermedio:
-Comunicación serial (monitor serie)
+### Cómo incluir una librería:
+```arduino
+#include <NombreLibreria.h>
+```
 
-Sensores de temperatura (DHT11)
+### Librerías comunes  
+```arduino  
+#include <Servo.h>           // Control de servomotores
+#include <LiquidCrystal.h>   // Pantallas LCD
+#include <DHT.h>             // Sensores DHT11/DHT22
+#include <Wire.h>            // Comunicación I2C
+#include <Stepper.h>         // Motores paso a paso
+```
+### Instalación de librerías:
+- Sketch → Incluir Librería → Gestionar Librerías
+- Buscar el nombre de la librería
+- Seleccionar la versión más reciente
+- Instalar
 
-Motores DC con puente H (L298N)
+### Ejemplo con Servomotor:  
 
-Servomotores
+```arduino  
+#include <Servo.h>
 
-🏆 Nivel Avanzado:
-Pantallas LCD/I2C
+Servo miServo;
 
-Módulos Bluetooth/Wi-Fi
+void setup() {
+  miServo.attach(9);
+}
 
-Sensores avanzados (ultrasónicos, infrarrojos)
+void loop() {
+  miServo.write(90);
+  delay(1000);
+  miServo.write(180);
+  delay(1000);
+}
+```
 
-Proyectos IoT
+## 11. Proyecto: Semáforo con Arduino
 
-💡 Consejos Finales
-Empieza simple → LED parpadeante ES tu "Hola Mundo"
+### Material necesario:
+- Arduino UNO
+- 3 LEDs (rojo, amarillo, verde)
+- 3 resistencias de 220Ω
+- Protoboard y cables
 
-Copia y modifica → Usa ejemplos del IDE
+### Conexiones:
+- LED Rojo → Pin 8
+- LED Amarillo → Pin 9  
+- LED Verde → Pin 10
+- GND de cada LED → Resistencia → GND de Arduino
 
-Prueba cada paso → Verifica conexiones
+### Código completo:
+```arduino
+int rojo = 8;
+int amarillo = 9;
+int verde = 10;
 
-Documenta tu código → Usa comentarios
+void setup() {
+  pinMode(rojo, OUTPUT);
+  pinMode(amarillo, OUTPUT);
+  pinMode(verde, OUTPUT);
+}
 
-No temas quemar nada → Con 5V es difícil (pero usa resistencias)
+void loop() {
+  // Verde encendido
+  digitalWrite(verde, HIGH);
+  delay(5000);
+  digitalWrite(verde, LOW);
+  
+  // Amarillo encendido
+  digitalWrite(amarillo, HIGH);
+  delay(2000);
+  digitalWrite(amarillo, LOW);
+  
+  // Rojo encendido
+  digitalWrite(rojo, HIGH);
+  delay(5000);
+  digitalWrite(rojo, LOW);
+}
 
-"La práctica hace al maestro" - Cada error te enseña algo nuevo.
 
-📄 Licencia y Uso
-Este material es de libre uso para fines educativos.
-Desarrollado para el Módulo de Robótica SMR1.
-
-📅 Actualizado: Noviembre 2024
-✍️ Autor: Recursos educativos SMR
