@@ -2,7 +2,9 @@
 **Módulo:** SMR1 (Sistemas Microinformáticos y Redes)
 **Duración estimada:** 60 minutos
 
----
+---  
+NOTA: ver este documento (https://docs.google.com/document/d/1jvlvm2FqSEJCLl_ezwGhrs87LphTGowsda3Qb6LG9Rk/edit?tab=t.0)  
+
 
 ## 1. Fundamentos Teóricos: Activos vs. Pasivos
 
@@ -77,7 +79,7 @@ void loop() {
 ---
 
 ### 4. Cuestionario de consolidación
-Responde brevemente a las siguientes preguntas para validar los conceptos aprendidos hoy:
+Responde brevemente a las siguientes preguntas para validar los conceptos aprendidos en esta práctica:
 
 1. **Sobre los componentes pasivos:** Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$ ($10.000\Omega$), ¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?
 
