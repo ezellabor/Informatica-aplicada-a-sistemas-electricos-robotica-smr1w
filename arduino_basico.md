@@ -9,10 +9,13 @@
 2. [Introducción a Arduino](#introduccion-a-arduino)
 3. [Partes de una placa Arduino UNO](#3-partes-de-una-placa-arduino-uno)
 4. [Conceptos esenciales](#4-conceptos-esenciales)
-5. [Primer programa](#5-primer-programa)
+5. [Primer programa: LED parpadeante](#5-primer-programa-led-parpadeante)
 6. [Sensores y Actuadores](#6-sensores-y-actuadores)
-7. [Flujo de trabajo](#7-flujo-de-trabajo)
-8. [Proyecto](#8-proyecto)
+7. [Flujo de trabajo con Arduino](#7-flujo-de-trabajo-con-arduino)
+8. [Comunicación serial](#8-comunicacion-serial)
+9. [Lectura de sensores analógicos](#9-lectura-de-sensores-analogicos)
+10. [Uso de librerías en Arduino](#10-uso-de-librerias-en-arduino)
+11. [Proyecto: Semáforo con Arduino](#11-proyecto-semaforo-con-arduino)
 
 ---
 
