@@ -6,7 +6,7 @@
 ## Indice  
 
 1. [Microcontroladores](#microcontroladores)
-2. [Introducción a Arduino](#introduccion-a-arduino)
+2. [Introduccion a Arduino](#introduccion-a-arduino)
 3. [Partes de una placa Arduino UNO](#partes-de-una-placa-arduino-uno)
 4. [Conceptos esenciales](#conceptos-esenciales)
 5. [Primer programa](#primer-programa)
