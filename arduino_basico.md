@@ -5,13 +5,13 @@
 
 ## Indice
 1. [¿Qué es un Microcontrolador?](#que-es-un-microcontrolador)
-2. [Introducción a Arduino](#introducción-a-arduino)
-3. [Partes de una Placa Arduino UNO](#partes-de-una-placa-arduino-uno)
-4. [Conceptos Esenciales](#conceptos-esenciales)
-5. [Tu Primer Programa](#tu-primer-programa)
+2. [Introducción a Arduino](#introduccion-a-arduino)
+3. [Partes de una placa Arduino UNO](#partes-de-una-placa-arduino-uno)
+4. [Conceptos esenciales](#conceptos-esenciales)
+5. [Primer programa](#primer-programa)
 6. [Sensores y Actuadores](#sensores-y-actuadores)
-7. [Flujo de Trabajo](#flujo-de-trabajo)
-8. [Proyecto Práctico](#proyecto-práctico)
+7. [Flujo de trabajo](#flujo-de-trabajo)
+8. [Proyecto](#proyecto)
 
 ---
 
@@ -43,7 +43,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ---
 
-## 3. Partes de una Placa Arduino UNO  
+## 3. Partes de una placa Arduino UNO  
     ARDUINO UNO
     ┌─────────────────┐
     │   Microcontrol  │ ← ATmega328P
@@ -64,7 +64,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ---
 
-## 4. Conceptos Esenciales
+## 4. Conceptos esenciales
 
 ### Digital vs Analógico
 | Tipo | Valores | Ejemplo |
@@ -81,7 +81,7 @@ Permite simular salidas analógicas en pines digitales.
 
 ---
 
-## 5. Tu Primer Programa: LED Parpadeante
+## 5. Primer programa: LED parpadeante
 
 ### Material necesario:
 - Arduino UNO
@@ -108,7 +108,7 @@ void loop() {
 }
 ```
 
-## Explicación de Funciones Básicas:
+## Funciones básicas:
 
 **`setup()`** → Se ejecuta una vez al inicio del programa  
 **`pinMode()`** → Configura el pin como entrada o salida  
@@ -292,5 +292,38 @@ void loop() {
   delay(5000);
   digitalWrite(rojo, LOW);
 }
+
+---
+---
+
+# Índice de Contenidos
+
+1. [Introducción](#introduccion)
+2. [Requisitos del Sistema](#requisitos-del-sistema)
+3. [Pasos a Seguir](#pasos-a-seguir)
+    *   [Paso 1: Instalar](#paso-1-instalar)
+    *   [Paso 2: Configurar](#paso-2-configurar)
+
+---
+
+## Introducción
+
+Este documento explica cómo enlazar secciones.
+
+## Requisitos del Sistema
+
+*   Sistema operativo compatible.
+*   Conexión a internet.
+
+## Pasos a Seguir
+
+### Paso 1: Instalar
+
+Descargar el software desde la página oficial.
+
+### Paso 2: Configurar
+
+Ajustar las opciones en el menú.
+
 
 
