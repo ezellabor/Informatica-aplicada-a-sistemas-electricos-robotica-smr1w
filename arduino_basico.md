@@ -296,7 +296,7 @@ void loop() {
 ---
 ---
 
-# Índice de Contenidos
+# Índice
 
 1. [Introducción](#introduccion)
 2. [Requisitos del Sistema](#requisitos-del-sistema)
