@@ -170,7 +170,7 @@ void loop() {
 ```
 
 
-## Configuración del Monitor Serial:
+### Configuración del Monitor Serial:
 
 **En el IDE de Arduino:**
 - **Herramientas → Monitor Serial**
@@ -180,6 +180,8 @@ void loop() {
 1. El código debe incluir `Serial.begin(9600)` en `setup()`
 2. Seleccionar la misma velocidad en el Monitor Serial
 3. Conectar Arduino al puerto correcto antes de abrir el monitor
+
+---  
 
 ## 9. Lectura de Sensores Analógicos
 
@@ -212,7 +214,9 @@ void loop() {
 float voltaje = valor * (5.0 / 1023.0);
 Serial.print("Voltaje: ");
 Serial.println(voltaje);
-```  
+```
+
+---  
 
 ## 10. Uso de librerías en Arduino
 
@@ -253,6 +257,9 @@ void loop() {
   delay(1000);
 }
 ```
+
+---
+
 
 ## 11. Proyecto: Semáforo con Arduino
 
@@ -298,39 +305,3 @@ void loop() {
 }
 ```  
 ---
----
-
-## Indice
-0. [Prueba uno](#prueba-uno)
-1. [Introducción](#introduccion)
-2. [Requisitos del Sistema](#requisitos-del-sistema)
-3. [Pasos a Seguir](#pasos-a-seguir)
-    *   [Paso 1: Instalar](#paso-1-instalar)
-    *   [Paso 2: Configurar](#paso-2-configurar)
-
----  
-
-## Prueba uno  
-hjhkhkhkhkhg
-
-## Introducción
-
-Este documento explica cómo enlazar secciones.
-
-## Requisitos del Sistema
-
-*   Sistema operativo compatible.
-*   Conexión a internet.
-
-## Pasos a Seguir
-
-### Paso 1: Instalar
-
-Descargar el software desde la página oficial.
-
-### Paso 2: Configurar
-
-Ajustar las opciones en el menú.
-
-
-
