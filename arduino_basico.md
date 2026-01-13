@@ -5,7 +5,7 @@
 
 ## Indice  
 
-1. [Microcontroladores](#microcontroladores)
+1. [Microcontroladores](#1-microcontroladores)
 2. [Introducción a Arduino](#introduccion-a-arduino)
 3. [Partes de una placa Arduino UNO](#partes-de-una-placa-arduino-uno)
 4. [Conceptos esenciales](#conceptos-esenciales)
@@ -16,7 +16,7 @@
 
 ---
 
-## Microcontroladores
+## 1. Microcontroladores
 
 Un **microcontrolador** es un ordenador en un solo chip. Integra:
 - **CPU** para procesar instrucciones
