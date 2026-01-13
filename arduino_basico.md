@@ -4,7 +4,7 @@
 ---
 
 ## Indice
-1. [¿Qué es un Microcontrolador?](#qué-es-un-microcontrolador)
+1. [¿Qué es un Microcontrolador?](#que-es-un-microcontrolador)
 2. [Introducción a Arduino](#introducción-a-arduino)
 3. [Partes de una Placa Arduino](#partes-de-una-placa-arduino)
 4. [Conceptos Esenciales](#conceptos-esenciales)
@@ -17,7 +17,7 @@
 
 ## 1. ¿Qué es un Microcontrolador?
 
-Un **microcontrolador** es un computador completo en un solo chip. Integra:
+Un **microcontrolador** es un ordenador en un solo chip. Integra:
 - **CPU** para procesar instrucciones
 - **Memoria** para almacenar programas
 - **Puertos de E/S** para comunicarse
