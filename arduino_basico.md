@@ -7,12 +7,12 @@
 
 1. [Microcontroladores](#1-microcontroladores)
 2. [Introducción a Arduino](#introduccion-a-arduino)
-3. [Partes de una placa Arduino UNO](#partes-de-una-placa-arduino-uno)
-4. [Conceptos esenciales](#conceptos-esenciales)
-5. [Primer programa](#primer-programa)
-6. [Sensores y Actuadores](#sensores-y-actuadores)
-7. [Flujo de trabajo](#flujo-de-trabajo)
-8. [Proyecto](#proyecto)
+3. [Partes de una placa Arduino UNO](#3-partes-de-una-placa-arduino-uno)
+4. [Conceptos esenciales](#4-conceptos-esenciales)
+5. [Primer programa](#5-primer-programa)
+6. [Sensores y Actuadores](#6-sensores-y-actuadores)
+7. [Flujo de trabajo](#7-flujo-de-trabajo)
+8. [Proyecto](#8-proyecto)
 
 ---
 
@@ -44,7 +44,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ---
 
-## Partes de una placa Arduino UNO  
+## 3. Partes de una placa Arduino UNO  
     ARDUINO UNO
     ┌─────────────────┐
     │   Microcontrol  │ ← ATmega328P
