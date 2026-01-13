@@ -1,9 +1,8 @@
 ## Indice  
 
 1. [¿Qué es un Microcontrolador?](#que-es-un-microcontrolador)
-2. [Introducción a Arduino](#introduccion-a-arduino)
-3. [Partes de una placa Arduino UNO](#partes-de-una-placa-arduino-uno)
-4. [Conceptos esenciales](#conceptos-esenciales)
+2. [Introducción a Arduino](#introduccion-a-arduino]
+3. [Parte de una placa Arduino UNO](#partes-de-una-placa-arduino-uno)  
 
 ---
 
