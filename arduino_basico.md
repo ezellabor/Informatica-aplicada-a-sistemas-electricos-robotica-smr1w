@@ -6,7 +6,7 @@
 ## Indice  
 
 1. [Microcontroladores](#microcontroladores)
-2. [Introducción a Arduino](#introducción-a-arduino)
+2. [Introducción a Arduino](#introduccion-a-arduino)
 3. [Partes de una placa Arduino UNO](#partes-de-una-placa-arduino-uno)
 4. [Conceptos esenciales](#conceptos-esenciales)
 5. [Primer programa](#primer-programa)
@@ -27,7 +27,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ---
 
-## Introduccion a Arduino
+## Introduccion a Arduino<a name="introduccion-a-arduino"></a>
 
 **Arduino** es una plataforma de código abierto para programar microcontroladores fácilmente.
 
