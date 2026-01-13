@@ -208,9 +208,9 @@ void loop() {
 float voltaje = valor * (5.0 / 1023.0);
 Serial.print("Voltaje: ");
 Serial.println(voltaje);
-```
+```  
 
-  ## 10. Uso de Librerías en Arduino
+## 10. Uso de librerías en Arduino
 
 ### Cómo incluir una librería:
 ```arduino
@@ -292,7 +292,7 @@ void loop() {
   delay(5000);
   digitalWrite(rojo, LOW);
 }
-
+```  
 ---
 ---
 
