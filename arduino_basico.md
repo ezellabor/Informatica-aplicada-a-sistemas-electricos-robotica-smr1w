@@ -118,7 +118,9 @@ void loop() {
 **`pinMode()`** → Configura el pin como entrada o salida  
 **`loop()`** → Se repite continuamente después del setup  
 **`digitalWrite()`** → Escribe HIGH (5V) o LOW (0V) en un pin  
-**`delay()`** → Pausa el programa en milisegundos
+**`delay()`** → Pausa el programa en milisegundos  
+
+---  
 
 ## 6. Sensores y Actuadores
 
@@ -154,7 +156,7 @@ void loop() {
 
 ---
 
-## 8. Comunicación Serial
+## 8. Comunicación serial
 
 ### Para depurar y ver datos:
 
@@ -183,7 +185,7 @@ void loop() {
 
 ---  
 
-## 9. Lectura de Sensores Analógicos
+## 9. Lectura de sensores analógicos
 
 ### Ejemplo con potenciómetro:
 
@@ -261,7 +263,7 @@ void loop() {
 ---
 
 
-## 11. Proyecto: Semáforo con Arduino
+## 11. Proyecto: semáforo con Arduino
 
 ### Material necesario:
 - Arduino UNO
