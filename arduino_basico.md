@@ -16,7 +16,7 @@
 
 ---
 
-## 1. ¿Qué es un Microcontrolador?
+## ¿Qué es un Microcontrolador?
 
 Un **microcontrolador** es un ordenador en un solo chip. Integra:
 - **CPU** para procesar instrucciones
@@ -27,7 +27,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ---
 
-## 2. Introducción a Arduino
+## Introducción a Arduino
 
 **Arduino** es una plataforma de código abierto para programar microcontroladores fácilmente.
 
@@ -44,7 +44,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ---
 
-## 3. Partes de una placa Arduino UNO  
+## Partes de una placa Arduino UNO  
     ARDUINO UNO
     ┌─────────────────┐
     │   Microcontrol  │ ← ATmega328P
