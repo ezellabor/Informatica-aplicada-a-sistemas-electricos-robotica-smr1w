@@ -138,7 +138,7 @@ void loop() {
 
 ---
 
-## 7. Flujo de Trabajo con Arduino
+## 7. Flujo de trabajo con Arduino
 
 ### Pasos básicos:
 1. **Conecta** Arduino al PC con cable USB
