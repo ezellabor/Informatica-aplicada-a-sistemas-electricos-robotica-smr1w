@@ -94,7 +94,7 @@ Antes de la invención del transistor (dispositivo activo por excelencia), los d
 - ¿Por qué fue revolucionario? -->
 
 
-
+<!--
   # Respuestas y Soluciones  
 ## Guía – Dispositivos Discretos
 
@@ -274,5 +274,5 @@ El pasivo obedece las leyes físicas.
 El activo las usa para controlar.
 
 Un matiz crucial y muy bien planteado para trabajarlo desde el primer momento con el alumnado.
-
+-->
 
