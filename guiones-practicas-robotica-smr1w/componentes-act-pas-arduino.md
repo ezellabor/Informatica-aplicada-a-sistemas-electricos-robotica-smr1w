@@ -1,5 +1,5 @@
-# Práctica de Robótica: Componentes Activos, Pasivos y Arduino
-**Módulo:** SMR1 (Sistemas Microinformáticos y Redes)  
+# Práctica: Componentes Activos, Pasivos y Arduino
+**Módulo:** Informática aplicada a sistemas electrónicos (Robótica) 
 **Duración estimada:** 60 minutos
 
 ---  
