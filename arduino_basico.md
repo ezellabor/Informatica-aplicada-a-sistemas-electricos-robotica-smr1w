@@ -6,7 +6,7 @@
 ## Indice  
 
 1. [Microcontroladores](#1-microcontroladores)
-2. [Introducción a Arduino](#introduccion-a-arduino)
+2. [Introducción a Arduino](#2-introduccion-a-arduino)
 3. [Partes de una placa Arduino UNO](#3-partes-de-una-placa-arduino-uno)
 4. [Conceptos esenciales](#4-conceptos-esenciales)
 5. [Primer programa: LED parpadeante](#5-primer-programa-led-parpadeante)
@@ -30,7 +30,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ---
 
-## 2. Introducción a Arduino<a name="introduccion-a-arduino"></a>
+## 2. Introducción a Arduino<a name="2-introduccion-a-arduino"></a>
 
 **Arduino** es una plataforma de código abierto para programar microcontroladores fácilmente.
 
@@ -156,7 +156,7 @@ void loop() {
 
 ---
 
-## 8. Comunicación serial
+## 8. Comunicación serial<a name="comunicacion-serial"></a>
 
 ### Para depurar y ver datos:
 
