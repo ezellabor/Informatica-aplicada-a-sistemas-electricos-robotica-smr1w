@@ -99,7 +99,7 @@ Responde brevemente a las siguientes preguntas para validar los conceptos aprend
 
 ---
 
-### 5. Reto extra (Para los que terminan pronto)
+### 5. Reto opcional (Para subir nota)
 Modifica el circuito y el código para añadir un segundo LED (otro componente activo). 
 * El **LED 1** debe encenderse mientras el **LED 2** está apagado, y viceversa (efecto policía).
 * ¿Has necesitado añadir otra resistencia? Justifica por qué.
