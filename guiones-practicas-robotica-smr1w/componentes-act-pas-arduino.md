@@ -22,7 +22,7 @@ Son aquellos que pueden **controlar el flujo eléctrico** o modificar la señal.
 
 ---
 
-## 2. El Proyecto: Control de Salida Digital
+## 2. Proyecto: Control de Salida Digital
 
 **Objetivo:** Montar un circuito donde una placa Arduino (cerebro) controle un componente activo (LED) protegido por un componente pasivo (resistencia).
 
@@ -38,9 +38,11 @@ Son aquellos que pueden **controlar el flujo eléctrico** o modificar la señal.
 2.  **Resistencia:** Conecta un extremo de la resistencia en la misma fila donde pusiste el cable anterior.
 3.  **LED:** Conecta la pata larga (**Ánodo**) en la misma fila donde termina la resistencia. La pata corta (**Cátodo**) ponla en una fila diferente.
 4.  **GND:** Conecta un cable desde el pin **GND** del Arduino hasta la fila de la pata corta del LED.
-5.  Esquema:
+5.  **Esquema del montaje**  
+   ![esquema-act-pas-arduino-uno](../figuras-imagenes/esquema-act-pas-led-intermitente-arduino.png)
 
-![esquema-act-pas-arduino-uno](../figuras-imagenes/esquema-act-pas-led-intermitente-arduino.png)
+6.  **Diseño y simulación con Arduino en Tinkercad**
+   ![diseño-tikercad-act-pas-arduino-uno](../figuras-imagenes/act-pas-led-intermitente-arduino.png)
 
 > **Nota de seguridad:** Nunca conectes el LED directamente al Arduino sin la resistencia; el componente activo se quemaría por exceso de corriente.
 
