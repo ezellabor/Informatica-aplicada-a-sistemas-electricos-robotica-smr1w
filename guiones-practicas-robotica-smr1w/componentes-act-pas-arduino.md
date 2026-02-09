@@ -77,10 +77,10 @@ void loop() {
 ### Lista de verificación
 | Tarea | Objetivo | Verificado |
 | :--- | :--- | :---: |
-| **Identificación de Componentes** | El alumno distingue visualmente la resistencia (pasivo) del LED (activo). | ☐ |
-| **Montaje de Circuito** | El LED y la resistencia están en serie y el LED tiene la polaridad correcta. | ☐ |
-| **Modificación de Código** | El alumno cambia los valores del `delay` a `200` y observa el parpadeo rápido. | ☐ |
-| **Seguridad Eléctrica** | El circuito nunca se conecta a la placa sin la resistencia limitadora. | ☐ |
+| **Identificación de componentes** | Distinguir visualmente la resistencia (pasivo) del LED (activo). | ☐ |
+| **Montaje de circuito** | El LED y la resistencia están en serie y el LED tiene la polaridad correcta. | ☐ |
+| **Modificación de código** | Cambiar los valores del `delay` a `200` y observa el parpadeo rápido. | ☐ |
+| **Seguridad eléctrica** | El circuito nunca se conecta a la placa sin la resistencia limitadora. | ☐ |
 
 ---
 
