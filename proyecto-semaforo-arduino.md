@@ -66,6 +66,12 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 4. **Conector USB** - Programación y alimentación
 5. **Alimentación** - 5V, 3.3V, GND
 
+![componentes-clave-arduino-uno](figuras-imagenes/arduino-uno-componentes.jpeg)  
+
+---  
+
+![componentes-clave-arduino-uno](figuras-imagenes/arduino-uno-partes-detallado.jpeg)
+
 ---
 
 ## 4. Conceptos esenciales
