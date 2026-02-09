@@ -263,7 +263,7 @@ void loop() {
 ---
 
 
-## 11. Proyecto: semáforo con Arduino<a name="11-proyecto:-semaforo-con-arduino"></a>
+## 11. Proyecto Semáforo con Arduino<a name="11-proyecto-semaforo-con-arduino"></a>
 
 ### Material necesario:
 - Arduino UNO
