@@ -1,4 +1,4 @@
-# Práctica: Introducción a Componentes Activos y Pasivos con Arduino
+# Práctica: Componentes activos y pasivos con Arduino
 
 **Módulo:** Robótica (SMR1)  
 **Duración:** 60 minutos  
