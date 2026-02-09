@@ -61,8 +61,8 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
     
 **Componentes clave:**
 1. **Microcontrolador ATmega328P** - El cerebro
-2. **14 Pines Digitales** - Para señales ON/OFF
-3. **6 Pines Analógicos** - Para valores variables
+2. **14 Pines Digitales (Entradas/Salidas)** - Para señales ON/OFF
+3. **6 Pines Analógicos (Entradas)** - Para valores variables
 4. **Conector USB** - Programación y alimentación
 5. **Alimentación** - 5V, 3.3V, GND
 
