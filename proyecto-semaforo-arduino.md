@@ -1,5 +1,5 @@
-# Conceptos Básicos de Microcontroladores con Arduino
-### **Módulo de Robótica - SMR1**
+# Microcontroladores con Arduino
+### **Proyecto Semáforo | Robótica | SMR1**
 
 ---
 
