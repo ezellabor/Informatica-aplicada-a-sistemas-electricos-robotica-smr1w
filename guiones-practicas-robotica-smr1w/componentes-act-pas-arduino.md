@@ -39,11 +39,7 @@ Son aquellos que pueden **controlar el flujo eléctrico** o modificar la señal.
 3.  **LED:** Conecta la pata larga (**Ánodo**) en la misma fila donde termina la resistencia. La pata corta (**Cátodo**) ponla en una fila diferente.
 4.  **GND:** Conecta un cable desde el pin **GND** del Arduino hasta la fila de la pata corta del LED.
 5.  **Esquema del montaje:**  
-   ![esquema-act-pas-arduino-uno](../figuras-imagenes/esquema-act-pas-led-intermitente-arduino.png)
-
-6.  **Diseño y simulación con Arduino en Tinkercad**
-7.  
-   ![diseño-tinkercad-act-pas-arduino-uno](../figuras-imagenes/activo-pasivo-led-intermitente-arduino.png)
+   ![esquema-act-pas-arduino-uno](../figuras-imagenes/esquema-act-pas-led-intermitente-arduino.png)  
 
 > **Nota de seguridad:** Nunca conectes el LED directamente al Arduino sin la resistencia; el componente activo se quemaría por exceso de corriente.
 
@@ -70,6 +66,9 @@ void loop() {
 }
 
 ```
+
+ **Diseño y simulación con Arduino en Tinkercad**
+   ![diseño-tinkercad-act-pas-arduino-uno](../figuras-imagenes/activo-pasivo-led-intermitente-arduino.png)
 
 
 ## 3. Ejercicios y Cuestionario
