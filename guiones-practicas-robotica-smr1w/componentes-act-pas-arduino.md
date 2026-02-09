@@ -67,7 +67,7 @@ void loop() {
 
 ```
 
- **Diseño y simulación con Arduino en Tinkercad**
+ **Diseño y simulación con Arduino en Tinkercad:**  
    ![diseño-tinkercad-act-pas-arduino-uno](../figuras-imagenes/activo-pasivo-led-intermitente-arduino.png)
 
 
