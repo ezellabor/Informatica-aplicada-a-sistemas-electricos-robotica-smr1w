@@ -3,10 +3,10 @@
 **Duración estimada:** 60 minutos
 
 ---  
-NOTA: ver este documento (https://docs.google.com/document/d/1jvlvm2FqSEJCLl_ezwGhrs87LphTGowsda3Qb6LG9Rk/edit?tab=t.0)  
+<!-- NOTA: ver este documento (https://docs.google.com/document/d/1jvlvm2FqSEJCLl_ezwGhrs87LphTGowsda3Qb6LG9Rk/edit?tab=t.0)  -->
 
 
-## 1. Fundamentos Teóricos: Activos vs. Pasivos
+## 1. Conceptos previos
 
 Antes de conectar nada, debemos entender qué papel juega cada pieza en el circuito:
 
@@ -33,11 +33,14 @@ Son aquellos que pueden **controlar el flujo eléctrico** o modificar la señal.
 * 1 Resistencia de $220\Omega$ (Pasivo) - Colores: Rojo-Rojo-Marrón
 * 2 Cables Jumper (Macho-Macho)
 
-### Paso 1: Montaje Físico (Hardware)
+### Paso 1: Instrucciones de montaje (Hardware)
 1.  **Pin 13:** Conecta un cable desde el Pin 13 de tu Arduino hasta una fila libre de la protoboard.
 2.  **Resistencia:** Conecta un extremo de la resistencia en la misma fila donde pusiste el cable anterior.
 3.  **LED:** Conecta la pata larga (**Ánodo**) en la misma fila donde termina la resistencia. La pata corta (**Cátodo**) ponla en una fila diferente.
 4.  **GND:** Conecta un cable desde el pin **GND** del Arduino hasta la fila de la pata corta del LED.
+5.  Esquema:
+
+![esquema-act-pas-arduino-uno](../figuras-imagenes/esquema-act-pas-led-intermitente-arduino.png)
 
 > **Nota de seguridad:** Nunca conectes el LED directamente al Arduino sin la resistencia; el componente activo se quemaría por exceso de corriente.
 
