@@ -156,7 +156,7 @@ void loop() {
 
 ---
 
-## 8. Comunicación serial<a name="comunicacion-serial"></a>
+## 8. Comunicación serial<a name="8-comunicacion-serial"></a>
 
 ### Para depurar y ver datos:
 
@@ -185,7 +185,7 @@ void loop() {
 
 ---  
 
-## 9. Lectura de sensores analógicos
+## 9. Lectura de sensores analógicos<a name="9-lectura-de-sensores-analogicos"></a>
 
 ### Ejemplo con potenciómetro:
 
@@ -220,7 +220,7 @@ Serial.println(voltaje);
 
 ---  
 
-## 10. Uso de librerías en Arduino
+## 10. Uso de librerías en Arduino<a name="10-uso-de-librerias-en-arduino"></a>
 
 ### Cómo incluir una librería:
 ```arduino
@@ -263,7 +263,7 @@ void loop() {
 ---
 
 
-## 11. Proyecto: semáforo con Arduino
+## 11. Proyecto: semáforo con Arduino<a name="11-proyecto:-semaforo-con-arduino"></a>
 
 ### Material necesario:
 - Arduino UNO
