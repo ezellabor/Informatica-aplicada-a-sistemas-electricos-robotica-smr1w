@@ -3,9 +3,14 @@
 **Módulo:** Robótica (SMR1)  
 **Duración:** 60 minutos  
 
-## 1. Conceptos previos
-- **Componentes Pasivos:** No generan energía ni controlan el flujo mediante señales externas. Ejemplo: **Resistencia** (limita la corriente).
-- **Componentes Activos:** Pueden controlar el flujo eléctrico o proporcionar ganancia. Ejemplos: **LED** (semiconductor) y **Arduino** (microcontrolador).
+## 1. Conceptos previos  
+### Componentes Pasivos    
+- No generan energía ni controlan el flujo mediante señales externas.
+- Ejemplo: **Resistencia** (limita la corriente).  
+
+### Componentes Activos  
+- Pueden controlar el flujo eléctrico o proporcionar ganancia.
+- Ejemplos: **LED** (semiconductor) y **Arduino** (microcontrolador).  
 
 ## 2. Instrucciones de montaje
 1. Conecta el **Pin 13** de tu Arduino a una fila de la protoboard.
