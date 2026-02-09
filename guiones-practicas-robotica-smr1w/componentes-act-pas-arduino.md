@@ -1,5 +1,5 @@
 # Práctica: Componentes Activos, Pasivos y Arduino
-**Módulo:** Informática aplicada a sistemas electrónicos (Robótica) 
+**Módulo:** Informática aplicada a sistemas electrónicos (Robótica)    
 **Duración estimada:** 60 minutos
 
 ---  
