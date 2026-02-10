@@ -42,7 +42,6 @@ Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 
 ### 3.2. Diodos LED y Resistencias
 
-
 #### Circuito 3: LED Verde (Polarización Directa)
 - **Conexión:** Positivo -> Resistencia 400 Ω -> Ánodo LED (pata larga) -> Cátodo LED (pata corta) -> Negativo.
 - **Aviso:** El LED verde debe encenderse correctamente.
@@ -51,7 +50,10 @@ Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 - **Conexión:** Positivo -> Resistencia 400 Ω -> Cátodo LED (pata corta) -> Ánodo LED (pata larga) -> Negativo.
 - **Aviso:** El LED rojo permanecerá apagado.
 
----
+---  
+
+### 3.3. Diseño de los circuitos en Tinkercad  
+![Circuito Diodo LED polarizacion](../figuras-imagenes/polarizacion-diodo-simulador.png)
 
 ## 4. Tabla de comprobación
 Completa esta tabla tras realizar la simulación:
