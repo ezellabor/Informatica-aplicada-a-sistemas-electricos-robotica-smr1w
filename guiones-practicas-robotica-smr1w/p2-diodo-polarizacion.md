@@ -1,20 +1,19 @@
 # Práctica 2: Diodo y polarización
 **Módulo:** Robótica   
 **Profesor:** Ezequiel Llarena Borges
-**Plataforma:** Tinkercad Circuits
 
 ---
 
-## 1. Introducción Teórica
-El **diodo** es un componente electrónico semiconductor que solo permite el paso de la corriente eléctrica en un sentido.
+## 1. Conceptos clave
+El **diodo** es un componente electrónico **semiconductor** que solo permite el paso de la corriente eléctrica en un sentido.
 * **Polarización Directa:** La corriente fluye (el diodo actúa como un cable).
 * **Polarización Inversa:** La corriente se bloquea (el diodo actúa como un aislante).
 * **Diodo LED:** Un diodo que emite luz al ser atravesado por electrones. Siempre requiere una **resistencia limitadora** para no quemarse.
 
 ---
 
-## 2. Materiales en Tinkercad
-Para esta práctica, selecciona los siguientes componentes en tu panel lateral:
+## 2. Herramientas necesarias
+Componentes de Tinkercad:
 * [ ] 1 Batería de **9V**.
 * [ ] 1 Protoboard (Placa de pruebas pequeña).
 * [ ] 2 Bombillas.
@@ -24,11 +23,11 @@ Para esta práctica, selecciona los siguientes componentes en tu panel lateral:
 
 ---
 
-## 3. Configuración de los Circuitos
+## 3. Configuración de los circuitos
 
 Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 
-### 🔴 Bloque A: Diodos Rectificadores y Bombillas
+### 3.1. Diodos Rectificadores y Bombillas
 
 
 #### Circuito 1: Polarización Directa
@@ -41,7 +40,7 @@ Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 
 ---
 
-### 🟢 Bloque B: Diodos LED y Resistencias
+### 3.2. Diodos LED y Resistencias
 
 
 #### Circuito 3: LED Verde (Polarización Directa)
@@ -69,17 +68,20 @@ Completa esta tabla tras realizar la simulación:
 ## 5. Cuestionario de Reflexión
 Responde a las siguientes preguntas en tu informe:
 
-1.  **Identificación:** ¿Cómo distinguimos el Ánodo del Cátodo en un diodo físico real?
-2.  **Cálculo:** Si la pila es de 9V y la resistencia es de 400 Ω, ¿por qué el LED no se quema?
-3.  **Análisis:** ¿Qué utilidad crees que tiene un diodo en un robot si este lleva motores?
-4.  **Error común:** Si conectas el LED sin resistencia en Tinkercad, ¿qué símbolo aparece sobre el componente?
+1.  ¿Cómo distinguimos el Ánodo del Cátodo en un diodo físico real?
+2.  ¿Por qué necesitamos las resistencias de 400Ω?
+3.  Si la pila es de 9V y la resistencia es de 400 Ω, ¿por qué el LED no se quema?
+4.  ¿Qué pasaría si conectáramos el LED directamente a 9V sin resistencia?
+5.  ¿Qué utilidad crees que tiene un diodo en un robot si este lleva motores?
+6.  Si conectas el LED sin resistencia en Tinkercad, ¿qué símbolo aparece sobre el componente?
+7.  ¿Cómo afectaría al LED usar resistencia de 100Ω o 1000Ω?
 
 ---
 
 ## 6. Instrucciones de Entrega
 1.  Pon el nombre del proyecto en Tinkercad como: `SMR_Robotica_Apellido_Nombre`.
 2.  Haz pública la simulación o genera un enlace de invitación.
-3.  Sube este archivo `.md` a tu repositorio de **GitHub** y adjunta una captura de pantalla del diseño final.
+3.  Sube una una captura de pantalla del diseño final: vista diseño, vista esquema y vista de Componentes en Tinkercad.
 
 ---
-**Firmado:** *Prof. Ezequiel*
+
