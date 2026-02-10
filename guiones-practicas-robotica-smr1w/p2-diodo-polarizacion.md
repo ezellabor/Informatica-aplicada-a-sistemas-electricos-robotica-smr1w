@@ -53,7 +53,7 @@ Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 
 ---
 
-## 4. Tabla de Comprobación
+## 4. Tabla de comprobación
 Completa esta tabla tras realizar la simulación:
 
 | Circuito | Componente | Polarización | Estado (Encendido/Apagado) | Voltaje en LED/Bombilla |
@@ -65,7 +65,7 @@ Completa esta tabla tras realizar la simulación:
 
 ---
 
-## 5. Cuestionario de Reflexión
+## 5. Cuestionario de reflexión
 Responde a las siguientes preguntas en tu informe:
 
 1.  ¿Cómo distinguimos el Ánodo del Cátodo en un diodo físico real?
@@ -78,7 +78,7 @@ Responde a las siguientes preguntas en tu informe:
 
 ---
 
-## 6. Instrucciones de Entrega
+## 6. Instrucciones de entrega
 1.  Pon el nombre del proyecto en Tinkercad como: `SMR_Robotica_Apellido_Nombre`.
 2.  Haz pública la simulación o genera un enlace de invitación.
 3.  Sube una una captura de pantalla del diseño final: vista diseño, vista esquema y vista de Componentes en Tinkercad.
