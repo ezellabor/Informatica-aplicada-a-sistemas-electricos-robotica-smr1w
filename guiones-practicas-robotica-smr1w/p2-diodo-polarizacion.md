@@ -33,8 +33,7 @@ Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 
 #### Circuito 1: Polarización Directa
 - **Conexión:** Ánodo (lado sin franja) al positivo -> Cátodo (lado con franja) a terminal de bombilla -> Segundo terminal de bombilla al negativo.
-- **Objetivo:** Observar el paso de corriente.
-![Circuito Diodo LED polarizacion](../figuras-imagenes/diodo-rectif-simbolo.png)  
+- **Objetivo:** Observar el paso de corriente.   
 #### Circuito 2: Polarización Inversa
 - **Conexión:** Invierte el diodo del Circuito 1 (Cátodo al positivo).
 - **Objetivo:** Observar el bloqueo de corriente.
