@@ -8,7 +8,7 @@
 El **diodo** es un componente electrónico **semiconductor** que solo permite el paso de la corriente eléctrica en un sentido.
 * **Polarización Directa:** La corriente fluye (el diodo actúa como un cable).
 * **Polarización Inversa:** La corriente se bloquea (el diodo actúa como un aislante).
-  
+  ![Circuito Diodo LED polarizacion](../figuras-imagenes/diodo-simbolo.png) 
 * **Diodo LED:** Un diodo que emite luz al ser atravesado por electrones. Siempre requiere una **resistencia limitadora** para no quemarse.
 
 ---
