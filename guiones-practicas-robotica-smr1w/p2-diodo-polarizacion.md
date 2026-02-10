@@ -68,20 +68,18 @@ Completa esta tabla tras realizar la simulación:
 ## 5. Cuestionario de reflexión
 Responde a las siguientes preguntas en tu informe:
 
-1.  ¿Cómo distinguimos el Ánodo del Cátodo en un diodo físico real?
-2.  ¿Por qué necesitamos las resistencias de 400Ω?
-3.  Si la pila es de 9V y la resistencia es de 400 Ω, ¿por qué el LED no se quema?
-4.  ¿Qué pasaría si conectáramos el LED directamente a 9V sin resistencia?
-5.  ¿Qué utilidad crees que tiene un diodo en un robot si este lleva motores?
-6.  Si conectas el LED sin resistencia en Tinkercad, ¿qué símbolo aparece sobre el componente?
-7.  ¿Cómo afectaría al LED usar resistencia de 100Ω o 1000Ω?
+1. ¿Cuál es la diferencia entre polarización directa e inversa?
+2. ¿Cómo distinguimos el ánodo del cátodo en un diodo físico real?
+3. ¿Qué pasaría si conectáramos el LED directamente a 9V sin resistencia?
+4. Calcula la resistencia necesaria para un LED azul (3.2V) con fuente de 9V a 15mA
+5. ¿Cómo afectaría al LED usar resistencia de 100Ω o 1000Ω?
 
 ---
 
 ## 6. Instrucciones de entrega
-1.  Pon el nombre del proyecto en Tinkercad como: `SMR_Robotica_Apellido_Nombre`.
-2.  Haz pública la simulación o genera un enlace de invitación.
-3.  Sube una una captura de pantalla del diseño final: vista diseño, vista esquema y vista de Componentes en Tinkercad.
+1.  Pon el nombre del proyecto en Tinkercad como: `P2-SMR1W_Robotica_Apellido_Nombre`.
+2.  Comparte el enlace de la simulación en Tinkercad.
+3.  Sube una una captura de pantalla del diseño final en Tinkercad: vista circuito, vista esquema y lista de componentes.
 
 ---
 
