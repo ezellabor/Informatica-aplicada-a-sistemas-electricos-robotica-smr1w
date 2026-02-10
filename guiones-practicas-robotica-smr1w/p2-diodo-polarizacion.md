@@ -52,7 +52,7 @@ Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 
 ---  
 
-### 3.3. Diseño de los circuitos en Tinkercad  
+### 3.3. Diseño y simulación en Tinkercad  
 ![Circuito Diodo LED polarizacion](../figuras-imagenes/polarizacion-diodo-simulador.png)
 
 ## 4. Tabla de comprobación
