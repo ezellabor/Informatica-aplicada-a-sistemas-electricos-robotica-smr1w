@@ -77,9 +77,9 @@ Responde a las siguientes preguntas en tu informe:
 ---
 
 ## 6. Instrucciones de entrega
-1.  Pon el nombre del proyecto en Tinkercad como: `P2-SMR1W_Robotica_Apellido_Nombre`.
-2.  Comparte el enlace de la simulación en Tinkercad.
-3.  Sube una una captura de pantalla del diseño final en Tinkercad: vista circuito, vista esquema y lista de componentes.
+1.  Descarga y rellena el informe de entrega de la práctica aquí.
+2.  Sube el documento PDF de tu informe al aula virtual.
+3.  Además deberás subir 3 capturas de pantalla del diseño final en Tinkercad: vista circuito, vista esquema y lista de componentes.
 
 ---
 
