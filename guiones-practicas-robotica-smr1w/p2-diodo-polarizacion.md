@@ -77,9 +77,9 @@ Responde a las siguientes preguntas en tu informe:
 ---
 
 ## 6. Instrucciones de entrega
-1.  Descarga y rellena el informe de entrega de la práctica [aquí](https://www.zekiland.es/recursos/practicas-robotica/p2-diodo-polarizacion-entrega.html) 
-2.  Sube el documento PDF de tu informe al aula virtual.
-3.  Además deberás subir 3 capturas de pantalla del diseño final en Tinkercad: vista circuito, vista esquema y lista de componentes.
+1.  Descarga y rellena el **informe de entrega** de la práctica [aquí](https://www.zekiland.es/recursos/practicas-robotica/p2-diodo-polarizacion-entrega.html) 
+2.  Sube el documento **PDF de tu informe** al aula virtual.
+3.  Además deberás subir **3 capturas del diseño final** en Tinkercad: vista circuito, vista esquema y lista de componentes.
 
 ---
 
