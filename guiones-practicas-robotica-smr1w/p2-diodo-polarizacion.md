@@ -8,6 +8,7 @@
 El **diodo** es un componente electrónico **semiconductor** que solo permite el paso de la corriente eléctrica en un sentido.
 * **Polarización Directa:** La corriente fluye (el diodo actúa como un cable).
 * **Polarización Inversa:** La corriente se bloquea (el diodo actúa como un aislante).
+  
 * **Diodo LED:** Un diodo que emite luz al ser atravesado por electrones. Siempre requiere una **resistencia limitadora** para no quemarse.
 
 ---
@@ -33,7 +34,7 @@ Deberás montar los 4 ejemplos en la misma protoboard de forma organizada.
 #### Circuito 1: Polarización Directa
 - **Conexión:** Ánodo (lado sin franja) al positivo -> Cátodo (lado con franja) a terminal de bombilla -> Segundo terminal de bombilla al negativo.
 - **Objetivo:** Observar el paso de corriente.
-
+![Circuito Diodo LED polarizacion](../figuras-imagenes/diodo-rectif-simbolo.png)  
 #### Circuito 2: Polarización Inversa
 - **Conexión:** Invierte el diodo del Circuito 1 (Cátodo al positivo).
 - **Objetivo:** Observar el bloqueo de corriente.
