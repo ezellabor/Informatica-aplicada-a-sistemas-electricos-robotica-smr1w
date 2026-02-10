@@ -1,6 +1,6 @@
-# 🤖 Práctica: Electrónica Básica - El Diodo y la Polaridad
-**Módulo:** Robótica Educativa  
-**Profesor:** Ezequiel  
+# Práctica 2: Diodo y polarización
+**Módulo:** Robótica   
+**Profesor:** Ezequiel Llarena Borges
 **Plataforma:** Tinkercad Circuits
 
 ---
