@@ -1,5 +1,5 @@
 # Práctica 2: Diodo y polarización
-**Módulo:** Robótica   
+**Módulo:** Informática aplicada a sistemas electrónicos (Robótica)    
 **Profesor:** Ezequiel Llarena Borges
 
 ---
