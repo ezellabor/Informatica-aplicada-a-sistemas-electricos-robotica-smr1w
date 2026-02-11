@@ -82,7 +82,7 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 
 ---  
 
-**Desglose de componentes de la placa microcontroladora Arduino UNO R3:**  
+**Desglose de pines de la placa microcontroladora Arduino UNO R3:**  
 
 ![desglose-componentes-arduino-uno-r3](figuras-imagenes/arduino-uno-r3-pines.png)    
 
