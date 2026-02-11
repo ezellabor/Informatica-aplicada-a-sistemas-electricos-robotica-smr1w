@@ -48,6 +48,18 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 ---
 
 ## 3. Partes de una placa Arduino UNO  
+
+Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contiene todo lo necesario para el funcionamiento del microcontrolador:
+- 14 pines de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
+- 6 entradas analógicas
+- 1 resonador cerámico de 16 MHz
+- 1 conexión USB
+- 1 conector de alimentación
+- 1 conector ICSP
+- 1 botón de reinicio
+
+Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adaptador de CA a CC o una batería para empezar.   
+
     ARDUINO UNO
     ┌─────────────────┐
     │   Microcontrol  │ ← ATmega328P
