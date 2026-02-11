@@ -49,18 +49,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ## 3. Partes de una placa Arduino UNO  
 
-[Anatomía de la placa Arduino UNO](https://docs.arduino.cc/tutorials/uno-rev3/board-anatomy/)
-
-Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contiene todo lo necesario para el funcionamiento del microcontrolador:
-- 14 pines de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
-- 6 entradas analógicas
-- 1 resonador cerámico de 16 MHz
-- 1 conexión USB
-- 1 conector de alimentación
-- 1 conector ICSP
-- 1 botón de reinicio
-
-Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adaptador de CA a CC o una batería para empezar.   
+Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contiene todo lo necesario para el funcionamiento del microcontrolador:  
 
     ARDUINO UNO
     ┌─────────────────┐
@@ -71,7 +60,18 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
     │                 │
     │ USB  Power  GND │ ← Conexiones
     └─────────────────┘  
+  
+- 14 pines de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
+- 6 entradas analógicas
+- 1 resonador cerámico de 16 MHz
+- 1 conexión USB
+- 1 conector de alimentación
+- 1 conector ICSP
+- 1 botón de reinicio
 
+Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adaptador de CA a CC o una batería para empezar.   
+
+![desglose-componentes-arduino-uno-r3](figuras-imagenes/detalles-componentes-arduino-uno-r3.png)   
     
 **Componentes clave:**
 1. **Microcontrolador ATmega328P** - El cerebro
@@ -80,13 +80,13 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 4. **Conector USB** - Programación y alimentación
 5. **Alimentación** - 5V, 3.3V, GND
 
-![componentes-clave-arduino-uno](figuras-imagenes/arduino-uno-componentes.jpg)  
-
 ---  
 
-**Detalle de componentes:**  
+**Desglose de componentes de la placa microcontroladora Arduino UNO R3:**  
 
-![componentes-clave-arduino-uno](figuras-imagenes/arduino-uno-partes-detallado.jpeg)
+![desglose-componentes-arduino-uno-r3](figuras-imagenes/arduino-uno-r3-pines.png)    
+
+[Anatomía de la placa Arduino UNO](https://docs.arduino.cc/tutorials/uno-rev3/board-anatomy/)
 
 ---
 
