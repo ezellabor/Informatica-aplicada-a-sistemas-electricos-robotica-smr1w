@@ -1,4 +1,4 @@
-# Práctica: Componentes Activos, Pasivos y Arduino
+# Práctica: Control de un LED mediante Pin Digital (Arduino UNO)
 **Módulo:** Informática aplicada a sistemas electrónicos (Robótica)    
 **Duración estimada:** 60 minutos
 
