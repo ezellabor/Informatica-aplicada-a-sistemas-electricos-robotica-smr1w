@@ -90,17 +90,17 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 
 ## 4. Conceptos esenciales
 
-### Digital vs Analógico
+### 4.1. Digital vs Analógico
 | Tipo | Valores | Ejemplo |
 |------|---------|---------|
 | **Digital** | 0 ó 1 | Interruptor |
 | **Analógico** | 0-1023 | Potenciómetro |
 
-### Voltajes
+### 4.2. Voltajes
 - **HIGH** = 5V (ON)
 - **LOW** = 0V (OFF)
 
-### PWM (Modulación por Ancho de Pulso)
+### 4.3. PWM (Modulación por Ancho de Pulso)
 Permite simular salidas analógicas en pines digitales.
 
 ---
