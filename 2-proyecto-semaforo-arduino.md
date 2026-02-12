@@ -34,7 +34,8 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 2. **Proceso (LOGICA PROGRAMABLE):** El **Sketch** controla la lógica; CPU y memoria. Analogía: cerebro humano  
 3. **Salida (ACTUADORES):** Actuadores físicos. Analogía: músculos humanos  
 
->**Bucle infinito (loop)** – Lectura → comparación → acción → repetición.   
+>**Bucle infinito (loop)** – Lectura → comparación → acción → repetición.
+
 **Ejemplo:** Termostato automático con sensor LDR
 
 ---
