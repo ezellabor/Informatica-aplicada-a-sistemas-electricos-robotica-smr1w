@@ -41,7 +41,7 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ## 2. Introducción a Arduino<a name="2-introduccion-a-arduino"></a>
 
-**Arduino** es una plataforma de código abierto para programar microcontroladores fácilmente.
+**Arduino** es una plataforma de código abierto para **programar microcontroladores** fácilmente.
 
 **Ventajas:**
 - Fácil de aprender
