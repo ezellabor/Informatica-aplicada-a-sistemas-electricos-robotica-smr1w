@@ -37,7 +37,7 @@ Este itinerario desarrolla:
 # Nivel 1 · Iniciación (Digital & Salidas)
 
 ## 1️⃣ El Faro  
-**Objetivo:** Control básico de salidas digitales.
+**Objetivo:** Control básico de salidas digitales.  
 **Circuito:** LED parpadeo básico  
 
 ```cpp
