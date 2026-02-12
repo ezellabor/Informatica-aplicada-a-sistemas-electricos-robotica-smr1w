@@ -51,7 +51,7 @@ delay(2000);
 
 ### 2️⃣ Semáforo Simple  
 **Objetivo:** Control básico de salidas digitales.   
-**Circuito** – Secuencia Verde → Amarillo → Rojo  
+**Circuito**: Secuencia Verde → Amarillo → Rojo  
 ```cpp
 digitalWrite(10, HIGH); 
 delay(5000);
