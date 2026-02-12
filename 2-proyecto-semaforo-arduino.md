@@ -156,19 +156,33 @@ void loop() {
 
 ## 6. Sensores y Actuadores
 
-### Sensores comunes (Entradas):
-- **Pulsador** - Entrada digital simple
-- **Potenciómetro** - Valor variable (analógico)
-- **LDR** - Sensor de luz
-- **HC-SR04** - Sensor de distancia ultrasónico
-- **DHT11** - Sensor de temperatura/humedad
+### Sensores comunes (Entradas)  
 
-### Actuadores comunes (Salidas):
-- **LED** - Indicación visual
-- **Buzzer** - Generador de sonido
-- **Motor DC** - Movimiento continuo
-- **Servomotor** - Control de posición angular
-- **Pantalla LCD** - Visualización de texto
+Dispositivos que **detectan magnitudes físicas** y las convierten en señales eléctricas.
+
+|Sensor               |Magnitud que detecta   |Aplicación en robótica  |
+|---------------------|-----------------------|------------------------|
+|LDR                  |Luz                    |Seguidor de línea       |
+|Ultrasónico (HC-SR04)|Distancia              |Evitar obstáculos       |
+|PIR                  |Movimiento (IR)        |Detección de presencia  |
+|DHT11/DHT22          |Temperatura y humedad  |Monitorización ambiental|
+|Encoder              |Rotación               |Control de velocidad    |
+|Acelerómetro         |Aceleración/inclinación|Estabilización          |
+|Infrarrojo           |Proximidad/línea       |Seguidor de línea       |
+|LCD                  |Pantalla de LCD        |Visualización de texto  |  
+
+### Actuadores comunes (Salidas)  
+
+Dispositivos que **convierten señales eléctricas en acciones físicas**.  
+
+|Actuador         |Función                     |Control típico     |
+|-----------------|----------------------------|-------------------|
+|Motor DC         |Movimiento rotatorio        |PWM                |
+|Servomotor       |Posición angular precisa    |Señal PWM (pulsos) |
+|Motor paso a paso|Movimiento preciso por pasos|Secuencia de pulsos|
+|Relé             |Interruptor electromecánico |Señal digital      |
+|Zumbador/Buzzer  |Sonido                      |Señal digital/PWM  |
+|Electroválvula   |Control de fluidos          |Señal digital      |
 
 ---
 
