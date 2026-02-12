@@ -129,7 +129,7 @@ Permite simular salidas analógicas en pines digitales.
 - LED (+) → Pin 13
 - LED (-) → GND (con resistencia)
 
-### Código completo:
+### Código:
 
 ```cpp
 void setup() {
@@ -309,7 +309,7 @@ void loop() {
 - LED Verde → Pin 10
 - GND de cada LED → Resistencia → GND de Arduino
 
-### Código completo:
+### Código:
 ```cpp
 int rojo = 8;
 int amarillo = 9;
