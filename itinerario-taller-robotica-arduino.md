@@ -36,9 +36,9 @@ Este itinerario desarrolla:
 
 # Nivel 1 · Iniciación (Digital & Salidas)
 
-## 1️⃣ El Faro
-
+## 1️⃣ El Faro  
 **Objetivo:** Control básico de salidas digitales.
+**Circuito:** LED parpadeo básico  
 
 ```cpp
 digitalWrite(13, HIGH);
@@ -49,7 +49,9 @@ delay(2000);
 
 >El LED parpadea 1 segundo encendido y 2 apagado.
 
-### 2️⃣ Semáforo Simple
+### 2️⃣ Semáforo Simple  
+**Objetivo:** Control básico de salidas digitales.  
+**Circuito** – Secuencia Verde → Amarillo → Rojo  
 ```cpp
 digitalWrite(10, HIGH); 
 delay(5000);
@@ -66,9 +68,10 @@ digitalWrite(12, LOW);
 
 >Secuencia Verde → Amarillo → Rojo.
 
-## Nivel 2 · Interacción (Entradas Digitales)
+## Nivel 2 · Interacción (Entradas Digitales)  
 ### 3️⃣ Pulsador de Emergencia
-
+**Circuito** – LED activo mientras se pulsa  
+ 
 ```cpp
 if (digitalRead(2) == HIGH) {
   digitalWrite(13, HIGH);
@@ -80,8 +83,9 @@ if (digitalRead(2) == HIGH) {
 >El LED se enciende solo mientras el botón esté pulsado.  
 
 ### 4️⃣ Interruptor ON/OFF (Estado Persistente)  
-```cpp
+**Circuito**: Estado persistente  
 
+```cpp
 int estadoLED = 0;
 int estadoBotonAnterior = LOW;
 
@@ -101,6 +105,8 @@ void loop() {
 
  ## Nivel 3 · El Mundo Analógico (Sensores)
 ### 5️⃣ Lámpara Nocturna  
+**Circuito:** LED según luz   
+
 ```cpp
 
 if (analogRead(A0) < 500) {
@@ -111,10 +117,10 @@ if (analogRead(A0) < 500) {
 ```  
 >Uso de divisor de tensión con LDR. 
 
-### 6️⃣ Termómetro Visual (PWM)
+### 6️⃣ Termómetro Visual (PWM)  
+**Circuito:** Intensidad PWM   
 
 ```cpp
-
 int valorSensor = analogRead(A1);
 int brillo = map(valorSensor, 20, 358, 0, 255);
 brillo = constrain(brillo, 0, 255);
@@ -144,7 +150,7 @@ void loop() {
 ```  
 >Control angular básico.
 
-## 8️⃣ Sensor de Aparcamiento (Ultrasonidos)
+## 8️⃣ Sensor de Aparcamiento (Ultrasonidos + Buzzer)
 ```cpp
 int calcularDistancia() {
   digitalWrite(7, LOW);
@@ -161,7 +167,8 @@ int calcularDistancia() {
 >Relación distancia-tiempo.
 
 ## Nivel 5 · Sistemas Complejos (Control Total)
-### 9️⃣ LCD Bienvenida
+### 9️⃣ LCD de Bienvenida  
+**Circuito:** Tiempo en pantalla LCD
 ```cpp
 lcd.print("Hola Alumno");
 lcd.setCursor(0, 1);
@@ -169,7 +176,9 @@ lcd.print(millis() / 1000);
 ```  
 >Gestión de información en tiempo real.
 
-### 🔟 Estación Meteorológica Pro
+### 🔟 Estación Meteorológica Pro  
+**Circuito:** Integración completa  
+
 ```cpp
 if (temperatura > 30.0) {
   servo.write(180);
@@ -179,27 +188,29 @@ if (temperatura > 30.0) {
 ```    
 >Integración total de sensores + actuadores + lógica.
 
-## Simbología Estándar
-Componente	Clave Técnica
-Resistencia	No tiene polaridad
-LED	Ánodo (+) / Cátodo (-)
-Pulsador	Usar siempre pull-up/down
-LDR	Divisor de tensión
-Potenciómetro	Pin central a analógico  
+## Simbología Estándar 
+| Componente | Símbolo | Clave Técnica |
+|------------|---------|---------------|
+| Resistencia | Zig-zag | No polarizada |
+| LED | Triángulo + flechas | Ánodo (+) / Cátodo (-) |
+| Pulsador | Contacto momentáneo | Pull-up/down |
+| LDR | Círculo + flechas | Divisor de tensión |
+| Potenciómetro | Resistencia + flecha | Pin central a analógico |  
 
-## Nota del Profesor
-```
-"Recordad que en Tinkercad el simulador es vuestro mejor amigo.
-Si algo explota o sale humo virtual, no pasa nada, pero leed el error antes de cambiar los cables."
-— Prof. Ezequiel
-```
+## Notas del Profesor  
 
-## Consejos para Tinkercad
+> "Recordad que en Tinkercad el simulador es vuestro mejor amigo.  
+> Si algo explota o sale humo virtual, no pasa nada, leed los errores antes de cambiar los cables."  
+> — Prof. Ezequiel
 
-1. Verifica siempre GND y 5V
-1. Usa el Monitor Serie para depurar
-1. Implementa anti-rebote en pulsadores
-2. Documenta tu código
+---  
+
+## Buenas prácticas  
+
+- Verifica **GND y 5V**  
+- Usa **resistencias pull-down** para pulsadores  
+- Pin 13 ideal para pruebas rápidas  
+- Monitor Serie para depuración  
 
 ## Resultado Final del Itinerario  
 
