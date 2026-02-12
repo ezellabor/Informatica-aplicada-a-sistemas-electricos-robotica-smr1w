@@ -26,7 +26,16 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 - **Memoria** para almacenar programas
 - **Puertos de E/S** para comunicarse
 
-**Analogía:** Es el **cerebro** de un robot. Recibe información de sensores, la procesa, y envía órdenes a actuadores.
+**Analogía:** Es el **cerebro** de un robot. Recibe información de sensores, la procesa, y envía órdenes a actuadores.  
+
+**Entrada → Proceso → Salida**
+
+1. **Entrada (Input)** – Sensores analógicos y digitales. Analogía: sentidos humanos  
+2. **Proceso (The Brain)** – El Sketch controla la lógica; CPU y memoria. Analogía: cerebro humano  
+3. **Salida (Output)** – Actuadores físicos. Analogía: músculos humanos  
+
+**Bucle infinito (loop)** – Lectura → comparación → acción → repetición.  
+**Ejemplo:** Termostato automático con sensor LDR
 
 ---
 
