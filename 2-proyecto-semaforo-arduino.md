@@ -131,7 +131,7 @@ Permite simular salidas analógicas en pines digitales.
 
 ### Código completo:
 
-```arduino
+```cpp
 void setup() {
   pinMode(13, OUTPUT);  // Configura pin 13 como salida
 }
@@ -192,7 +192,7 @@ void loop() {
 
 ### Para depurar y ver datos:
 
-```arduino
+```cpp
 void setup() {
   Serial.begin(9600);  // Inicia comunicación a 9600 baudios
 }
@@ -221,7 +221,7 @@ void loop() {
 
 ### Ejemplo con potenciómetro:
 
-```arduino
+```cpp
 int valor = 0;
 
 void setup() {
@@ -244,7 +244,7 @@ void loop() {
 
 ### Conversión a voltaje:
 
-```arduino
+```cpp
 float voltaje = valor * (5.0 / 1023.0);
 Serial.print("Voltaje: ");
 Serial.println(voltaje);
@@ -255,12 +255,12 @@ Serial.println(voltaje);
 ## 10. Uso de librerías en Arduino<a name="10-uso-de-librerias-en-arduino"></a>
 
 ### Cómo incluir una librería:
-```arduino
+```cpp
 #include <NombreLibreria.h>
 ```
 
 ### Librerías comunes  
-```arduino  
+```cpp  
 #include <Servo.h>           // Control de servomotores
 #include <LiquidCrystal.h>   // Pantallas LCD
 #include <DHT.h>             // Sensores DHT11/DHT22
@@ -275,7 +275,7 @@ Serial.println(voltaje);
 
 ### Ejemplo con Servomotor:  
 
-```arduino  
+```cpp  
 #include <Servo.h>
 
 Servo miServo;
@@ -310,7 +310,7 @@ void loop() {
 - GND de cada LED → Resistencia → GND de Arduino
 
 ### Código completo:
-```arduino
+```cpp
 int rojo = 8;
 int amarillo = 9;
 int verde = 10;
