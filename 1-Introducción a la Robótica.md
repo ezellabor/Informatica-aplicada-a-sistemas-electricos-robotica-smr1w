@@ -53,12 +53,12 @@ _Realizar tareas sin intervención humana._
 Ejemplo: 
 - Una cinta transportadora en una fábrica que clasifica paquetes por peso usando sensores y actuadores.
 
-### 8. Lenguajes de Programación en Robótica
+### 8. Lenguajes de programación en Robótica
 Ejemplos:  
 - Bloques (Scratch, Blockly): Para principiantes (ej: programar un robot mBot).
 - Python/C++: Para robots avanzados (ej: ROS - Robot Operating System).
 
-### Ejemplo Práctico Integrado
+### Ejemplo práctico integrado
 **Robot que evita obstáculos:**
 - Sensor: Ultrasónico detecta un obstáculo.
 - Microcontrolador (Arduino): Procesa la señal.
