@@ -50,7 +50,7 @@ delay(2000);
 >El LED parpadea 1 segundo encendido y 2 apagado.
 
 ### 2️⃣ Semáforo Simple  
-**Objetivo:** Control básico de salidas digitales.  
+**Objetivo:** Control básico de salidas digitales.   
 **Circuito** – Secuencia Verde → Amarillo → Rojo  
 ```cpp
 digitalWrite(10, HIGH); 
@@ -69,8 +69,8 @@ digitalWrite(12, LOW);
 >Secuencia Verde → Amarillo → Rojo.
 
 ## Nivel 2 · Interacción (Entradas Digitales)  
-### 3️⃣ Pulsador de Emergencia
-**Circuito** – LED activo mientras se pulsa  
+### 3️⃣ Pulsador de Emergencia  
+**Circuito** : LED activo mientras se pulsa  
  
 ```cpp
 if (digitalRead(2) == HIGH) {
@@ -201,7 +201,7 @@ if (temperatura > 30.0) {
 
 > "Recordad que en Tinkercad el simulador es vuestro mejor amigo.  
 > Si algo explota o sale humo virtual, no pasa nada, leed los errores antes de cambiar los cables."  
-> — Prof. Ezequiel
+> ```Prof. Ezequiel```
 
 ---  
 
@@ -209,10 +209,10 @@ if (temperatura > 30.0) {
 
 - Verifica **GND y 5V**  
 - Usa **resistencias pull-down** para pulsadores  
-- Pin 13 ideal para pruebas rápidas  
-- Monitor Serie para depuración  
+- **Pin 13** ideal para pruebas rápidas  
+- **Monitor Serie** para depuración  
 
-## Resultado Final del Itinerario  
+## Resultado del Itinerario  
 
 Al finalizar los 10 retos, el alumnado será capaz de:  
 
