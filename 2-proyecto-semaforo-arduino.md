@@ -28,11 +28,11 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 >**Analogía:** Es el **cerebro** de un robot. Recibe información de sensores, la procesa, y envía órdenes a actuadores.  
 
-```**Entrada → Proceso → Salida**```
+```ENTRADA → PROCESO → SALIDA```
 
-1. **Entrada (Input)** – Sensores analógicos y digitales. Analogía: sentidos humanos  
-2. **Proceso (The Brain)** – El Sketch controla la lógica; CPU y memoria. Analogía: cerebro humano  
-3. **Salida (Output)** – Actuadores físicos. Analogía: músculos humanos  
+1. **Entrada (SENSORES):** Sensores analógicos y digitales. Analogía: sentidos humanos  
+2. **Proceso (LOGICA PROGRAMABLE):** El **Sketch** controla la lógica; CPU y memoria. Analogía: cerebro humano  
+3. **Salida (ACTUADORES):** Actuadores físicos. Analogía: músculos humanos  
 
 >**Bucle infinito (loop)** – Lectura → comparación → acción → repetición.   
 **Ejemplo:** Termostato automático con sensor LDR
