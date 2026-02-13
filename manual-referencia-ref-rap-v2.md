@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🤖 MANUAL DE REFERENCIA RÁPIDA  
-## Taller de Robótica – SMR1
+# MANUAL DE REFERENCIA RÁPIDA 2.O
+## Taller de Robótica
 
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-SMR1-green)
 ![Uso](https://img.shields.io/badge/Uso-Taller-orange)
 ![Formato](https://img.shields.io/badge/Formato-Hoja_de_Trucos-success)
 
-📌 Guía definitiva para las 10 prácticas  
-📎 Comandos · Pines · Sensores · Conexiones · Actuadores  
+📌 Guía para prácticas  
+Comandos · Pines · Sensores · Conexiones · Actuadores  
 
 </div>
 
@@ -32,16 +32,16 @@
 
 # 1️⃣ PINES Y ALIMENTACIÓN
 
-## 🔢 Digitales (0–13)
+## Digitales (0–13)
 - digitalRead()
 - digitalWrite()
 - PWM → 3, 5, 6, 9, 10, 11
 
-## 🎚 Analógicos (A0–A5)
+## Analógicos (A0–A5)
 - analogRead()
 - Rango: 0–1023
 
-## ⚡ Alimentación
+## Alimentación
 
 | Pin | Función |
 |------|----------|
@@ -84,7 +84,7 @@ Serial.begin(9600);
 
 # 4️⃣ SERVO MOTOR
 
-## 📌 Conexión
+## Conexión
 
 | Cable Servo | Arduino |
 |-------------|----------|
@@ -94,7 +94,7 @@ Serial.begin(9600);
 
 ---
 
-## 🧠 Código básico
+## Código básico
 
 ```cpp
 #include <Servo.h>
@@ -119,14 +119,14 @@ void loop() {
 
 # 5️⃣ BUZZER
 
-## 📌 Conexión
+## Conexión
 
 | Pin + | Pin digital |
 | Pin - | GND |
 
 ---
 
-## 🔊 Sonido simple
+## Sonido simple
 
 ```cpp
 tone(8, 1000);  // Pin 8, 1000 Hz
@@ -138,7 +138,7 @@ noTone(8);
 
 # 6️⃣ SENSOR ULTRASÓNICO (HC-SR04)
 
-## 📌 Pines
+## Pines
 
 | Sensor | Arduino |
 |---------|----------|
@@ -149,7 +149,7 @@ noTone(8);
 
 ---
 
-## 📏 Código básico
+## Código básico
 
 ```cpp
 long duracion;
@@ -171,7 +171,7 @@ Distancia en cm.
 
 # 7️⃣ LDR (SENSOR DE LUZ)
 
-## 📌 Conexión con divisor de tensión
+## Conexión con divisor de tensión
 
 ```
 5V --- LDR --- A0 --- Resistencia --- GND
@@ -179,7 +179,7 @@ Distancia en cm.
 
 ---
 
-## 📊 Lectura
+## Lectura
 
 ```cpp
 int luz = analogRead(A0);
@@ -196,7 +196,7 @@ Valores:
 
 ---
 
-## 💡 LED
+## LED
 
 ```
 Pin 8 ---- Resistencia ---- LED ---- GND
@@ -204,7 +204,7 @@ Pin 8 ---- Resistencia ---- LED ---- GND
 
 ---
 
-## 🔘 Pulsador
+## Pulsador
 
 ```
 5V --- Pulsador --- Pin 2
@@ -220,7 +220,7 @@ pinMode(2, INPUT_PULLUP);
 
 ---
 
-## 🎛 Servo
+## Servo
 
 ```
 5V  --------- Rojo
@@ -230,7 +230,7 @@ Pin 9 ------- Amarillo
 
 ---
 
-## 📏 Ultrasonido
+## Ultrasonido
 
 ```
 5V  -------- VCC
