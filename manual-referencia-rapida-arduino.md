@@ -58,8 +58,8 @@ Comandos · Pines · Sensores · Conexiones · Errores comunes
 
 ## Pines Analógicos (A0–A5)
 
-- Usan `analogRead()`
-- Valores de 0 a 1023
+- `analogRead()`
+- Rango: de 0 a 1023
 
 ---
 
