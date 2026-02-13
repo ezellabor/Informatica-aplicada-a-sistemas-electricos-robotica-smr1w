@@ -10,7 +10,7 @@
 
 ## Descripción
 
-Itinerario de prácticas diseñado para el taller de robótica, estructurada para que el alumnado evolucione desde el control básico digital (encender un LED) hasta la integración de sistemas completos con sensores, actuadores y pantallas.
+Itinerario de prácticas diseñado para el taller de robótica, estructurada para que el estudiante evolucione desde el control básico digital (encender un LED) hasta la integración de sistemas completos con sensores, actuadores y pantallas.
 
 Este itinerario desarrolla:
 
