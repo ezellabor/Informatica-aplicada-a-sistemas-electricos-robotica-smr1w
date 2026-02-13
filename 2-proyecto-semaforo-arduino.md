@@ -59,8 +59,6 @@ Un **microcontrolador** es un ordenador en un solo chip. Integra:
 
 ## 3. Partes de una placa Arduino UNO  
 
-Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contiene todo lo necesario para el funcionamiento del microcontrolador:  
-
     ARDUINO UNO
     ┌─────────────────┐
     │   Microcontrol  │ ← ATmega328P
@@ -70,7 +68,9 @@ Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contie
     │                 │
     │ USB  Power  GND │ ← Conexiones
     └─────────────────┘  
-  
+
+  Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contiene todo lo necesario para el funcionamiento del microcontrolador:  
+
 - 14 pines de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
 - 6 entradas analógicas
 - 1 resonador cerámico de 16 MHz
@@ -100,19 +100,19 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 
 ---
 
-## 4. Conceptos esenciales
+## 4. Conceptos base
 
-### 4.1. Digital vs Analógico
+#### 1. Digital vs Analógico
 | Tipo | Valores | Ejemplo |
 |------|---------|---------|
 | **Digital** | 0 ó 1 | Interruptor |
 | **Analógico** | 0-1023 | Potenciómetro |
 
-### 4.2. Voltajes
+#### 2. Voltajes
 - **HIGH** = 5V (ON)
 - **LOW** = 0V (OFF)
 
-### 4.3. PWM (Modulación por Ancho de Pulso)
+#### 3. PWM (Modulación por Ancho de Pulso)
 Permite simular salidas analógicas en pines digitales.
 
 ---
