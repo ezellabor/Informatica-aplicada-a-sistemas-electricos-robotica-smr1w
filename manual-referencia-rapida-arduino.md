@@ -260,7 +260,7 @@ int x = 5;  // CORRECTO
 
 ## 🔟 CHECKLIST AL FINALIZAR PROYECTO
 
-✔ bien definidos  
+✔ Pines bien definidos  
 ✔ Cableado correcto  
 ✔ GND común  
 ✔ Velocidad Serial correcta  
