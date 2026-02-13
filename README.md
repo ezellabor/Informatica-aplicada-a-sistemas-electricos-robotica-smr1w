@@ -1,6 +1,6 @@
-# Informática aplicada a sistemas electrónicos 
+# Informática Aplicada a Sistemas Electrónicos (Robótica)
 
-```Robótica - Profesor: Ezequiel Llarena Borges```
+```Sistemas Microinformáticos y Redes - Prof. Ezequiel Llarena Borges```
 
 ---
 
