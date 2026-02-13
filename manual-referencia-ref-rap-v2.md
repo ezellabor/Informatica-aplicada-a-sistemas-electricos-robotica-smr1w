@@ -192,7 +192,7 @@ Valores:
 
 ---
 
-# 8️⃣ DIAGRAMAS ASCII TÍPICOS
+# 8️⃣ DIAGRAMAS BASE
 
 ---
 
@@ -241,7 +241,7 @@ Pin 6 ------ ECHO
 
 ---
 
-# 9️⃣ TABLA RÁPIDA DE SENSORES MÁS USADOS
+# 9️⃣ SENSORES MÁS USADOS
 
 | Sensor | Tipo | Pin | Función |
 |--------|------|------|----------|
@@ -255,7 +255,7 @@ Pin 6 ------ ECHO
 
 ---
 
-# 🔟 ERRORES COMUNES
+# 🔟 ERRORES TIPICOS
 
 ❌ No compartir GND  
 ❌ Olvidar pinMode()  
@@ -266,7 +266,7 @@ Pin 6 ------ ECHO
 
 ---
 
-# RECORDATORIOS CLAVE
+# CONCEPTOS CLAVE
 
 - 0–1023 → Analógico  
 - 0–255 → PWM  
