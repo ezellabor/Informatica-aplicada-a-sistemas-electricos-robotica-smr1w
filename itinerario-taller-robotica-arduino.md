@@ -17,7 +17,7 @@ Este itinerario desarrolla:
 
 ---
 
-# Índice
+## Indice
 
 1. [Nivel 1 · Iniciación](#-nivel-1--iniciación-digital--salidas)
 2. [Nivel 2 · Interacción](#-nivel-2--interacción-entradas-digitales)
@@ -25,7 +25,7 @@ Este itinerario desarrolla:
 4. [Nivel 4 · Actuadores](#️-nivel-4--actuadores-y-pantallas)
 5. [Nivel 5 · Sistemas Complejos](#-nivel-5--sistemas-complejos-control-total)
 6. [Simbología](#-simbología-estándar)
-7. [Consejos y Buenas Prácticas](#-consejos-para-tinkercad)
+7. [Consejos y buenas prácticas](#-consejos-para-tinkercad)
 
 ---
 
