@@ -15,7 +15,7 @@ Comandos · Pines · Sensores · Conexiones · Errores comunes
 
 ---
 
-# ÍNDICE
+## INDICE
 
 1. Esquema rápido de Arduino UNO  
 2. Referencia de Pines  
@@ -30,7 +30,7 @@ Comandos · Pines · Sensores · Conexiones · Errores comunes
 
 ---
 
-# 1️⃣ ESQUEMA RÁPIDO – ARDUINO UNO
+## 1️⃣ ESQUEMA SIMPLIFICADO – ARDUINO UNO
 
 ```
            ┌─────────────────────┐
@@ -46,9 +46,9 @@ Comandos · Pines · Sensores · Conexiones · Errores comunes
 
 ---
 
-# 2️⃣ REFERENCIA DE PINES
+## 2️⃣ REFERENCIA DE PINES
 
-## Pines Digitales (0–13)
+### Pines Digitales (0–13)
 
 - `digitalWrite()`
 - `digitalRead()`
@@ -56,14 +56,14 @@ Comandos · Pines · Sensores · Conexiones · Errores comunes
 
 ---
 
-## Pines Analógicos (A0–A5)
+### Pines Analógicos (A0–A5)
 
 - `analogRead()`
 - Rango: de 0 a 1023
 
 ---
 
-## Alimentación
+### Alimentación
 
 | Pin | Función |
 |------|----------|
@@ -75,7 +75,7 @@ Comandos · Pines · Sensores · Conexiones · Errores comunes
 
 ---
 
-# 3️⃣ ESTRUCTURA BÁSICA DEL PROGRAMA / Sketch
+## 3️⃣ ESTRUCTURA BÁSICA DEL PROGRAMA (SKETCH)
 
 ```cpp
 void setup() {
@@ -89,9 +89,9 @@ void loop() {
 
 ---
 
-# 4️⃣ COMANDOS ESENCIALES
+## 4️⃣ COMANDOS ESENCIALES
 
-## Configuración de pines
+### Configuración de pines
 
 ```cpp
 pinMode(pin, INPUT);
@@ -101,7 +101,7 @@ pinMode(pin, INPUT_PULLUP);
 
 ---
 
-## Salida digital
+### Salida digital
 
 ```cpp
 digitalWrite(pin, HIGH);
@@ -110,7 +110,7 @@ digitalWrite(pin, LOW);
 
 ---
 
-## Entrada digital
+### Entrada digital
 
 ```cpp
 int valor = digitalRead(pin);
@@ -118,7 +118,7 @@ int valor = digitalRead(pin);
 
 ---
 
-## Entrada analógica
+### Entrada analógica
 
 ```cpp
 int valor = analogRead(A0);
@@ -126,7 +126,7 @@ int valor = analogRead(A0);
 
 ---
 
-## Salida PWM
+### Salida PWM
 
 ```cpp
 analogWrite(pin, valor); // 0 - 255
@@ -145,9 +145,9 @@ Serial.begin(9600);
 ```  
 ---
 
-# 5️⃣ CONTROL DE TIEMPO
+## 5️⃣ CONTROL DE TIEMPO
 
-## delay()
+### delay()
 
 ```cpp
 delay(1000); // 1 segundo
@@ -155,7 +155,7 @@ delay(1000); // 1 segundo
 
 ---
 
-## millis()
+### millis()
 
 ```cpp
 unsigned long tiempo = millis();
@@ -165,9 +165,9 @@ Usar para temporizadores sin bloquear el programa.
 
 ---
 
-# 6️⃣ COMUNICACIÓN SERIAL
+## 6️⃣ COMUNICACIÓN SERIAL
 
-## Iniciar comunicación
+### Iniciar comunicación
 
 ```cpp
 Serial.begin(9600);
@@ -175,7 +175,7 @@ Serial.begin(9600);
 
 ---
 
-## Enviar datos
+### Enviar datos
 
 ```cpp
 Serial.print("Texto");
@@ -184,7 +184,7 @@ Serial.println(valor);
 
 ---
 
-## Leer datos
+### Leer datos
 
 ```cpp
 if (Serial.available()) {
@@ -194,7 +194,7 @@ if (Serial.available()) {
 
 ---
 
-# 7️⃣ PWM Y SEÑAL ANALÓGICA
+## 7️⃣ PWM Y SEÑAL ANALÓGICA
 
 | Tipo | Rango |
 |------|--------|
@@ -204,7 +204,7 @@ if (Serial.available()) {
 
 ---
 
-# 8️⃣ ESQUEMA DE COLORES DEL CABLEADO
+## 8️⃣ ESQUEMA DE COLORES DEL CABLEADO
 
 | Color | Uso recomendado |
 |--------|----------------|
@@ -218,18 +218,16 @@ if (Serial.available()) {
 
 ---
 
-# 9️⃣ ERRORES COMUNES EN EL TALLER
+## 9️⃣ ERRORES COMUNES EN EL TALLER
 
-## ❌ Error 1: No configurar pinMode()
+### ❌ Error 1: No configurar pinMode()
 
 Síntoma: El LED no funciona  
 Solución: Revisar `pinMode()`
 
 ---
 
-## ❌ Error 2: Confundir HIGH y LOW
-
-Recordar:
+### ❌ Error 2: Confundir HIGH y LOW
 
 ```
 HIGH  → 1 → Encendido
@@ -238,19 +236,19 @@ LOW   → 0 → Apagado
 
 ---
 
-## ❌ Error 3: No conectar GND común
+### ❌ Error 3: No conectar GND común
 
 Todos los componentes deben compartir tierra.
 
 ---
 
-## ❌ Error 4: Usar pin incorrecto para PWM
+### ❌ Error 4: Usar pin incorrecto para PWM
 
-Solo: 3, 5, 6, 9, 10, 11
+PWM (~) → pines 3, 5, 6, 9, 10 y 11  
 
 ---
 
-## ❌ Error 5: Falta punto y coma
+### ❌ Error 5: Falta punto y coma
 
 ```cpp
 int x = 5   // ERROR
@@ -259,7 +257,7 @@ int x = 5;  // CORRECTO
 
 ---
 
-# 🔟 CHECKLIST RÁPIDO ANTES DE ENTREGAR PRÁCTICA
+## 🔟 CHECKLIST RÁPIDO ANTES DE ENTREGAR PRÁCTICA
 
 ☐ Pines bien definidos  
 ☐ Cableado correcto  
@@ -270,7 +268,7 @@ int x = 5;  // CORRECTO
 
 ---
 
-# RECORDATORIO CLAVE
+## CONCEPTOS CLAVE
 
 - setup() → Configuración inicial  
 - loop() → Se repite sin parar  
