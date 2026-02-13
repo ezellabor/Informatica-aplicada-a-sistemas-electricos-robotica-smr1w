@@ -29,7 +29,7 @@ Este itinerario desarrolla:
 
 ---
 
-# 1. Iniciación: digital y salidas
+# 1 - Iniciación: Salidas digitales  
 
 ## 1️⃣ El Faro  
 **Objetivo:** Control básico de salidas digitales.  
@@ -63,7 +63,7 @@ digitalWrite(12, LOW);
 
 >Secuencia Verde → Amarillo → Rojo.
 
-## Nivel 2 · Interacción (Entradas Digitales)  
+## 2 - Interacción: Entradas digitales
 ### 3️⃣ Pulsador de Emergencia  
 **Circuito** : LED activo mientras se pulsa  
  
@@ -98,7 +98,7 @@ void loop() {
 ```  
 > Implementación de memoria de estado.
 
- ## 3. El mundo analógico: Sensores  
+ ## 3 - El mundo analógico: Sensores  
 ### 5️⃣ Lámpara Nocturna  
 **Circuito:** LED según luz   
 
@@ -123,7 +123,7 @@ analogWrite(9, brillo);
 ```  
 >Control proporcional mediante PWM.
 
-## 4. Actuadores y pantallas
+## 4 - Actuadores y pantallas
 ### 7️⃣ Barrera de Garaje (Servo)  
 ```cpp
 
@@ -161,7 +161,7 @@ int calcularDistancia() {
 ```  
 >Relación distancia-tiempo.
 
-## 5. Sistemas complejos: control total  
+## 5 - Sistemas complejos: control total  
 ### 9️⃣ LCD de Bienvenida  
 **Circuito:** Tiempo en pantalla LCD
 ```cpp
