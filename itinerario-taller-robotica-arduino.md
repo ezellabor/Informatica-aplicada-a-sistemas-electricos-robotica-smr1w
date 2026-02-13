@@ -29,7 +29,7 @@ Este itinerario desarrolla:
 
 ---
 
-# Nivel 1 · Iniciación (Digital & Salidas)
+# 1. Iniciación: digital y salidas
 
 ## 1️⃣ El Faro  
 **Objetivo:** Control básico de salidas digitales.  
@@ -98,7 +98,7 @@ void loop() {
 ```  
 > Implementación de memoria de estado.
 
- ## Nivel 3 · El Mundo Analógico (Sensores)
+ ## 3. El mundo analógico: Sensores  
 ### 5️⃣ Lámpara Nocturna  
 **Circuito:** LED según luz   
 
@@ -123,7 +123,7 @@ analogWrite(9, brillo);
 ```  
 >Control proporcional mediante PWM.
 
-## Nivel 4 · Actuadores y Pantallas
+## 4. Actuadores y pantallas
 ### 7️⃣ Barrera de Garaje (Servo)  
 ```cpp
 
@@ -161,7 +161,7 @@ int calcularDistancia() {
 ```  
 >Relación distancia-tiempo.
 
-## Nivel 5 · Sistemas Complejos (Control Total)
+## 5. Sistemas complejos: control total  
 ### 9️⃣ LCD de Bienvenida  
 **Circuito:** Tiempo en pantalla LCD
 ```cpp
@@ -183,7 +183,7 @@ if (temperatura > 30.0) {
 ```    
 >Integración total de sensores + actuadores + lógica.
 
-## Simbología Estándar 
+## Simbología estándar 
 | Componente | Símbolo | Clave Técnica |
 |------------|---------|---------------|
 | Resistencia | Zig-zag | No polarizada |
@@ -192,7 +192,7 @@ if (temperatura > 30.0) {
 | LDR | Círculo + flechas | Divisor de tensión |
 | Potenciómetro | Resistencia + flecha | Pin central a analógico |  
 
-## Notas del Profesor  
+## Notas del profesor  
 
 > "Recordad que en Tinkercad el simulador es vuestro mejor amigo.  
 > Si algo explota o sale humo virtual, no pasa nada, leed los errores antes de cambiar los cables."  
