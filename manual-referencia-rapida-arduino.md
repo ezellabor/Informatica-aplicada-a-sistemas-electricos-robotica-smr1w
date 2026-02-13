@@ -8,8 +8,8 @@
 ![Uso](https://img.shields.io/badge/Uso-Taller-orange)
 ![Tipo](https://img.shields.io/badge/Formato-Hoja_de_Trucos-success)
 
-📌 Guía rápida para usar durante las prácticas  
-Comandos · Pines · Sensores · Conexiones · Errores comunes  
+Guía rápida para usar durante las prácticas  
+```Comandos · Pines · Sensores · Conexiones · Errores comunes```    
 
 </div>
 
@@ -275,7 +275,11 @@ int x = 5;  // CORRECTO
 - loop() → Se repite sin parar  
 - 0–1023 → Lectura analógica  
 - 0–255 → PWM  
-- Siempre revisar GND  
+- Siempre revisar GND
+
+## Referencias
+- https://docs.arduino.cc/tutorials/uno-rev3/board-anatomy/
+- https://content.arduino.cc/assets/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf?
 
 ---
 
