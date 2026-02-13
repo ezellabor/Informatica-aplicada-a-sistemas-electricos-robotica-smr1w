@@ -94,6 +94,10 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 
 ---  
 
+### Anatomía de la placa Arduino UNO  
+
+![anatomia-placa-arduino-uno-r3](figuras-imagenes/ArduinoBoardAnatomyOficialDoc.svg) 
+
 **Desglose de pines de la placa microcontroladora Arduino UNO R3:**  
 
 ![desglose-componentes-arduino-uno-r3](figuras-imagenes/arduino-uno-r3-pines.png)    
