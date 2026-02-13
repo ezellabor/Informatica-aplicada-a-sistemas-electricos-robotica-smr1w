@@ -1,16 +1,13 @@
-# Taller de Robótica con Arduino  
-## Itinerario Progresivo · 10 Retos con Tinkercad
-
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?style=for-the-badge&logo=arduino)
 ![Nivel](https://img.shields.io/badge/Nivel-Progresivo-blue?style=for-the-badge)
 ![Modalidad](https://img.shields.io/badge/Modalidad-Práctico-green?style=for-the-badge)
-![IDE](https://img.shields.io/badge/Simulador-Tinkercad-orange?style=for-the-badge)
+![IDE](https://img.shields.io/badge/Simulador-Tinkercad-orange?style=for-the-badge)  
 
----
+# Taller de Robótica con Arduino  
 
 ## Descripción
 
-Itinerario de prácticas diseñado para el taller de robótica, estructurada para que el estudiante evolucione desde el control básico digital (encender un LED) hasta la integración de sistemas completos con sensores, actuadores y pantallas.
+Itinerario progresivo de **10 de prácticas con Tinkercad** diseñado para el taller de robótica, estructurada para que el estudiante evolucione desde el **control básico digital** (encender un LED) hasta la **integración** de sistemas completos con **sensores, actuadores** y pantallas.
 
 Este itinerario desarrolla:
 
