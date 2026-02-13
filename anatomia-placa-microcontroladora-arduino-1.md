@@ -1,15 +1,22 @@
+![Módulo](https://img.shields.io/badge/Módulo-Informática_aplicada_a_sistemas_electrónicos_(Robótica)-orange?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-green?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-green?style=for-the-badge)
+<div align="center">   
+ 
 # Anatomía de la placa Arduino UNO
 
 ```Una descripción general del clásico Arduino UNO```  
 
-- Las placas Arduino detectan el entorno al recibir información de numerosos sensores e influyen en su entorno controlando luces, motores y otros actuadores.
-- Las placas Arduino son la plataforma de desarrollo de microcontroladores que será la base de tus proyectos.
-- Construirás los circuitos e interfaces para la interacción y le indicarás al microcontrolador cómo interactuar con otros componentes.
+Las placas Arduino detectan el entorno al recibir información de numerosos sensores e influyen en su entorno controlando luces, motores y otros actuadores.
+Las placas Arduino son la plataforma de desarrollo de microcontroladores que será la base de tus proyectos.
+Construirás los circuitos e interfaces para la interacción y le indicarás al microcontrolador cómo interactuar con otros componentes.
 
+</div>
 
 ### 1 - Componentes de la placa Arduino UNO  
 ##  
-<div align="center"> ![Placa Arduino UNO](figuras-imagenes/anatomia-arduino-uno.png)  </div>  
+![Placa Arduino UNO](figuras-imagenes/anatomia-arduino-uno.png) 
+
 
 | Nº | Componente | Especificaciones | Descripción técnica | Funciones asociadas |
 |----|------------|--------------------------|---------------------|---------------------|
@@ -23,6 +30,74 @@
 | **8** | `LED TX y RX` | Indicadores de comunicación serie | *Parpadean durante la transmisión y recepción de datos UART.* | Comunicación Serial |
 | **9** | `Puerto USB Tipo B` | Comunicación USB-Serial | *Permite alimentar la placa, cargar programas y comunicación con el PC.* | `Serial.begin()`, `Serial.println()` |
 | **10** | `Botón RESET` | Reinicio hardware | *Reinicia el microcontrolador y vuelve a ejecutar el programa desde el inicio.* | Reset manual |
+
+
+### 2 - Detalle de componentes físicos de la placa Arduino UNO  
+##  
+
+| Nº | Componente | Especificaciones técnicas | Descripción técnica |
+|----|------------|--------------------------|---------------------|
+| **1** | `Pin de referencia analógica (AREF)` | Referencia ADC | *Define el voltaje de referencia para las entradas analógicas mediante analogReference().* |
+| **2** | `Tierra digital (GND)` | 0V referencia | *Proporciona referencia de tierra para el sistema digital.* |
+| **3** | `Pines digitales 2–13` | 12 pines I/O | *Entradas y salidas digitales configurables mediante pinMode(), digitalRead() y digitalWrite().* |
+| **4** | `Pines 0 (RX) y 1 (TX)` | UART TTL | *Comunicación serie. No deben usarse como I/O digital si se utiliza Serial.* |
+| **5** | `Botón de reinicio (S1)` | Reset hardware | *Reinicia el microcontrolador forzando la ejecución desde el inicio.* |
+| **6** | `Programador ICSP` | SPI programación | *Permite programar el microcontrolador directamente mediante interfaz SPI.* |
+| **7** | `Entradas analógicas A0–A5` | ADC 10 bits | *Conversión analógico-digital con resolución de 0–1023.* |
+| **8** | `Pines de alimentación` | 5V, 3.3V, GND, VIN | *Suministro y distribución de energía a la placa y periféricos.* |
+| **9** | `Entrada alimentación externa (X1)` | 9–12V DC | *Permite alimentar la placa mediante fuente externa.* |
+| **10** | `Selector alimentación (SV1)` | USB / Externa | *Permite seleccionar la fuente de alimentación activa.* |
+| **11** | `Puerto USB` | USB-B Serial | *Carga de sketches, comunicación serie y alimentación.* |
+| **12** | `Microcontrolador ATmega328P` | 8 bits, 16 MHz | *Unidad central que ejecuta el programa cargado en memoria Flash.* |
+
+
+### 3 - Microcontroladores utilizados en Arduino UNO  
+##  
+
+| Nº | Componente | Especificaciones técnicas | Descripción técnica |
+|----|------------|--------------------------|---------------------|
+| **13** | `ATmega328P` | 32KB Flash, 2KB SRAM, 1KB EEPROM, 14 I/O (6 PWM) | *Microcontrolador principal en versiones recientes del Arduino UNO.* |
+| **14** | `ATmega168` | 16KB Flash, 1KB SRAM, 512B EEPROM | *Utilizado en placas Diecimila y primeros Duemilanove.* |
+| **15** | `ATmega8` | 8KB Flash, 1KB SRAM, 512B EEPROM | *Utilizado en versiones más antiguas del Arduino.* |
+
+
+### 4 - Funcionalidades de los pines digitales  
+##  
+
+| Nº | Componente | Especificaciones técnicas | Descripción técnica |
+|----|------------|--------------------------|---------------------|
+| **16** | `Interrupciones externas (2,3)` | attachInterrupt() | *Permiten generar interrupciones por flanco o cambio de estado.* |
+| **17** | `PWM (3,5,6,9,10,11)` | 8 bits | *Generación de señal PWM mediante analogWrite().* |
+| **18** | `SPI (10–13)` | SS, MOSI, MISO, SCK | *Comunicación SPI hardware.* |
+| **19** | `LED integrado (13)` | LED onboard | *Indicador visual controlado por el pin digital 13.* |
+
+
+### 5 - Pines analógicos y comunicación  
+##  
+
+| Nº | Componente | Especificaciones técnicas | Descripción técnica |
+|----|------------|--------------------------|---------------------|
+| **20** | `ADC 10 bits` | Resolución 0–1023 | *Conversión analógica-digital mediante analogRead().* |
+| **21** | `I2C (SDA 4, SCL 5)` | TWI hardware | *Comunicación I2C mediante la librería Wire.* |
+
+
+### 6 - Pines de alimentación  
+##  
+
+| Nº | Componente | Especificaciones técnicas | Descripción técnica |
+|----|------------|--------------------------|---------------------|
+| **22** | `VIN` | Entrada no regulada | *Voltaje de entrada cuando se usa fuente externa.* |
+| **23** | `5V` | Salida regulada | *Alimentación principal del sistema.* |
+| **24** | `3V3` | 3.3V regulado | *Salida secundaria generada por el chip USB-Serial.* |
+| **25** | `GND` | Tierra | *Referencia común del sistema.* |
+
+### 7 - Otros Pines  
+##  
+
+| Nº | Componente | Especificaciones técnicas | Descripción técnica |
+|----|------------|--------------------------|---------------------|
+| **26** | `AREF` | Referencia analógica | *Referencia externa para el ADC.* |
+| **27** | `RESET` | Reinicio hardware | *Permite reiniciar el microcontrolador externamente.* |
 
 <!--
 
