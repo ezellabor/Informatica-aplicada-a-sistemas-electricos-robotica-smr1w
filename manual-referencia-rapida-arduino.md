@@ -71,6 +71,7 @@ Comandos · Pines · Sensores · Conexiones · Errores comunes
 | 3.3V | Sensores específicos |
 | GND | Tierra |
 | VIN | Entrada externa |  
+
 ⚠ Siempre GND común en todo el circuito.
 
 ---
@@ -257,7 +258,7 @@ int x = 5;  // CORRECTO
 
 ---
 
-## 🔟 CHECKLIST RÁPIDO ANTES DE ENTREGAR PRÁCTICA
+## 🔟 CHECKLIST AL FINALIZAR PROYECTO
 
 ☐ Pines bien definidos  
 ☐ Cableado correcto  
