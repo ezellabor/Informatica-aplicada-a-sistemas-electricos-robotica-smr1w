@@ -6,16 +6,12 @@
 - Las placas Arduino son la plataforma de desarrollo de microcontroladores que será la base de tus proyectos.
 - Construirás los circuitos e interfaces para la interacción y le indicarás al microcontrolador cómo interactuar con otros componentes.  
 
-##
-
-## Imagen de referencia
-
-<!-- Sustituye la siguiente línea por la ruta de tu imagen -->
+### Descripción general de la placa Arduino UNO  
 ![Placa Arduino UNO](figuras-imagenes/anatomia-arduino-uno.png)
 
 ---
 
-## Partes de la placa Arduino UNO (Versión técnica)
+### Componentes de la placa Arduino UNO 
 
 | Nº | Componente | Especificaciones técnicas | Descripción técnica | Funciones asociadas |
 |----|------------|--------------------------|---------------------|---------------------|
