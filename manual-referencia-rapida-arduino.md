@@ -1,7 +1,7 @@
 <div align="center">
 
 # MANUAL DE REFERENCIA RÁPIDA  
-## Taller de Robótica – SMR1
+## Taller de Robótica
 
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-SMR1-green)
@@ -9,7 +9,7 @@
 ![Tipo](https://img.shields.io/badge/Formato-Hoja_de_Trucos-success)
 
 📌 Guía rápida para usar durante las prácticas  
-📎 Incluye comandos, pines, colores y errores comunes  
+Comandos · Pines · Sensores · Conexiones · Errores comunes  
 
 </div>
 
@@ -50,8 +50,9 @@
 
 ## Pines Digitales (0–13)
 
-- Usan `digitalWrite()` y `digitalRead()`
-- Pines 3, 5, 6, 9, 10 y 11 → PWM (~)
+- `digitalWrite()`
+- `digitalRead()`
+-  PWM (~) → pines 3, 5, 6, 9, 10 y 11
 
 ---
 
@@ -69,11 +70,12 @@
 | 5V | Alimentación positiva |
 | 3.3V | Sensores específicos |
 | GND | Tierra |
-| VIN | Entrada externa |
+| VIN | Entrada externa |  
+⚠ Siempre GND común en todo el circuito.
 
 ---
 
-# 3️⃣ ESTRUCTURA BÁSICA DEL PROGRAMA
+# 3️⃣ ESTRUCTURA BÁSICA DEL PROGRAMA / Sketch
 
 ```cpp
 void setup() {
@@ -130,6 +132,17 @@ int valor = analogRead(A0);
 analogWrite(pin, valor); // 0 - 255
 ```
 
+```cpp
+pinMode(pin, INPUT);
+pinMode(pin, OUTPUT);
+digitalWrite(pin, HIGH);
+digitalWrite(pin, LOW);
+int v = digitalRead(pin);
+int a = analogRead(A0);
+analogWrite(pin, 128);
+delay(1000);
+Serial.begin(9600);
+```  
 ---
 
 # 5️⃣ CONTROL DE TIEMPO
