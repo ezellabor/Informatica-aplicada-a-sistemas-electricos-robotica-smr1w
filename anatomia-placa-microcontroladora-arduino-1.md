@@ -61,11 +61,11 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 
 | Microcontrolador | Especificaciones técnicas | Descripción técnica |
 |------------------|---------------------------|---------------------|
-| `ATmega328P` | 32KB Flash Memory, 2KB SRAM, 1KB EEPROM, 14 I/O (6 PWM) | *Microcontrolador principal en versiones recientes del Arduino UNO.* |
-| `ATmega168` | 16KB Flash Memory, 1KB SRAM, 512B EEPROM | *Utilizado en placas Diecimila y primeros Duemilanove.* |
-| `ATmega8` | 8KB Flash Memory, 1KB SRAM, 512B EEPROM | *Utilizado en versiones más antiguas del Arduino.* |  
+| `ATmega328P` | 32 KB Flash Memory, 2 KB SRAM, 1 KB EEPROM, 14 I/O (6 PWM) | *Microcontrolador principal en versiones recientes del Arduino UNO.* |
+| `ATmega168` | 16 KB Flash Memory, 1 KB SRAM, 512 Bytes  EEPROM | *Utilizado en placas Diecimila y primeros Duemilanove.* |
+| `ATmega8` | 8 KB Flash Memory, 1 KB SRAM, 512 Bytes EEPROM | *Utilizado en versiones más antiguas del Arduino.* |  
 
-*En los tres controladores la Corriente CC por pin de E/S es de 40 mA* |
+**Nota** *En los tres controladores la Corriente CC por pin de E/S es de 40 mA* |
 
 
 ### 4 - Funcionalidades de los pines digitales  
