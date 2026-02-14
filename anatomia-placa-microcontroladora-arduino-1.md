@@ -20,8 +20,8 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 ![Placa Arduino UNO](figuras-imagenes/anatomia-arduino-uno.png) 
 
 
-| Nº | Componente hardware| Especificaciones técnicas | Descripción | Funciones asociadas |
-|----|------------|--------------------------|---------------------|---------------------|
+| Nº |  Componente hardware  | Especificaciones técnicas | Descripción | Funciones asociadas |
+|----|-----------------------|---------------------------|-------------|---------------------|
 | **1** | `Pines digitales (0–13)` | 14 pines I/O digitales (6 con PWM: 3,5,6,9,10,11) | *Permiten configurar cada pin como entrada o salida digital. Los pines PWM generan señal modulada por ancho de pulso (8 bits).* | `pinMode()`, `digitalRead()`, `digitalWrite()`, `analogWrite()` |
 | **2** | `LED integrado (Pin 13)` | Conectado internamente al pin digital 13 | *LED integrado para pruebas rápidas y depuración sin hardware externo.* | `digitalWrite(13, HIGH/LOW)` |
 | **3** | `LED de encendido (ON)` | Indicador de alimentación | *Se activa cuando la placa recibe energía (USB o Jack DC).* | Indicador visual |
@@ -40,8 +40,8 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 
 Comenzando en el sentido de las agujas del reloj desde el centro superior:  
 
-| Componente | Especificaciones técnicas | Descripción técnica |
-|------------|--------------------------|---------------------|
+| Componente físico | Especificaciones técnicas | Descripción del componente |
+|-------------------|---------------------------|----------------------------|
 | `Pin de referencia analógica (AREF)` | Referencia ADC | *Define el voltaje de referencia para las entradas analógicas mediante analogReference().* |
 | `Tierra digital (GND)` | 0V referencia | *Proporciona referencia de tierra para el sistema digital.* |
 | `Pines digitales 2–13` | 12 pines I/O | *Entradas y salidas digitales configurables mediante pinMode(), digitalRead() y digitalWrite().* |
