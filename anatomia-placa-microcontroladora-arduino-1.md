@@ -59,8 +59,8 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 ### 3 - Microcontroladores utilizados en Arduino UNO  
 ##  
 
-| Microcontrolador | Especificaciones técnicas | Descripción técnica |
-|------------------|---------------------------|---------------------|
+| Nombre del controlador | Especificaciones técnicas | Descripción técnica |
+|------------------------|---------------------------|---------------------|
 | `ATmega328P` | 32 KB Flash Memory, 2 KB SRAM, 1 KB EEPROM, 14 I/O (6 PWM) | *Microcontrolador principal en versiones recientes del Arduino UNO.* |
 | `ATmega168` | 16 KB Flash Memory, 1 KB SRAM, 512 Bytes  EEPROM | *Utilizado en placas Diecimila y primeros Duemilanove.* |
 | `ATmega8` | 8 KB Flash Memory, 1 KB SRAM, 512 Bytes EEPROM | *Utilizado en versiones más antiguas del Arduino.* |  
