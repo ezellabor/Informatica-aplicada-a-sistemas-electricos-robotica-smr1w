@@ -23,7 +23,7 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 | **1** | `Pines digitales (0–13)` | 14 pines I/O digitales (6 con PWM: 3,5,6,9,10,11) | *Permiten configurar cada pin como entrada o salida digital. Los pines PWM generan señal modulada por ancho de pulso (8 bits).* | `pinMode()`, `digitalRead()`, `digitalWrite()`, `analogWrite()` |
 | **2** | `LED integrado (Pin 13)` | Conectado internamente al pin digital 13 | *LED integrado para pruebas rápidas y depuración sin hardware externo.* | `digitalWrite(13, HIGH/LOW)` |
 | **3** | `LED de encendido (ON)` | Indicador de alimentación | *Se activa cuando la placa recibe energía (USB o Jack DC).* | Indicador visual |
-| **4** | `Microcontrolador ATmega328P` | 8 bits, 16 MHz, 32 KB Flash, 2 KB SRAM, 1 KB EEPROM | *Unidad central de procesamiento que ejecuta el programa (sketch).* | Procesamiento y control del sistema |
+| **4** | `Microcontrolador ATmega328P` | Arquitect. 8 bits, 16 MHz, 32 KB Flash, 2 KB SRAM, 1 KB EEPROM | *Unidad central de procesamiento que ejecuta el programa (sketch).* | Procesamiento y control del sistema |
 | **5** | `Entradas analógicas (A0–A5)` | 6 canales ADC, resolución 10 bits (0–1023) | *Convertidor Analógico-Digital integrado para leer señales entre 0V y 5V.* | `analogRead()` |
 | **6** | `Pines de alimentación (5V, 3.3V, GND, VIN)` | 5V regulado, 3.3V máx. 50 mA | *Suministran energía a circuitos externos y sensores.* | Alimentación externa |
 | **7** | `Conector de alimentación (Jack DC)` | Entrada recomendada: 7–12V | *Permite alimentar la placa externamente. Incluye regulador de voltaje.* | Alimentación externa |
@@ -32,7 +32,7 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 | **10** | `Botón RESET` | Reinicio hardware | *Reinicia el microcontrolador y vuelve a ejecutar el programa desde el inicio.* | Reset manual |
 
 
-### 2 - Detalle de componentes físicos de la placa Arduino UNO  
+### 2 - Descripción general de los componentes de Arduino UNO  
 ##  
 
 | Nº | Componente | Especificaciones técnicas | Descripción técnica |
