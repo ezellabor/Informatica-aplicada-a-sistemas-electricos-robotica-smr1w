@@ -3,8 +3,10 @@
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-green?style=for-the-badge)
 <div align="center">   
  
-# Anatomía de la placa Arduino UNO
-</div>
+# Anatomía de la placa Arduino UNO  
+
+</div>  
+
 ```Una descripción general del clásico Arduino UNO```  
 
 Las placas Arduino detectan el entorno al recibir información de numerosos sensores e influyen en su entorno controlando luces, motores y otros actuadores.
