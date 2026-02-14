@@ -65,7 +65,7 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 | `ATmega168` | 16 KB Flash Memory, 1 KB SRAM, 512 Bytes  EEPROM | *Utilizado en placas Diecimila y primeros Duemilanove.* |
 | `ATmega8` | 8 KB Flash Memory, 1 KB SRAM, 512 Bytes EEPROM | *Utilizado en versiones más antiguas del Arduino.* |  
 
-**Nota** *En los tres controladores la Corriente CC por pin de E/S es de 40 mA* |
+**Nota** *En los tres chips la corriente CC por pin de E/S es 40 mA* |
 
 
 ### 4 - Funcionalidades de los pines digitales  
