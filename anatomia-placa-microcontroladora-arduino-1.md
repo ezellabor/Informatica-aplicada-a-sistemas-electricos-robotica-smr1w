@@ -57,18 +57,23 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 ### 3 - Microcontroladores utilizados en Arduino UNO  
 ##  
 
-| Nº | Componente | Especificaciones técnicas | Descripción técnica |
-|----|------------|--------------------------|---------------------|
-| **13** | `ATmega328P` | 32KB Flash, 2KB SRAM, 1KB EEPROM, 14 I/O (6 PWM) | *Microcontrolador principal en versiones recientes del Arduino UNO.* |
-| **14** | `ATmega168` | 16KB Flash, 1KB SRAM, 512B EEPROM | *Utilizado en placas Diecimila y primeros Duemilanove.* |
-| **15** | `ATmega8` | 8KB Flash, 1KB SRAM, 512B EEPROM | *Utilizado en versiones más antiguas del Arduino.* |
+| Microcontrolador | Especificaciones técnicas | Descripción técnica |
+|------------------|---------------------------|---------------------|
+| `ATmega328P` | 32KB Flash Memory, 2KB SRAM, 1KB EEPROM, 14 I/O (6 PWM) | *Microcontrolador principal en versiones recientes del Arduino UNO.* |
+| `ATmega168` | 16KB Flash Memory, 1KB SRAM, 512B EEPROM | *Utilizado en placas Diecimila y primeros Duemilanove.* |
+| `ATmega8` | 8KB Flash Memory, 1KB SRAM, 512B EEPROM | *Utilizado en versiones más antiguas del Arduino.* |  
+
+*En los tres controladores la Corriente CC por pin de E/S es de 40 mA* |
 
 
 ### 4 - Funcionalidades de los pines digitales  
 ##  
+- Además de las funciones específicas que se indican a continuación, los pines digitales de una placa Arduino pueden utilizarse para **entradas y salidas** de propósito general mediante los comandos ```pinMode()``` , ```digitalRead()``` y ```digitalWrite()```.
+- Cada pin tiene una **resistencia pull-up** interna que puede activarse y desactivarse mediante ```digitalWrite()``` (con un valor HIGH o LOW, respectivamente) cuando el pin se configura como entrada.
+- La corriente máxima por pin es de **40 mA.**    
 
-| Nº | Componente | Especificaciones técnicas | Descripción técnica |
-|----|------------|--------------------------|---------------------|
+| Componente | Especificaciones técnicas | Descripción técnica |
+|------------|--------------------------|---------------------|
 | **16** | `Interrupciones externas (2,3)` | attachInterrupt() | *Permiten generar interrupciones por flanco o cambio de estado.* |
 | **17** | `PWM (3,5,6,9,10,11)` | 8 bits | *Generación de señal PWM mediante analogWrite().* |
 | **18** | `SPI (10–13)` | SS, MOSI, MISO, SCK | *Comunicación SPI hardware.* |
