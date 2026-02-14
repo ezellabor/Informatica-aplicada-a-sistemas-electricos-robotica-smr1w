@@ -23,7 +23,7 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 | **1** | `Pines digitales (0–13)` | 14 pines I/O digitales (6 con PWM: 3,5,6,9,10,11) | *Permiten configurar cada pin como entrada o salida digital. Los pines PWM generan señal modulada por ancho de pulso (8 bits).* | `pinMode()`, `digitalRead()`, `digitalWrite()`, `analogWrite()` |
 | **2** | `LED integrado (Pin 13)` | Conectado internamente al pin digital 13 | *LED integrado para pruebas rápidas y depuración sin hardware externo.* | `digitalWrite(13, HIGH/LOW)` |
 | **3** | `LED de encendido (ON)` | Indicador de alimentación | *Se activa cuando la placa recibe energía (USB o Jack DC).* | Indicador visual |
-| **4** | `Microcontrolador ATmega328P` | Arquitect. 8 bits, 16 MHz, 32 KB Flash, 2 KB SRAM, 1 KB EEPROM | *Unidad central de procesamiento que ejecuta el programa (sketch).* | Procesamiento y control del sistema |
+| **4** | `Microcontrolador ATmega328P` | 8 bits (Arquitectura), 16 MHz, 32 KB Flash, 2 KB SRAM, 1 KB EEPROM | *Unidad central de procesamiento que ejecuta el programa (sketch).* | Procesamiento y control del sistema |
 | **5** | `Entradas analógicas (A0–A5)` | 6 canales ADC, resolución 10 bits (0–1023) | *Convertidor Analógico-Digital integrado para leer señales entre 0V y 5V.* | `analogRead()` |
 | **6** | `Pines de alimentación (5V, 3.3V, GND, VIN)` | 5V regulado, 3.3V máx. 50 mA | *Suministran energía a circuitos externos y sensores.* | Alimentación externa |
 | **7** | `Conector de alimentación (Jack DC)` | Entrada recomendada: 7–12V | *Permite alimentar la placa externamente. Incluye regulador de voltaje.* | Alimentación externa |
@@ -34,21 +34,24 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 
 ### 2 - Descripción general de los componentes de Arduino UNO  
 ##  
+![Placa Arduino UNO](figuras-imagenes/arduino-uno-intro.png)   
 
-| Nº | Componente | Especificaciones técnicas | Descripción técnica |
-|----|------------|--------------------------|---------------------|
-| **1** | `Pin de referencia analógica (AREF)` | Referencia ADC | *Define el voltaje de referencia para las entradas analógicas mediante analogReference().* |
-| **2** | `Tierra digital (GND)` | 0V referencia | *Proporciona referencia de tierra para el sistema digital.* |
-| **3** | `Pines digitales 2–13` | 12 pines I/O | *Entradas y salidas digitales configurables mediante pinMode(), digitalRead() y digitalWrite().* |
-| **4** | `Pines 0 (RX) y 1 (TX)` | UART TTL | *Comunicación serie. No deben usarse como I/O digital si se utiliza Serial.* |
-| **5** | `Botón de reinicio (S1)` | Reset hardware | *Reinicia el microcontrolador forzando la ejecución desde el inicio.* |
-| **6** | `Programador ICSP` | SPI programación | *Permite programar el microcontrolador directamente mediante interfaz SPI.* |
-| **7** | `Entradas analógicas A0–A5` | ADC 10 bits | *Conversión analógico-digital con resolución de 0–1023.* |
-| **8** | `Pines de alimentación` | 5V, 3.3V, GND, VIN | *Suministro y distribución de energía a la placa y periféricos.* |
-| **9** | `Entrada alimentación externa (X1)` | 9–12V DC | *Permite alimentar la placa mediante fuente externa.* |
-| **10** | `Selector alimentación (SV1)` | USB / Externa | *Permite seleccionar la fuente de alimentación activa.* |
-| **11** | `Puerto USB` | USB-B Serial | *Carga de sketches, comunicación serie y alimentación.* |
-| **12** | `Microcontrolador ATmega328P` | 8 bits, 16 MHz | *Unidad central que ejecuta el programa cargado en memoria Flash.* |
+Comenzando en el sentido de las agujas del reloj desde el centro superior:  
+
+| Componente | Especificaciones técnicas | Descripción técnica |
+|------------|--------------------------|---------------------|
+| `Pin de referencia analógica (AREF)` | Referencia ADC | *Define el voltaje de referencia para las entradas analógicas mediante analogReference().* |
+| `Tierra digital (GND)` | 0V referencia | *Proporciona referencia de tierra para el sistema digital.* |
+| `Pines digitales 2–13` | 12 pines I/O | *Entradas y salidas digitales configurables mediante pinMode(), digitalRead() y digitalWrite().* |
+| `Pines 0 (RX) y 1 (TX)` | UART TTL | *Comunicación serie. No deben usarse como I/O digital si se utiliza Serial.* |
+| `Botón de reinicio (RESET)` | Reset hardware | *Reinicia el microcontrolador forzando la ejecución desde el inicio.* |
+| `Programador ICSP` | SPI programación | *Permite programar el microcontrolador directamente mediante interfaz SPI (Interfaz Periférica Serie) que es un protocolo de comunicación que permite a Arduino intercambiar datos de forma rápida y eficiente con otros dispositivos..* |
+| `Entradas analógicas A0–A5` | ADC 10 bits | *Conversión analógico-digital con resolución de 0–1023.* |
+| `Pines de alimentación` | 5V, 3.3V, GND, VIN | *Suministro y distribución de energía a la placa y periféricos.* |
+| `Entrada alimentación externa (X1)` | 9–12V DC | *Permite alimentar la placa mediante fuente externa.* |
+| `Selector alimentación (SV1)` | USB / Externa | *Permite seleccionar la fuente de alimentación activa.* |
+| `Puerto USB` | USB-B Serial | *Carga de sketches, comunicación serie y alimentación.* |
+| `Microcontrolador ATmega328P` | 8 bits, 16 MHz | *Unidad central que ejecuta el programa cargado en memoria Flash.* |
 
 
 ### 3 - Microcontroladores utilizados en Arduino UNO  
