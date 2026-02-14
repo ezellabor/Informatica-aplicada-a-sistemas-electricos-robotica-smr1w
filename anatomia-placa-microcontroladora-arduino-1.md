@@ -1,5 +1,5 @@
 ![Módulo](https://img.shields.io/badge/Módulo-Informática_aplicada_a_sistemas_electrónicos_(Robótica)-orange?style=for-the-badge)
-![Grupo](https://img.shields.io/badge/Grupo-SMR1-green?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-darkgreen?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-green?style=for-the-badge)
 <div align="center">   
  
