@@ -4,9 +4,9 @@
 <div align="center">   
  
 # Anatomía de la placa Arduino UNO
-
-```Una descripción general del clásico Arduino UNO```  
 </div>
+```Una descripción general del clásico Arduino UNO```  
+
 Las placas Arduino detectan el entorno al recibir información de numerosos sensores e influyen en su entorno controlando luces, motores y otros actuadores.
 Las placas Arduino son la plataforma de desarrollo de microcontroladores que será la base de tus proyectos.
 Construirás los circuitos e interfaces para la interacción y le indicarás al microcontrolador cómo interactuar con otros componentes.
