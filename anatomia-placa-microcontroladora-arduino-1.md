@@ -7,7 +7,7 @@
 
 </div>  
 
-```Una descripción general del clásico Arduino UNO```  
+```Descripción detallada de Arduino UNO y sus componentes```  
 
 Las placas Arduino detectan el entorno al recibir información de numerosos sensores e influyen en su entorno controlando luces, motores y otros actuadores.
 Las placas Arduino son la plataforma de desarrollo de microcontroladores que será la base de tus proyectos.
