@@ -200,18 +200,18 @@ if (temperatura > 30.0) {
 
 ---  
 
-## Buenas prácticas  
+## Recomendaciones y buenas prácticas  
 
 - Verifica siempre las conexiones de **GND y 5V**
 - Usa **resistencias pull-down** para pulsadores
-- El **Pin 13** tiene una resistencia interna, ideal para pruebas
-- Aprovecha el **Monitor Serie** para **depurar** tus programas
+- El **pin 13** tiene una resistencia interna, ideal para pruebas
+- Aprovecha el **monitor serie** para **depurar** tus programas
 
 
 
-## Resultado del Itinerario  
+## Resultado del itinerario  
 
-Al finalizar las 10 prácticas del itinerario, serás capaz de:  
+Al finalizar las 10 prácticas serás capaz de:  
 
 - Diseñar circuitos básicos y avanzados
 - Programar lógica condicional compleja
