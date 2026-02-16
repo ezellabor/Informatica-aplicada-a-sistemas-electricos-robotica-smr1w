@@ -98,8 +98,6 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 ### Anatomía de la placa Arduino UNO  
 Las placas Arduino detectan el entorno al recibir información de numerosos sensores e influyen en su entorno controlando luces, motores y otros actuadores. 
 
-![anatomia-placa-arduino-uno-r3](figuras-imagenes/ArduinoBoardAnatomyOficialDoc.svg)   
-
 ![anatomia-placa-arduino-uno-r3](figuras-imagenes/anatomia-arduino-uno.png) 
 
 
