@@ -75,39 +75,39 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 - La corriente máxima por pin es de **40 mA.**    
 
 | Componente | Especificaciones técnicas | Descripción técnica |
-|------------|--------------------------|---------------------|
-| **16** | `Interrupciones externas (2,3)` | attachInterrupt() | *Permiten generar interrupciones por flanco o cambio de estado.* |
-| **17** | `PWM (3,5,6,9,10,11)` | 8 bits | *Generación de señal PWM mediante analogWrite().* |
-| **18** | `SPI (10–13)` | SS, MOSI, MISO, SCK | *Comunicación SPI hardware.* |
-| **19** | `LED integrado (13)` | LED onboard | *Indicador visual controlado por el pin digital 13.* |
+|------------|---------------------------|---------------------|
+|`Interrupciones externas (2,3)` | attachInterrupt() | *Permiten generar interrupciones por flanco o cambio de estado.* |
+| `PWM (3,5,6,9,10,11)` | 8 bits | *Generación de señal PWM mediante analogWrite().* |
+| `SPI (10–13)` | SS, MOSI, MISO, SCK | *Comunicación SPI hardware.* |
+| `LED integrado (13)` | LED onboard | *Indicador visual controlado por el pin digital 13.* |
 
 
 ### 5 - Pines analógicos y comunicación  
 ##  
 
-| Nº | Componente | Especificaciones técnicas | Descripción técnica |
-|----|------------|--------------------------|---------------------|
-| **20** | `ADC 10 bits` | Resolución 0–1023 | *Conversión analógica-digital mediante analogRead().* |
-| **21** | `I2C (SDA 4, SCL 5)` | TWI hardware | *Comunicación I2C mediante la librería Wire.* |
+| Componente | Especificaciones técnicas | Descripción técnica |
+|------------|--------------------------|---------------------|
+| `ADC 10 bits` | Resolución 0–1023 | *Conversión analógica-digital mediante analogRead().* |
+| `I2C (SDA 4, SCL 5)` | TWI hardware | *Comunicación I2C mediante la librería Wire.* |
 
 
 ### 6 - Pines de alimentación  
 ##  
 
-| Nº | Componente | Especificaciones técnicas | Descripción técnica |
-|----|------------|--------------------------|---------------------|
-| **22** | `VIN` | Entrada no regulada | *Voltaje de entrada cuando se usa fuente externa.* |
-| **23** | `5V` | Salida regulada | *Alimentación principal del sistema.* |
-| **24** | `3V3` | 3.3V regulado | *Salida secundaria generada por el chip USB-Serial.* |
-| **25** | `GND` | Tierra | *Referencia común del sistema.* |
+| Componente | Especificaciones técnicas | Descripción técnica |
+|------------|---------------------------|---------------------|
+| `VIN` | Entrada no regulada | *Voltaje de entrada cuando se usa fuente externa.* |
+| `5V` | Salida regulada | *Alimentación principal del sistema.* |
+| `3V3` | 3.3V regulado | *Salida secundaria generada por el chip USB-Serial.* |
+| `GND` | Tierra | *Referencia común del sistema.* |
 
-### 7 - Otros Pines  
+### 7 - Otros pines  
 ##  
 
 | Nº | Componente | Especificaciones técnicas | Descripción técnica |
 |----|------------|--------------------------|---------------------|
-| **26** | `AREF` | Referencia analógica | *Referencia externa para el ADC.* |
-| **27** | `RESET` | Reinicio hardware | *Permite reiniciar el microcontrolador externamente.* |
+| `AREF` | Referencia analógica | *Referencia externa para el ADC.* |
+| `RESET` | Reinicio hardware | *Permite reiniciar el microcontrolador externamente.* |
 
 <!--
 
