@@ -1,5 +1,5 @@
-![Módulo](https://img.shields.io/badge/Módulo-Robótica-green?style=for-the-badge)
-![Grupo](https://img.shields.io/badge/Grupo-SMR1?style=for-the-badge)
+![Módulo](https://img.shields.io/badge/Módulo-Robótica-lightgreen?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?style=for-the-badge&logo=arduino)
 ![IDE](https://img.shields.io/badge/Simulador-Tinkercad-orange?style=for-the-badge)  
 
