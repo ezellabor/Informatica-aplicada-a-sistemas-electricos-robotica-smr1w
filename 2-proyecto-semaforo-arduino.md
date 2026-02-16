@@ -22,7 +22,7 @@
 
 ## 1. Microcontroladores
 
-Un **microcontrolador** es un ordenador en un solo chip que integra:
+Un **microcontrolador** es un ordenador en un solo chip que integra: 
 - **CPU** para procesar instrucciones
 - **Memoria** para almacenar programas
 - **Puertos de E/S** para comunicarse
