@@ -27,9 +27,7 @@ Un **microcontrolador** es un ordenador en un solo chip que integra:
 - **Memoria** para almacenar programas
 - **Puertos de E/S** para comunicarse
 
->**Analogía:** Es el **cerebro** de un robot.
-
- Recibe información de sensores, la procesa, y envía órdenes a actuadores.  
+Recibe información del entorno a través de los sensores, la procesa, y envía órdenes a los actuadores.  
 
 ```ENTRADA → PROCESO → SALIDA```
 
