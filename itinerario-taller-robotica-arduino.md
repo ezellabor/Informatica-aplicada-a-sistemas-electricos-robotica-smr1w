@@ -1,6 +1,6 @@
+![Módulo](https://img.shields.io/badge/Módulo-Robótica-green?style=for-the-badge)
+![Grupo](https://img.shields.io/badge/Grupo-SMR1?style=for-the-badge)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?style=for-the-badge&logo=arduino)
-![Nivel](https://img.shields.io/badge/Nivel-Progresivo-blue?style=for-the-badge)
-![Modalidad](https://img.shields.io/badge/Modalidad-Práctico-green?style=for-the-badge)
 ![IDE](https://img.shields.io/badge/Simulador-Tinkercad-orange?style=for-the-badge)  
 
 # Taller de Robótica con Arduino  
