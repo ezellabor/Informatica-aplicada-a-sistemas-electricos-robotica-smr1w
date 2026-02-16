@@ -35,7 +35,7 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 
 
 ### 2 - Descripción general de los componentes de Arduino UNO  
-##  
+##   
 ![Placa Arduino UNO](figuras-imagenes/arduino-uno-intro.png)   
 
 Comenzando en el sentido de las agujas del reloj desde el centro superior:  
