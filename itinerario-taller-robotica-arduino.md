@@ -1,4 +1,4 @@
-![Módulo](https://img.shields.io/badge/Módulo-Robótica-blue?style=for-the-badge)  
+![Módulo](https://img.shields.io/badge/Módulo-Informática_Aplicada_a_Sistemas_Electrónicos-blue?style=for-the-badge)
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?style=for-the-badge&logo=arduino)
 ![IDE](https://img.shields.io/badge/Simulador-Tinkercad-orange?style=for-the-badge)  
