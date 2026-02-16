@@ -104,8 +104,8 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 ### 7 - Otros pines  
 ##  
 
-| Nº | Componente | Especificaciones técnicas | Descripción técnica |
-|----|------------|--------------------------|---------------------|
+| Componente | Especificaciones técnicas | Descripción técnica |
+|------------|---------------------------|---------------------|
 | `AREF` | Referencia analógica | *Referencia externa para el ADC.* |
 | `RESET` | Reinicio hardware | *Permite reiniciar el microcontrolador externamente.* |
 
