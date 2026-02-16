@@ -5,8 +5,6 @@
 # Microcontroladores con Arduino
 ### Proyecto Semáforo | Robótica
 
----
-
 ## Indice  
 
 1. [Microcontroladores](#1-microcontroladores)
