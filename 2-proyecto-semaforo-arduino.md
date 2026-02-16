@@ -70,7 +70,14 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
     │ USB  Power  GND │ ← Conexiones
     └─────────────────┘  
 
-  Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contiene todo lo necesario para el funcionamiento del microcontrolador:  
+ **Componentes clave:**
+1. **Microcontrolador ATmega328P** - El cerebro
+2. **14 Pines Digitales (Entradas/Salidas)** - Para señales ON/OFF
+3. **6 Pines Analógicos (Entradas)** - Para valores variables
+4. **Conector USB** - Programación y alimentación
+5. **Alimentación** - 5V, 3.3V, GND  
+ 
+ Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.** Contiene todo lo necesario para el funcionamiento del microcontrolador:  
 
 - 14 pines de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
 - 6 entradas analógicas
@@ -84,13 +91,6 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 
 ![desglose-componentes-arduino-uno-r3](figuras-imagenes/detalles-componentes-arduino-uno-r3.png)   
     
-**Componentes clave:**
-1. **Microcontrolador ATmega328P** - El cerebro
-2. **14 Pines Digitales (Entradas/Salidas)** - Para señales ON/OFF
-3. **6 Pines Analógicos (Entradas)** - Para valores variables
-4. **Conector USB** - Programación y alimentación
-5. **Alimentación** - 5V, 3.3V, GND
-
 ---  
 
 ### Anatomía de la placa Arduino UNO  
