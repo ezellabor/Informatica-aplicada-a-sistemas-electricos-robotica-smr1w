@@ -1,10 +1,9 @@
 ![Módulo](https://img.shields.io/badge/Módulo-Informática_aplicada_a_sistemas_electrónicos_(Robótica)-orange?style=for-the-badge)
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
-![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
+![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
+```Proyecto Semáforo Arduino UNO```  
 
 # Microcontroladores con Arduino
-### Proyecto Semáforo | Robótica
-
 ## Indice  
 
 1. [Microcontroladores](#1-microcontroladores)
