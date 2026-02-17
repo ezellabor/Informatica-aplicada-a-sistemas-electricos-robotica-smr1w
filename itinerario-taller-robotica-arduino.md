@@ -29,9 +29,9 @@ Los aspectos a desarrollar en estas prácticas son:
 
 ---
 
-# 1 - Iniciación: Salidas digitales  
+## 1 - Iniciación: Salidas digitales  
 
-## 1️⃣ El Faro  
+### 1️⃣ El faro  
 **Objetivo:** Control básico de salidas digitales.  
 **Circuito:** LED parpadeo básico  
 
@@ -44,7 +44,7 @@ delay(2000);
 
 >El LED parpadea 1 segundo encendido y 2 apagado.
 
-### 2️⃣ Semáforo Simple  
+### 2️⃣ Semáforo simple  
 **Objetivo:** Control básico de salidas digitales.   
 **Circuito**: Secuencia Verde → Amarillo → Rojo  
 ```cpp
@@ -64,7 +64,7 @@ digitalWrite(12, LOW);
 >Secuencia Verde → Amarillo → Rojo.
 
 ## 2 - Interacción: Entradas digitales
-### 3️⃣ Pulsador de Emergencia  
+### 3️⃣ Pulsador de emergencia  
 **Circuito** : LED activo mientras se pulsa  
  
 ```cpp
@@ -77,7 +77,7 @@ if (digitalRead(2) == HIGH) {
 
 >El LED se enciende solo mientras el botón esté pulsado.  
 
-### 4️⃣ Interruptor ON/OFF (Estado Persistente)  
+### 4️⃣ Interruptor ON/OFF (estado persistente)  
 **Circuito**: Estado persistente  
 
 ```cpp
@@ -99,7 +99,7 @@ void loop() {
 > Implementación de memoria de estado.
 
  ## 3 - El mundo analógico: Sensores  
-### 5️⃣ Lámpara Nocturna  
+### 5️⃣ Lámpara nocturna  
 **Circuito:** LED según luz   
 
 ```cpp
@@ -112,7 +112,7 @@ if (analogRead(A0) < 500) {
 ```  
 >Uso de divisor de tensión con LDR. 
 
-### 6️⃣ Termómetro Visual (PWM)  
+### 6️⃣ Termómetro visual (PWM)  
 **Circuito:** Intensidad PWM   
 
 ```cpp
@@ -145,7 +145,7 @@ void loop() {
 ```  
 >Control angular básico.
 
-## 8️⃣ Sensor de Aparcamiento (Ultrasonidos + Buzzer)
+## 8️⃣ Sensor de aparcamiento (Ultrasonidos + Buzzer)
 ```cpp
 int calcularDistancia() {
   digitalWrite(7, LOW);
@@ -162,7 +162,7 @@ int calcularDistancia() {
 >Relación distancia-tiempo.
 
 ## 5 - Sistemas complejos: control total  
-### 9️⃣ LCD de Bienvenida  
+### 9️⃣ LCD de bienvenida  
 **Circuito:** Tiempo en pantalla LCD
 ```cpp
 lcd.print("Hola Alumno");
@@ -171,7 +171,7 @@ lcd.print(millis() / 1000);
 ```  
 >Gestión de información en tiempo real.
 
-### 🔟 Estación Meteorológica Pro  
+### 🔟 Estación meteorológica  
 **Circuito:** Integración completa  
 
 ```cpp
