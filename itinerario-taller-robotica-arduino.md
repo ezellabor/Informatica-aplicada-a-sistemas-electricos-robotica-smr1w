@@ -124,7 +124,7 @@ analogWrite(9, brillo);
 >Control proporcional mediante PWM.
 
 ## 4 - Actuadores y pantallas
-### 7️⃣ Barrera de Garaje (Servo)  
+### 7️⃣ Barrera de garaje (Servo)  
 ```cpp
 
 #include <Servo.h>
