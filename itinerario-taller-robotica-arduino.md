@@ -5,9 +5,9 @@
 
 # Taller de Robótica 
 
-Itinerario progresivo de **10 de prácticas con Tinkercad** diseñado para el taller de robótica, estructurada para que el estudiante evolucione desde el **control básico digital** (encender un LED) hasta la **integración** de sistemas completos con **sensores, actuadores** y pantallas.
+Itinerario progresivo de **10 de prácticas de diseño, montaje y programación de circuitos electrónicos con Arduino en Tinkercad**, diseñado para el taller de robótica y estructurado para que el estudiante evolucione desde el **control básico digital** (encender un LED) hasta la **integración** de sistemas completos con **sensores, actuadores y pantallas.**  
 
-Este itinerario desarrolla:
+Los aspectos a desarrollar en estas prácticas son:
 
 - Pensamiento computacional  
 - Lógica secuencial y condicional  
