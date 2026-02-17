@@ -3,7 +3,7 @@
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-00979D?style=for-the-badge&logo=arduino)
 ![IDE](https://img.shields.io/badge/Simulador-Tinkercad-orange?style=for-the-badge)  
 
-# Taller de Robótica con Arduino  
+# Taller de Robótica 
 
 Itinerario progresivo de **10 de prácticas con Tinkercad** diseñado para el taller de robótica, estructurada para que el estudiante evolucione desde el **control básico digital** (encender un LED) hasta la **integración** de sistemas completos con **sensores, actuadores** y pantallas.
 
