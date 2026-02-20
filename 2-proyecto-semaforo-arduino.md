@@ -35,9 +35,9 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 2. **Proceso (LOGICA PROGRAMABLE):** El **Sketch** controla la lógica; CPU y memoria. Analogía: cerebro humano  
 3. **Salida (ACTUADORES):** Actuadores físicos. Analogía: músculos humanos  
 
-<!--**Bucle infinito (loop)** – Lectura → comparación → acción → repetición. -->
+<!--**Bucle infinito (loop)** – Lectura → comparación → acción → repetición. 
 
-**Ejemplo:** Termostato automático con sensor LDR
+**Ejemplo:** Termostato automático con sensor LDR-->
 
 ---
 
@@ -59,7 +59,7 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 ---
 
 ## 3. Partes de una placa Arduino UNO  
- Arduino UNO es una placa de microcontrolador basada en el **ATmega328P.**  
+ Arduino UNO es una placa de microcontrolador basada en el **ATmega328P**. Sus componentes clave:  
 
     ARDUINO UNO
     ┌─────────────────┐
@@ -71,7 +71,6 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
     │ USB  Power  GND │ ← Conexiones (4)(5)
     └─────────────────┘  
 
- **Componentes clave:**
 1. **Microcontrolador ATmega328P** - El cerebro
 2. **14 Pines Digitales (Entradas/Salidas)** - Para señales ON/OFF
 3. **6 Pines Analógicos (Entradas)** - Para valores variables
@@ -93,7 +92,7 @@ Las placas Arduino detectan el entorno al recibir información de numerosos sens
 
 **Desglose de pines de la placa microcontroladora Arduino UNO R3:**  
 
-![desglose-componentes-arduino-uno-r3](figuras-imagenes/arduino-uno-r3-pines.png)    
+<!-- ![desglose-componentes-arduino-uno-r3](figuras-imagenes/arduino-uno-r3-pines.png) -->   
 
 [Anatomía de la placa Arduino UNO](https://docs.arduino.cc/tutorials/uno-rev3/board-anatomy/)
 
