@@ -15,9 +15,9 @@
 
 ## 1. Sistemas Electrónicos Analógicos y Digitales
 
-### 1.1 Conceptos Fundamentales
+### 1.1 Conceptos previos 
 
-#### ¿Qué es la electrónica?
+#### Electrónica
 
 La electrónica es la rama de la física y la ingeniería que estudia el flujo y control de electrones en diferentes medios y dispositivos. Se divide en dos grandes categorías:
 
@@ -45,7 +45,7 @@ La electrónica es la rama de la física y la ingeniería que estudia el flujo y
 - Facilita el almacenamiento y procesamiento de datos
 - Circuitos basados en puertas lógicas y microcontroladores
 
-### 1.2 Comparativa Analógico vs Digital
+### 1.2 Analógico vs Digital
 
 |Aspecto      |Analógico                       |Digital              |
 |-------------|--------------------------------|---------------------|
@@ -55,14 +55,14 @@ La electrónica es la rama de la física y la ingeniería que estudia el flujo y
 |Procesamiento|Natural                         |Mediante algoritmos  |
 |Ejemplos     |Radio FM, termómetro de mercurio|Ordenador, smartphone|
 
-### 1.3 Conversión de Señales
+### 1.3 Conversión de señales
 
 - **ADC (Analog to Digital Converter):** Convierte señales analógicas a digitales
 - **DAC (Digital to Analog Converter):** Convierte señales digitales a analógicas
 
-**Aplicación práctica:** Un sensor de temperatura (analógico) envía datos a un microcontrolador (digital) mediante un ADC.
+> **Aplicación práctica:** Un sensor de temperatura (analógico) envía datos a un microcontrolador (digital) mediante un ADC.
 
-### 1.4 Actividades Propuestas
+### 1.4 Actividades propuestas
 
 1. Identifica 5 dispositivos analógicos y 5 digitales de tu entorno
 1. Dibuja una señal senoidal y una señal cuadrada. ¿Cuál es analógica y cuál digital?
@@ -72,11 +72,11 @@ La electrónica es la rama de la física y la ingeniería que estudia el flujo y
 
 ## 2. Dispositivos Discretos: Pasivos, Activos, Sensores y Actuadores
 
-### 2.1 Componentes Pasivos
+### 2.1 Componentes pasivos
 
 Son aquellos que **no amplifican** la señal eléctrica. Consumen, almacenan o disipan energía.
 
-#### Resistencias (R)
+#### 2.1.1 Resistencias (R)
 
 - **Función:** Limitar el paso de corriente
 - **Unidad:** Ohmios (Ω)
@@ -88,44 +88,41 @@ Ley de Ohm: V = I × R
 Donde: V = Voltaje (V), I = Corriente (A), R = Resistencia (Ω)
 ```
 
-#### Condensadores (C)
+#### 2.1.2 Condensadores/Capacitadores (C)
 
 - **Función:** Almacenar carga eléctrica temporalmente
 - **Unidad:** Faradios (F), normalmente µF, nF o pF
 - **Tipos:** Cerámicos, electrolíticos, de tantalio, de poliéster
+- **Aplicaciones:** Filtros, temporizadores, acoplamiento de señales
 
-**Aplicaciones:** Filtros, temporizadores, acoplamiento de señales
-
-#### Bobinas/Inductores (L)
+#### 2.1.3 Bobinas/Inductores (L)
 
 - **Función:** Almacenar energía en forma de campo magnético
 - **Unidad:** Henrios (H)
 - **Aplicaciones:** Filtros, transformadores, motores
 
-### 2.2 Componentes Activos
+### 2.2 Componentes activos
 
 Son capaces de **amplificar o controlar** señales eléctricas. Requieren alimentación externa.
 
-#### Diodos
+#### 2.2.1 Diodos
 
 - **Función:** Permitir el paso de corriente en un solo sentido
 - **Tipos:** Rectificadores, LED, Zener, Schottky
+- **Aplicación en robótica:** LEDs indicadores de estado
 
-**Aplicación robótica:** LEDs indicadores de estado
-
-#### Transistores
+#### 2.2.2 Transistores
 
 - **Función:** Amplificar señales o actuar como interruptores
 - **Tipos principales:**
   - **BJT (Bipolar):** NPN y PNP
   - **MOSFET:** Canal N y Canal P
-
-**Aplicación robótica:** Control de motores, interfaces de potencia
+  - **Aplicación en robótica:** Control de motores, interfaces de potencia
 
 #### Circuitos Integrados (CI)
 
 - Combinación de múltiples componentes en un solo chip
-- Ejemplos: Amplificadores operacionales, reguladores de tensión, microcontroladores
+- Ejemplos: Amplificadores operacionales, reguladores de tensión, microcontroladores...
 
 ### 2.3 Sensores
 
@@ -154,7 +151,7 @@ Dispositivos que **convierten señales eléctricas en acciones físicas**.
 |Zumbador/Buzzer  |Sonido                      |Señal digital/PWM  |
 |Electroválvula   |Control de fluidos          |Señal digital      |
 
-### 2.5 Actividades Propuestas
+### 2.5 Actividades propuestas
 
 1. Calcula la resistencia necesaria para un LED rojo (2V, 20mA) alimentado a 5V
 1. Identifica los componentes de una placa Arduino
@@ -163,9 +160,9 @@ Dispositivos que **convierten señales eléctricas en acciones físicas**.
 
 -----
 
-## 3. Diseño, Montaje y Medida de Circuitos Electrónicos
+## 3. Diseño, montaje y medición de circuitos electrónicos
 
-### 3.1 Herramientas de Diseño
+### 3.1 Herramientas de diseño
 
 #### Software de simulación
 
@@ -180,7 +177,7 @@ Dispositivos que **convierten señales eléctricas en acciones físicas**.
 1. **Esquema eléctrico:** Conexiones detalladas con símbolos normalizados
 1. **Esquema de montaje:** Representación física para protoboard
 
-### 3.2 Protoboard (Placa de Pruebas)
+### 3.2 Protoboard (Placa de pruebas)
 
 #### Estructura y funcionamiento
 
@@ -215,9 +212,9 @@ Canal central: Separa las dos mitades (para CI)
 1. Retirar estaño, luego soldador
 1. No mover hasta que solidifique
 
-### 3.4 Instrumentos de Medida
+### 3.4 Instrumentos de medición
 
-#### Multímetro Digital
+#### Multímetro o Polímetro digital
 
 Funciones principales:
 
@@ -241,13 +238,13 @@ Funciones principales:
 - Permite medir frecuencia, amplitud, forma de onda
 - Esencial para depurar señales PWM y comunicaciones
 
-#### Fuente de Alimentación
+#### Fuente de alimentación
 
 - Proporciona tensión regulable y estable
 - Permite limitar la corriente (protección)
 - Indicada para pruebas de circuitos
 
-### 3.5 Metodología de Proyecto Tecnológico
+### 3.5 Metodología de proyectos tecnológicos
 
 ```
 1. IDENTIFICACIÓN DEL PROBLEMA
@@ -267,7 +264,7 @@ Funciones principales:
 8. PRESENTACIÓN
 ```
 
-### 3.6 Actividades Propuestas
+### 3.6 Actividades propuestas
 
 1. Diseña en Tinkercad un circuito con 3 LEDs controlados por pulsadores
 1. Monta el circuito anterior en protoboard y verifica su funcionamiento
@@ -277,7 +274,7 @@ Funciones principales:
 
 -----
 
-## 4. Programación de Sistemas/Circuitos Electrónicos
+## 4. Programación de sistemas/circuitos electrónicos
 
 ### 4.1 Introducción a Arduino
 
@@ -295,7 +292,7 @@ Funciones principales:
 |Arduino Nano|ATmega328P      |14 digital, 8 analógicos |Proyectos compactos|
 |Arduino Mega|ATmega2560      |54 digital, 16 analógicos|Proyectos grandes  |
 
-### 4.2 Estructura de un Programa Arduino
+### 4.2 Estructura de un programa Arduino
 
 ```cpp
 // Declaración de variables globales
@@ -316,7 +313,7 @@ void loop() {
 }
 ```
 
-### 4.3 Funciones Básicas
+### 4.3 Funciones básicas
 
 #### Entrada/Salida Digital
 
@@ -382,7 +379,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-### 4.5 Ejemplos Prácticos
+### 4.5 Ejemplos 
 
 #### Ejemplo 1: Lectura de Sensor LDR
 
@@ -474,7 +471,7 @@ void loop() {
 
 ### 4.6 Proyecto Integrador: Robot Seguidor de Línea
 
-#### Componentes necesarios
+#### Componentes 
 
 - Arduino UNO
 - 2 sensores infrarrojos TCRT5000
@@ -566,7 +563,7 @@ void parar() {
 }
 ```
 
-### 4.7 Depuración y Resolución de Problemas
+### 4.7 Depuración y resolución de problemas
 
 #### Técnicas de depuración
 
@@ -584,7 +581,7 @@ void parar() {
 |Valores raros|Pin mal configurado   |Revisar pinMode()   |
 |Se reinicia  |Consumo excesivo      |Alimentación externa|
 
-### 4.8 Actividades Propuestas
+### 4.8 Actividades propuestas
 
 1. Programa un semáforo con LEDs (rojo, ámbar, verde) con tiempos realistas
 1. Crea un sistema de alarma con sensor PIR y buzzer
@@ -638,4 +635,4 @@ void parar() {
 
 -----
 
-*Guía elaborada para el módulo de Informática aplicada a sistemas electrónicos (robótica) - SMR1*
+*Guía elaborada para el módulo de Informática aplicada a sistemas electrónicos (Robótica) - SMR1*
