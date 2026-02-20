@@ -200,7 +200,7 @@ if (Serial.available()) {
 Síntoma: El LED no funciona  
 Solución: Revisar `pinMode()`
 
----
+#
 
 #### ❌ Error 2: Confundir HIGH y LOW
 
@@ -209,19 +209,19 @@ HIGH  → 1 → Encendido
 LOW   → 0 → Apagado
 ```
 
----
+#
 
 #### ❌ Error 3: No conectar GND común
 
 Todos los componentes deben compartir tierra.
 
----
+#
 
 #### ❌ Error 4: Usar pin incorrecto para PWM
 
 PWM (~) → pines 3, 5, 6, 9, 10 y 11  
 
----
+#
 
 #### ❌ Error 5: Falta punto y coma
 
@@ -243,7 +243,7 @@ int x = 5;  // CORRECTO
 
 ---
 
-### CONCEPTOS CLAVE
+#### CONCEPTOS CLAVE
 
 - setup() → Configuración inicial  
 - loop() → Se repite sin parar  
