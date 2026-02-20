@@ -594,7 +594,7 @@ void parar() {
 
 -----
 
-## Recursos Adicionales
+## Recursos adicionales
 
 ### Bibliografía recomendada
 
@@ -618,9 +618,9 @@ void parar() {
 
 -----
 
-## Glosario de Términos
+## Terminología básica  
 
-|Término |Definición                                  |
+|Término |Sifnificado                                 |
 |--------|--------------------------------------------|
 |**ADC** |Conversor Analógico-Digital                 |
 |**Bit** |Unidad mínima de información (0 o 1)        |
