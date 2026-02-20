@@ -8,7 +8,7 @@
 
 1. [Sistemas Electrónicos Analógicos y Digitales](#1-sistemas-electrónicos-analógicos-y-digitales)
 1. [Dispositivos Discretos: Pasivos, Activos, Sensores y Actuadores](#2-dispositivos-discretos-pasivos-activos-sensores-y-actuadores)
-1. [Diseño, Montaje y Medida de Circuitos Electrónicos](#3-diseño-montaje-y-medida-de-circuitos-electrónicos)
+1. [Diseño, Montaje y Medicion de Circuitos Electrónicos](#3-diseño-montaje-y-medicion-de-circuitos-electrónicos)
 1. [Programación de Sistemas/Circuitos Electrónicos](#4-programación-de-sistemascircuitos-electrónicos)
 
 -----
