@@ -1,10 +1,10 @@
-# Guía de Estudio: Informática Aplicada a Sistemas Electrónicos (Robótica)
+# Informática Aplicada a Sistemas Electrónicos (Robótica)
 
-<code>Informática Aplicada a Sistemas Electrónicos (Robótica) | SMR1 | Prof. Ezequiel Llarena Borges</code>  
+<code>Guía de estudio</code>  
 
 -----
 
-## Indice de Contenidos
+## Indice
 
 1. [Sistemas Electrónicos Analógicos y Digitales](#1-sistemas-electrónicos-analógicos-y-digitales)
 1. [Dispositivos Discretos: Pasivos, Activos, Sensores y Actuadores](#2-dispositivos-discretos-pasivos-activos-sensores-y-actuadores)
