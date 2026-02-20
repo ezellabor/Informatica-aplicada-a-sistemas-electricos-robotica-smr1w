@@ -1,6 +1,7 @@
-# ![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)![Módulo](https://img.shields.io/badge/Módulo-Robótica-green)
-![Recurso](https://img.shields.io/badge/Recurso-Guía_de_consulta_rápida-orange)
-![Referencia](https://img.shields.io/badge/Referencia-Comandos_Pines_Sensores_Conexiones_Errores_típicos_brown)   
+# ![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)
+# ![Módulo](https://img.shields.io/badge/Módulo-Robótica-green)
+# ![Recurso](https://img.shields.io/badge/Recurso-Guía_de_consulta_rápida-orange)
+# ![Referencia](https://img.shields.io/badge/Referencia-Comandos_Pines_Sensores_Conexiones_Errores_típicos_brown)   
 
 ---
 
