@@ -35,7 +35,7 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 2. **Proceso (LOGICA PROGRAMABLE):** El **Sketch** controla la lógica; CPU y memoria. Analogía: cerebro humano  
 3. **Salida (ACTUADORES):** Actuadores físicos. Analogía: músculos humanos  
 
->**Bucle infinito (loop)** – Lectura → comparación → acción → repetición.
+<!--**Bucle infinito (loop)** – Lectura → comparación → acción → repetición. -->
 
 **Ejemplo:** Termostato automático con sensor LDR
 
@@ -63,12 +63,12 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 
     ARDUINO UNO
     ┌─────────────────┐
-    │   Microcontrol  │ ← ATmega328P
+    │   Microcontrol  │ ← ATmega328P (1)
     │                 │
-    │ Pines Digitales │ ← 0-13
-    │ Pines Analógicos│ ← A0-A5
+    │ Pines Digitales │ ← 0-13 (2)
+    │ Pines Analógicos│ ← A0-A5 (3)
     │                 │
-    │ USB  Power  GND │ ← Conexiones
+    │ USB  Power  GND │ ← Conexiones (4)(5)
     └─────────────────┘  
 
  **Componentes clave:**
@@ -76,20 +76,13 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 2. **14 Pines Digitales (Entradas/Salidas)** - Para señales ON/OFF
 3. **6 Pines Analógicos (Entradas)** - Para valores variables
 4. **Conector USB** - Programación y alimentación
-5. **Alimentación** - 5V, 3.3V, GND  
+5. **Alimentación** - 5V, 3.3V, GND*  
 
-Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adaptador de CA a CC o una batería para empezar.   
+*_Tipos de conexión: conector USB, adaptador CA/CC y batería o pila._     
 
 ![desglose-componentes-arduino-uno-r3](figuras-imagenes/detalles-componentes-arduino-uno-r3.png)   
 
-1. Pines (14) de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
-2. Botón de reinicio
-3. Conexión USB
-4. Microcontrolador comunicación
-5. Conector de alimentación AD/DC
-6. Pines de alimentación
-7. Entradas analógicas (6)    
-    
+   
 ---  
 
 ### Anatomía de la placa Arduino UNO  
