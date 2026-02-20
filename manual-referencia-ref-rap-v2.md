@@ -8,8 +8,7 @@
 ![Uso](https://img.shields.io/badge/Uso-Taller-orange)
 ![Formato](https://img.shields.io/badge/Formato-Hoja_de_Trucos-success)
 
-📌 Guía para prácticas  
-Comandos · Pines · Sensores · Conexiones · Actuadores  
+Guía para prácticas: Comandos · Pines · Sensores · Conexiones · Actuadores  
 
 </div>
 
@@ -278,11 +277,5 @@ Pin 6 ------ ECHO
 ---
 
 <div align="center">
-
-## Hoja lista para imprimir o usar en GitHub
-
-✔ Compacta  
-✔ Completa  
-✔ Pensada para taller real  
 
 </div>
