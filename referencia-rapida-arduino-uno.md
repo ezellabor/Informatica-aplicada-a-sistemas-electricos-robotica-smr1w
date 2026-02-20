@@ -1,16 +1,8 @@
 <div align="center">
-
-# MANUAL DE REFERENCIA RÁPIDA  
-## Taller de Robótica
-
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-blue)
-![Nivel](https://img.shields.io/badge/Nivel-SMR1-green)
-![Uso](https://img.shields.io/badge/Uso-Taller-orange)
-![Tipo](https://img.shields.io/badge/Formato-Hoja_de_Trucos-success)
-
-Guía rápida para usar durante las prácticas  
-```Comandos · Pines · Sensores · Conexiones · Errores comunes```    
-
+![Módulo](https://img.shields.io/badge/Módulo-Robótica-green)
+![Recurso](https://img.shields.io/badge/Recurso-Guía_de_consulta_rápida-orange)
+![Referencia](https://img.shields.io/badge/Referencia_Comandos_Pines_Sensores_Conexiones_Errores_típicos_brown)  
 </div>
 
 ---
