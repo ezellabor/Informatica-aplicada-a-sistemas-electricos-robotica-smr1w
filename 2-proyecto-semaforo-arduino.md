@@ -58,8 +58,8 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 
 ---
 
-## 3. Partes de una placa Arduino UNO  
- Arduino UNO es una placa de microcontrolador basada en el **ATmega328P**. Sus componentes clave:  
+## 3. Partes principales de una placa Arduino UNO  
+ Arduino UNO es una placa de microcontrolador basada en el **ATmega328P**. Sus componentes clave son:  
 
     ARDUINO UNO
     ┌─────────────────┐
@@ -76,7 +76,6 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 3. **6 Pines Analógicos (Entradas)** - Para valores variables
 4. **Conector USB** - Programación y alimentación
 5. **Alimentación** - 5V, 3.3V, GND*  
-
 *_Tipos de conexión: conector USB, adaptador CA/CC y batería o pila._     
 
 ![desglose-componentes-arduino-uno-r3](figuras-imagenes/detalles-componentes-arduino-uno-r3.png)   
