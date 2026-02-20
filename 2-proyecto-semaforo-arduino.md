@@ -82,13 +82,13 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 
 ![desglose-componentes-arduino-uno-r3](figuras-imagenes/detalles-componentes-arduino-uno-r3.png)   
 
-1. 14 pines de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
-2. 6 entradas analógicas
-3. 1 resonador cerámico de 16 MHz
-4. 1 conexión USB
-5. 1 conector de alimentación
-6. 1 conector ICSP
-7. 1 botón de reinicio
+1. Pines (14) de entrada/salida digitales (de los cuales 6 se pueden usar como salidas PWM)
+2. Botón de reinicio
+3. Conexión USB
+4. Microcontrolador comunicación
+5. Conector de alimentación AD/DC
+6. Pines de alimentación
+7. 6 entradas analógicas    
     
 ---  
 
