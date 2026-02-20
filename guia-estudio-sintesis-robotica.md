@@ -2,7 +2,7 @@
 
 <code>Guía de estudio</code>  
 
------
+----- 
 
 ## Indice
 
