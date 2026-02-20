@@ -27,13 +27,13 @@ Un **microcontrolador** es un ordenador en un solo chip que integra:
 - **Memoria** para almacenar programas
 - **Puertos de E/S** para comunicarse
 
-Recibe información del entorno a través de los sensores, la procesa, y envía órdenes a los actuadores.  
+Recibe información del entorno a través de los sensores, la procesa, y envía órdenes a los actuadores siguiendo el esquema básico:  
 
 ```ENTRADA → PROCESO → SALIDA```
 
-1. **Entrada (SENSORES):** Sensores analógicos y digitales. Analogía: sentidos humanos  
-2. **Proceso (LOGICA PROGRAMABLE):** El **Sketch** controla la lógica; CPU y memoria. Analogía: cerebro humano  
-3. **Salida (ACTUADORES):** Actuadores físicos. Analogía: músculos humanos  
+1. **ENTRADA (Sensores):** Sensores analógicos y digitales. Analogía: sentidos humanos  
+2. **PROCESO (Lógica programable):** El **Sketch** controla la lógica; CPU y memoria. Analogía: cerebro humano  
+3. **SALIDA (Actuadores):** Actuadores físicos. Analogía: músculos humanos  
 
 <!--**Bucle infinito (loop)** – Lectura → comparación → acción → repetición. 
 
