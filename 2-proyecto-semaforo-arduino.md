@@ -88,7 +88,7 @@ Simplemente conéctalo a un ordenador con un cable USB o aliméntalo con un adap
 4. Microcontrolador comunicación
 5. Conector de alimentación AD/DC
 6. Pines de alimentación
-7. 6 entradas analógicas    
+7. Entradas analógicas (6)    
     
 ---  
 
