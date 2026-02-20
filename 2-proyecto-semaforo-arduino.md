@@ -89,10 +89,10 @@ Las placas Arduino detectan el entorno al recibir información de numerosos sens
 
 ![anatomia-placa-arduino-uno-r3](figuras-imagenes/anatomia-arduino-uno.png) 
 
-
+<!--
 **Desglose de pines de la placa microcontroladora Arduino UNO R3:**  
 
-<!-- ![desglose-componentes-arduino-uno-r3](figuras-imagenes/arduino-uno-r3-pines.png) -->   
+ ![desglose-componentes-arduino-uno-r3](figuras-imagenes/arduino-uno-r3-pines.png) -->   
 
 [Anatomía de la placa Arduino UNO](https://docs.arduino.cc/tutorials/uno-rev3/board-anatomy/)
 
@@ -100,24 +100,24 @@ Las placas Arduino detectan el entorno al recibir información de numerosos sens
 
 ## 4. Conceptos base
 
-#### 1. Digital vs Analógico
+### 1. Digital vs Analógico
 | Tipo | Valores | Ejemplo |
 |------|---------|---------|
 | **Digital** | 0 ó 1 | Interruptor |
 | **Analógico** | 0-1023 | Potenciómetro |
 
-#### 2. Voltajes
+### 2. Voltajes
 - **HIGH** = 5V (ON)
 - **LOW** = 0V (OFF)
 
-#### 3. PWM (Modulación por Ancho de Pulso)
+### 3. PWM (Modulación por Ancho de Pulso)
 Permite simular salidas analógicas en pines digitales.
 
 ---
 
 ## 5. Primer programa: LED parpadeante
 
-### Material necesario:
+### Componentes:
 - Arduino UNO
 - LED
 - Resistencia 220Ω
