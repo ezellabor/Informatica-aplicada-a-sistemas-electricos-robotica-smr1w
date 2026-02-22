@@ -4,7 +4,7 @@
 
 # Práctica 2: Diodo y polarización
 
----
+---  
 
 ## 1. Conceptos clave
 El **diodo** es un componente electrónico **semiconductor** que solo permite el paso de la corriente eléctrica en un sentido.
