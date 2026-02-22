@@ -104,7 +104,7 @@ Modifica el circuito y el código para añadir un segundo LED (otro componente a
 ## 6. Instrucciones de entrega
 1.  Descarga y rellena el **informe de entrega** de la práctica [aquí](https://www.zekiland.es/recursos/practicas-robotica/p2-diodo-polarizacion-entrega.html) 
 2.  Sube el documento **PDF de tu informe** al aula virtual en la práctica 3.
-3.  No olvides añadir el enlace (URL) de tu diseño en Tinkercad del circuito de esta práctica.
+3.  No olvides añadir en el informe el enlace (URL) de tu diseño en Tinkercad del circuito de esta práctica.
 
 <!--
 # Guía de Soluciones: Práctica de Elementos Activos y Pasivos
