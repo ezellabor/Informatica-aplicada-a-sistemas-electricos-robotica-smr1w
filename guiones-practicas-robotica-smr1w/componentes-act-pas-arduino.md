@@ -10,12 +10,12 @@
 
 Antes de conectar nada, debemos entender qué papel juega cada pieza en el circuito:
 
-### A. Componentes Pasivos
+### 1.1. Componentes Pasivos
 Son componentes que **no introducen energía** neta en el circuito ni pueden controlar la electricidad por sí mismos. Solo la consumen, la resisten o la almacenan.
 * **La Resistencia:** Su función es limitar el flujo de corriente. Es vital porque protege a los componentes más sensibles de quemarse.
 * **Dato técnico:** Se miden en Ohmios ($\Omega$). No tienen polaridad (puedes ponerlas en cualquier sentido).
 
-### B. Componentes Activos
+### 1.2. Componentes Activos
 Son aquellos que pueden **controlar el flujo eléctrico** o modificar la señal. Requieren una fuente de alimentación externa para realizar su función.
 * **El LED (Diodo Emisor de Luz):** Es un semiconductor que emite luz cuando pasa corriente a través de él. 
 * **Dato técnico:** ¡Tienen polaridad! La pata larga (Ánodo) es el positivo y la pata corta (Cátodo) es el negativo.
@@ -100,6 +100,11 @@ Responde brevemente a las siguientes preguntas para validar los conceptos aprend
 Modifica el circuito y el código para añadir un segundo LED (otro componente activo). 
 * El **LED 1** debe encenderse mientras el **LED 2** está apagado, y viceversa (efecto policía).
 * ¿Has necesitado añadir otra resistencia? Justifica por qué.
+
+## 6. Instrucciones de entrega
+1.  Descarga y rellena el **informe de entrega** de la práctica [aquí](https://www.zekiland.es/recursos/practicas-robotica/p2-diodo-polarizacion-entrega.html) 
+2.  Sube el documento **PDF de tu informe** al aula virtual en la práctica 3.
+3.  No olvides añadir el enlace (URL) de tu diseño en Tinkercad del circuito de esta práctica.
 
 <!--
 # Guía de Soluciones: Práctica de Elementos Activos y Pasivos
