@@ -2,7 +2,7 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 
-# Práctica 3: Control de un LED mediante pin digital (Arduino UNO)
+# Práctica 3: Control de un LED mediante pin digital (Arduino UNO) 
 
 <!-- NOTA: ver este documento (https://docs.google.com/document/d/1jvlvm2FqSEJCLl_ezwGhrs87LphTGowsda3Qb6LG9Rk/edit?tab=t.0)  -->
  
