@@ -72,14 +72,13 @@ void loop() {
    ![diseño-tinkercad-act-pas-arduino-uno](../figuras-imagenes/activo-pasivo-led-intermitente-arduino.png)
 
 
-## 3. Ejercicios y Cuestionario
+## 3. Checklist de tareas
 
-### Lista de verificación
 | Tarea | Objetivo | Verificado |
 | :--- | :--- | :---: |
 | **Identificación de componentes** | Distinguir visualmente la resistencia (pasivo) del LED (activo). | ☐ |
 | **Montaje de circuito** | El LED y la resistencia están en serie y el LED tiene la polaridad correcta. | ☐ |
-| **Modificación de código** | Cambiar los valores del `delay` a `200` y observa el parpadeo rápido. | ☐ |
+| **Modificación de código** | Cambiar los valores del `delay` a `200` y observar el parpadeo rápido. | ☐ |
 | **Seguridad eléctrica** | El circuito nunca se conecta a la placa sin la resistencia limitadora. | ☐ |
 
 ---
@@ -87,15 +86,13 @@ void loop() {
 ### 4. Cuestionario de consolidación
 Responde brevemente a las siguientes preguntas para validar los conceptos aprendidos en esta práctica:
 
-1. **Sobre los componentes pasivos:** Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$ ($10.000\Omega$), ¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?
+1. Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$ ($10.000\Omega$), **¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?**
 
-2. **Sobre los componentes activos:** El LED es un componente semiconductor. Explica con tus palabras qué sucede si intentas que la corriente pase del Cátodo (negativo) al Ánodo (positivo).
+2. El LED es un componente semiconductor. **Explica con tus palabras qué sucede si intentas que la corriente pase del Cátodo (negativo) al Ánodo (positivo).**
 
-3. **Lógica de control:**
-   En el código de Arduino, ¿qué función realiza el comando `digitalWrite(pin, LOW)` y qué efecto tiene sobre el flujo de electrones hacia el LED?
+3. En la lógica de programación o código _(sketch)_ de Arduino, **¿qué función realiza el comando `digitalWrite(pin, LOW)` y qué efecto tiene sobre el flujo de electrones hacia el LED?**
 
-4. **Análisis de fallos:**
-   Si el código se carga correctamente pero el LED no enciende, indica los 3 puntos de fallo más comunes que revisarías (Hardware).
+4. Análisis de fallos: **Si el código se carga correctamente pero el LED no enciende, indica los 3 puntos de fallo más comunes que revisarías (Hardware).**
 
 ---
 
