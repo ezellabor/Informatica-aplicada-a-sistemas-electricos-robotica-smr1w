@@ -83,7 +83,7 @@ void loop() {
 
 ---
 
-### 4. Cuestionario de consolidación
+## 4. Cuestionario de consolidación
 Responde brevemente a las siguientes preguntas para validar los conceptos aprendidos en esta práctica:
 
 1. Si cambiamos la resistencia de $220\Omega$ por una de $10k\Omega$ ($10.000\Omega$), **¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?**
@@ -96,7 +96,7 @@ Responde brevemente a las siguientes preguntas para validar los conceptos aprend
 
 ---
 
-### 5. Reto opcional (para subir nota)
+## 5. Reto opcional (para subir nota)
 Modifica el circuito y el código para añadir un segundo LED (otro componente activo). 
 * El **LED 1** debe encenderse mientras el **LED 2** está apagado, y viceversa (efecto policía).
 * ¿Has necesitado añadir otra resistencia? Justifica por qué.
