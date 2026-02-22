@@ -22,7 +22,7 @@ Son aquellos que pueden **controlar el flujo eléctrico** o modificar la señal.
 
 ---
 
-## 2. Proyecto: Control de Salida Digital
+## 2. Proyecto: Control de salida digital
 
 **Objetivo:** Montar un circuito donde una placa Arduino (cerebro) controle un componente activo (LED) protegido por un componente pasivo (resistencia).
 
