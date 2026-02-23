@@ -102,9 +102,9 @@ Modifica el circuito y el código para añadir un segundo LED (otro componente a
 * ¿Has necesitado añadir otra resistencia? Justifica por qué.
 
 ## 6. Instrucciones de entrega
-1.  Descarga y rellena el **informe de entrega** de la práctica [aquí](https://github.com/ezellabor/Informatica-aplicada-a-sistemas-electricos-robotica-smr1w/blob/main/guiones-practicas-robotica-smr1w/p3-salida-pin-digital-entrega.html) 
-2.  Sube el documento **PDF de tu informe** al aula virtual en la práctica 3.
-3.  No olvides añadir en el informe el enlace (URL) de tu diseño en Tinkercad del circuito de esta práctica.
+1.  Descarga y rellena el **informe de entrega** que encontrarás en la tarea correspondiente a esta práctica en el aula virtual.
+2.  Sube el documento **PDF de tu informe** como entrega de esta práctica.
+3.  **Importante:** No olvides añadir en el informe el enlace (URL) de tu diseño en Tinkercad del circuito de esta práctica.
 
 <!--
 # Guía de Soluciones: Práctica de Elementos Activos y Pasivos
