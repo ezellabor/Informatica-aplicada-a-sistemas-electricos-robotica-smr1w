@@ -8,7 +8,7 @@
 
 1. [Microcontrolador](#1-microcontrolador)
 2. [Introducción a Arduino](#2-introduccion-a-arduino)
-3. [Partes de una placa Arduino UNO](#3-partes-de-una-placa-arduino-uno)
+3. [Partes principales de una placa Arduino UNO](#3-partes-principales-de-una-placa-arduino-uno)
 4. [Conceptos esenciales](#4-conceptos-esenciales)
 5. [Primer programa: LED parpadeante](#5-primer-programa-led-parpadeante)
 6. [Sensores y Actuadores](#6-sensores-y-actuadores)
