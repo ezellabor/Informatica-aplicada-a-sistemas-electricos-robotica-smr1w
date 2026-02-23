@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica de Robótica - Prof. Ezequiel</title>
+    <style>
+        :root { --azul: #4a6984; --arena: #fcfaf7; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--arena); padding: 40px; line-height: 1.6; }
+        .document { max-width: 850px; margin: auto; background: white; padding: 50px; box-shadow: 0 0 20px rgba(0,0,0,0.1); border-radius: 8px; }
+        
+        header { border-bottom: 3px solid var(--azul); margin-bottom: 30px; }
+        h1 { color: var(--azul); margin-bottom: 5px; }
+        .prof-info { text-align: right; font-weight: bold; color: var(--azul); margin-top: -40px; }
+        
+        .section { margin-bottom: 25px; padding: 15px; background: #f9f9f9; border-left: 5px solid var(--azul); }
+        h2 { color: var(--azul); border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+        
+        label { display: block; margin-top: 15px; color: #444; }
+        input[type="text"], input[type="date"], textarea { 
+            width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; font-family: inherit;
+        }
+        
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background: var(--azul); color: white; }
+
+        .btn-print { 
+            display: block; width: 100%; padding: 20px; background: var(--azul); color: white; 
+            text-align: center; font-weight: bold; font-size: 1.2em; border: none; border-radius: 8px; 
+            cursor: pointer; margin-top: 40px; transition: 0.3s;
+        }
+        .btn-print:hover { background: #364d61; }
+
+        @media print {
+            .btn-print, .no-print { display: none !important; }
+            body { background: white; padding: 0; }
+            .document { box-shadow: none; width: 100%; max-width: 100%; padding: 20px; }
+            textarea { border: 1px solid #eee; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="document">
+    <header>
+        <h1>Informe P3: Salida digital (Arduino UNO)</h1>
+        <div class="prof-info">Prof. Ezequiel Llarena Borges</div>
+    </header>
+
+    <div class="no-print" style="background: #fff3cd; padding: 10px; border-radius: 5px; margin-bottom: 20px; font-size: 0.9em;">
+        <strong>Instrucciones:</strong> Rellena todos los campos. Al terminar, pulsa el botón "Imprimir PDF" y lo envias al aula virtual.
+    </div>
+
+    <div class="header-box">
+        <label>Alumno/a:</label>
+        <input type="text" placeholder="Escribe tu nombre completo aquí...">
+        
+        <div style="display: flex; gap: 20px;">
+            <div style="flex: 1;">
+                <label>Fecha:</label>
+                <input type="date">
+            </div>
+            <div style="flex: 1;">
+                <label>Enlace de tu(s) circuito(s) en Tinkercad:</label>
+                <input type="text" placeholder="https://www.tinkercad.com/...">
+            </div>
+        </div>
+    </div>
+
+    <h2>1. Resultados de la simulación</h2>
+    <p>Completa la tabla basándote en lo observado en Tinkercad:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Tarea</th>
+                <th>Objetivo</th>
+                <th>Comentarios/Observaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Identificación de componentes</td><td>Distinguir visualmente la resistencia (pasivo) del LED (activo).</td><td><input type="text"></td></tr>
+            <tr><td>Identificación de componentes</td><td>El LED y la resistencia están en serie y el LED tiene la polaridad correcta.</td><td><input type="text"></td></tr>
+            <tr><td>Modificación de código</td><td>Cambiar los valores del delay a 200 y observar el parpadeo rápido.</td><td><input type="text"></td></tr>
+            <tr><td>Seguridad eléctrica</td><td>El circuito nunca se conecta a la placa sin la resistencia limitadora.</td><td><input type="text"></td></tr>
+        </tbody>
+    </table>
+
+    
+
+    <h2>2. Cuestionario técnico</h2>
+    
+     <label>1. Si cambiamos la resistencia de 220 Ω por una de 10 k Ω ( 10.000 Ω ), ¿qué crees que le pasará a la intensidad de la luz del LED? ¿Por qué?</label>
+    <textarea rows="3"></textarea>
+
+    <label>2. El LED es un componente semiconductor. Explica con tus palabras qué sucede si intentas que la corriente pase del Cátodo (negativo) al Ánodo (positivo).</label>
+    <textarea rows="3" ></textarea>
+
+    <label>3. En la lógica de programación o código (sketch) de Arduino, ¿qué función realiza el comando digitalWrite(pin, LOW) y qué efecto tiene sobre el flujo de electrones hacia el LED?</label>
+    <textarea rows="3"></textarea>
+<label>4. Análisis de fallos: Si el código se carga correctamente pero el LED no enciende, indica los 3 puntos de fallo más comunes que revisarías (Hardware).
+</label>
+     <textarea rows="3" ></textarea> 
+
+
+    <h2>3. Conclusiones</h2>
+    <label>Comenta lo que te ha parecido más interesante o útil de esta práctica y lo más complejo.</label>
+    <textarea rows="3"></textarea>
+
+    <button class="btn-print" onclick="window.print()">Imprimir PDF</button>
+</div>
+
+</body>
+</html>
