@@ -107,7 +107,10 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 | Componente | Especificaciones técnicas | Descripción técnica |
 |------------|---------------------------|---------------------|
 | `AREF` | Referencia analógica | *Referencia externa para el ADC.* |
-| `RESET` | Reinicio hardware | *Permite reiniciar el microcontrolador externamente.* |
+| `RESET` | Reinicio hardware | *Permite reiniciar el microcontrolador externamente.* |   
+
+````Referencicias``` 
+[Arduino UNO Board Anatony](https://docs.arduino.cc/tutorials/uno-rev3/board-anatomy/)  
 
 <!--
 
