@@ -51,7 +51,7 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 - Gran comunidad
 - Multiplataforma
 
-**Modelos más utilizados:**  ç
+**Modelos más utilizados:** 
 
 |Placa       |Microcontrolador|Pines I/O                |Especial para      |
 |------------|----------------|-------------------------|-------------------|
