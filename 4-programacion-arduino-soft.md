@@ -356,4 +356,8 @@ void parar() {
 |**UART**|Transmisor-Receptor Asíncrono Universal     |
 |**VCC** |Tensión de alimentación positiva            |
 
------
+-----  
+
+>**Referencias**
+>[Arduino software](https://docs.arduino.cc/tutorials/uno-rev3/getting-started/)
+
