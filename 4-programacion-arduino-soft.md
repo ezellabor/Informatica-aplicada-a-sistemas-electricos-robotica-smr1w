@@ -1,11 +1,15 @@
 ![Módulo](https://img.shields.io/badge/Módulo-Informática_aplicada_a_sistemas_electrónicos_(Robótica)-orange?style=for-the-badge)
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
-```Programación de sistemas electrónicos``` 
+<div align="center">   
+ 
+# Lógica programable de Arduino: El Software 
 
-### 1 - Introducción a Arduino
+</div>  
 
-### 1.1. ¿Qué es Arduino?
+```Programación de sistemas electrónicos```  
+
+### 1.1. ¿Qué es Arduino?  
 
 - Plataforma de hardware libre basada en microcontroladores
 - Incluye entorno de programación (IDE) sencillo
