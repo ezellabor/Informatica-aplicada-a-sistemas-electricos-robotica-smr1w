@@ -51,10 +51,13 @@ Recibe información del entorno a través de los sensores, la procesa, y envía 
 - Gran comunidad
 - Multiplataforma
 
-**Modelos comunes:**
-- **Arduino UNO** (el más usado)
-- **Arduino Nano** (compacto)
-- **Arduino Mega** (más pines)
+**Modelos más utilizados:**  ç
+
+|Placa       |Microcontrolador|Pines I/O                |Especial para      |
+|------------|----------------|-------------------------|-------------------|
+|Arduino UNO |ATmega328P      |14 digital, 6 analógicos |Aprendizaje        |
+|Arduino Nano|ATmega328P      |14 digital, 8 analógicos |Proyectos compactos|
+|Arduino Mega|ATmega2560      |54 digital, 16 analógicos|Proyectos grandes  |  
 
 ---
 
