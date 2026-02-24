@@ -3,7 +3,7 @@
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)
 <div align="center">   
  
-# Anatomía de Arduino UNO (HARDWARE) 
+# Anatomía de Arduino: el hardware 
 
 </div>  
 
