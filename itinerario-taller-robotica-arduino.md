@@ -221,21 +221,6 @@ if (temperatura > 30.0) {
 ```    
 >Integración total de sensores + actuadores + lógica.
 
-## Simbología estándar 
-| Componente | Símbolo | Clave Técnica |
-|------------|---------|---------------|
-| Resistencia | Zig-zag | No polarizada |
-| LED | Triángulo + flechas | Ánodo (+) / Cátodo (-) |
-| Pulsador | Contacto momentáneo | Pull-up/down |
-| LDR | Círculo + flechas | Divisor de tensión |
-| Potenciómetro | Resistencia + flecha | Pin central a analógico |  
-
-## Notas del profesor  
-
-> "Recordad que en Tinkercad el simulador es vuestro mejor amigo.  
-> Si algo explota o sale humo virtual, no pasa nada, leed los errores antes de cambiar los cables."  
-> ```Prof. Ezequiel```
-
 ---  
 
 ## Recomendaciones y buenas prácticas  
