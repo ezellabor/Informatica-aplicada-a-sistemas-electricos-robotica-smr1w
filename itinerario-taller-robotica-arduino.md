@@ -73,11 +73,11 @@ digitalWrite(12, LOW);
 
 ## 2 - Interacción: Entradas digitales
 ### 3️⃣ Pulsador de emergencia  
-**Circuito** : LED activo mientras se pulsa  
-**Componentes:** 1 LED, 1 Pulsador, 1 Resistencia (Pull-down).
-**Esquema:** Pulsador a y Pin . Resistencia de de Pin a .
-**Reto:** El LED solo debe encenderse mientras el pulsador esté presionado.
-**Solución:** if (digitalRead(2) == HIGH) { digitalWrite(13, HIGH); }
+**Circuito** : LED activo mientras se pulsa    
+**Componentes:** 1 LED, 1 Pulsador, 1 Resistencia (Pull-down).  
+**Esquema:** Pulsador a y Pin . Resistencia de de Pin a .  
+**Reto:** El LED solo debe encenderse mientras el pulsador esté presionado.  
+**Solución:** ```if (digitalRead(2) == HIGH) { digitalWrite(13, HIGH); }``` 
 
  
 ```cpp
@@ -91,10 +91,10 @@ if (digitalRead(2) == HIGH) {
 >El LED se enciende solo mientras el botón esté pulsado.  
 
 ### 4️⃣ Interruptor ON/OFF (estado persistente)  
-**Circuito**: Estado persistente  
-**Componentes:** Mismos que el ejercicio anterior (3).
-**Reto:** Un clic enciende el LED, otro clic lo apaga (Estado persistente).
-**Solución:** Crear una variable estado que cambie cada vez que el botón pase de LOW a HIGH.
+**Circuito**: Estado persistente    
+**Componentes:** Mismos que el ejercicio anterior (3).    
+**Reto:** Un clic enciende el LED, otro clic lo apaga (Estado persistente).  
+**Solución:** Crear una variable estado que cambie cada vez que el botón pase de LOW a HIGH.  
 
 ```cpp
 int estadoLED = 0;
