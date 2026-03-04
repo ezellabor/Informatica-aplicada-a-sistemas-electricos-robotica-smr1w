@@ -33,7 +33,10 @@ Los aspectos a desarrollar en estas prácticas son:
 
 ### 1️⃣ El faro  
 **Objetivo:** Control básico de salidas digitales.  
-**Circuito:** LED parpadeo básico  
+**Circuito:** LED parpadeo básico.  
+**Componentes:** Arduino, 1 LED, 1 Resistencia ().  
+**Reto:** Hacer que el LED parpadee 1 segundo encendido y 2 segundos apagado.  
+
 
 ```cpp
 digitalWrite(13, HIGH);
@@ -47,6 +50,11 @@ delay(2000);
 ### 2️⃣ Semáforo simple  
 **Objetivo:** Control básico de salidas digitales.   
 **Circuito**: Secuencia Verde → Amarillo → Rojo  
+**Componentes:** Arduino, 3 LEDs (Rojo, Amarillo, Verde), 3 Resistencias ().  
+**Esquema:** 3 circuitos serie independientes en pines 12, 11 y 10.  
+**Reto:** Crear la secuencia: Verde (5s) Amarillo (2s) Rojo (5s).  
+**Solución:** Uso de 3 digitalWrite secuenciales.  
+
 ```cpp
 digitalWrite(10, HIGH); 
 delay(5000);
@@ -66,6 +74,11 @@ digitalWrite(12, LOW);
 ## 2 - Interacción: Entradas digitales
 ### 3️⃣ Pulsador de emergencia  
 **Circuito** : LED activo mientras se pulsa  
+**Componentes:** 1 LED, 1 Pulsador, 1 Resistencia (Pull-down).
+**Esquema:** Pulsador a y Pin . Resistencia de de Pin a .
+**Reto:** El LED solo debe encenderse mientras el pulsador esté presionado.
+**Solución:** if (digitalRead(2) == HIGH) { digitalWrite(13, HIGH); }
+
  
 ```cpp
 if (digitalRead(2) == HIGH) {
@@ -79,6 +92,9 @@ if (digitalRead(2) == HIGH) {
 
 ### 4️⃣ Interruptor ON/OFF (estado persistente)  
 **Circuito**: Estado persistente  
+**Componentes:** Mismos que el ejercicio anterior (3).
+**Reto:** Un clic enciende el LED, otro clic lo apaga (Estado persistente).
+**Solución:** Crear una variable estado que cambie cada vez que el botón pase de LOW a HIGH.
 
 ```cpp
 int estadoLED = 0;
@@ -100,7 +116,12 @@ void loop() {
 
  ## 3 - El mundo analógico: Sensores  
 ### 5️⃣ Lámpara nocturna  
-**Circuito:** LED según luz   
+**Circuito:** LED según luz  
+**Componentes:** 1 Fotorresistencia (LDR), 1 LED, 1 Resistencia (), 1 Resistencia ().  
+**Esquema:** Divisor de tensión con LDR en Pin . LED en Pin.  
+**Reto:** Que el LED se encienda solo cuando "anochezca" (poca luz en el LDR).  
+**Solución:** if (analogRead(A0) < 500) { digitalWrite(9, HIGH); }  
+
 
 ```cpp
 
@@ -114,6 +135,10 @@ if (analogRead(A0) < 500) {
 
 ### 6️⃣ Termómetro visual (PWM)  
 **Circuito:** Intensidad PWM   
+**Componentes:** Sensor de temperatura TMP36, 1 LED.  
+**Esquema:** TMP36 a , y Pin .  
+**Reto:** Que el brillo del LED aumente proporcionalmente a la temperatura (usando PWM).  
+**Solución:** int brillo = map(analogRead(A1), min, max, 0, 255); analogWrite(9, brillo);  
 
 ```cpp
 int valorSensor = analogRead(A1);
@@ -125,6 +150,11 @@ analogWrite(9, brillo);
 
 ## 4 - Actuadores y pantallas
 ### 7️⃣ Barrera de garaje (Servo)  
+**Componentes:** 1 Micro Servomotor, 1 Pulsador.  
+**Esquema:** Servo (Pin ), Pulsador (Pin ).  
+**Reto:** Al pulsar, el servo gira a 90° (abre). Al soltar, vuelve a 0° (cierra).  
+**Solución:** #include <Servo.h> ... myservo.write(90);  
+
 ```cpp
 
 #include <Servo.h>
@@ -145,7 +175,12 @@ void loop() {
 ```  
 >Control angular básico.
 
-## 8️⃣ Sensor de aparcamiento (Ultrasonidos + Buzzer)
+## 8️⃣ Sensor de aparcamiento (Ultrasonidos + Buzzer)  
+**Componentes:** Sensor de distancia HC-SR04, 1 Zumbador (Buzzer).  
+**Esquema:** Trig (Pin ), Echo (Pin ), Buzzer (Pin ).  
+**Reto:** Que el zumbador pite más rápido cuanto más cerca esté un objeto.  
+**Solución:** Calcular distancia en cm y usarla en un delay(distancia*10).  
+
 ```cpp
 int calcularDistancia() {
   digitalWrite(7, LOW);
@@ -163,7 +198,12 @@ int calcularDistancia() {
 
 ## 5 - Sistemas complejos: control total  
 ### 9️⃣ LCD de bienvenida  
-**Circuito:** Tiempo en pantalla LCD
+**Circuito:** Tiempo en pantalla LCD    
+**Componentes:** Pantalla LCD 16x2, Potenciómetro ().  
+**Esquema:** Conexión estándar de 6 hilos (RS, E, D4, D5, D6, D7).  
+**Reto:** Mostrar "HOLA [NOMBRE ALUMNO]" y en la segunda línea los segundos que lleva encendido el PC.  
+**Solución:** lcd.print("Hola Alumno"); lcd.setCursor(0,1); lcd.print(millis()/1000);  
+
 ```cpp
 lcd.print("Hola Alumno");
 lcd.setCursor(0, 1);
@@ -172,7 +212,11 @@ lcd.print(millis() / 1000);
 >Gestión de información en tiempo real.
 
 ### 🔟 Estación meteorológica  
-**Circuito:** Integración completa  
+**Circuito:** Integración completa    
+**Componentes:** LCD 16x2, TMP36, LDR, Servomotor.  
+**Esquema:** Combinación de los retos anteriores en una sola placa.  
+**Reto:** Mostrar Temperatura y Luz en el LCD. Si la temperatura supera los 30°C, el Servo se mueve a 180° (activa un ventilador imaginario).  
+**Solución:** Un Sketch que gestione múltiples entradas y condiciones lógicas cruzadas.  
 
 ```cpp
 if (temperatura > 30.0) {
