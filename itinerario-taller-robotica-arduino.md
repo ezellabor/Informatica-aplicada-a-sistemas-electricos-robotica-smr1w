@@ -17,18 +17,6 @@ Los aspectos a desarrollar en estas prácticas son:
 
 ---
 
-## Indice
-
-1. [Iniciación](#-iniciación-digital--salidas)
-2. [Interacción](#-interacción-entradas-digitales)
-3. [Mundo Analógico](#-mundo-analógico-sensores)
-4. [Actuadores](#️-nivel-4--actuadores-y-pantallas)
-5. [Sistemas Complejos](#-nivel-5--sistemas-complejos-control-total)
-6. [Simbología](#-simbología-estándar)
-7. [Consejos y buenas prácticas](#-consejos-para-tinkercad)
-
----
-
 ## 1 - Iniciación: Salidas digitales  
 
 ### 1️⃣ El faro  
