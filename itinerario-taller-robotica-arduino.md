@@ -19,11 +19,11 @@ Los aspectos a desarrollar en estas prácticas son:
 
 ## Indice
 
-1. [Nivel 1 · Iniciación](#-nivel-1--iniciación-digital--salidas)
-2. [Nivel 2 · Interacción](#-nivel-2--interacción-entradas-digitales)
-3. [Nivel 3 · Mundo Analógico](#-nivel-3--el-mundo-analógico-sensores)
-4. [Nivel 4 · Actuadores](#️-nivel-4--actuadores-y-pantallas)
-5. [Nivel 5 · Sistemas Complejos](#-nivel-5--sistemas-complejos-control-total)
+1. [Iniciación](#-iniciación-digital--salidas)
+2. [Interacción](#-interacción-entradas-digitales)
+3. [Mundo Analógico](#-mundo-analógico-sensores)
+4. [Actuadores](#️-nivel-4--actuadores-y-pantallas)
+5. [Sistemas Complejos](#-nivel-5--sistemas-complejos-control-total)
 6. [Simbología](#-simbología-estándar)
 7. [Consejos y buenas prácticas](#-consejos-para-tinkercad)
 
