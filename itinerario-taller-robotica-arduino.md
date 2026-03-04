@@ -77,8 +77,7 @@ digitalWrite(12, LOW);
 **Componentes:** 1 LED, 1 Pulsador, 1 Resistencia (Pull-down).  
 **Esquema:** Pulsador a y Pin . Resistencia de de Pin a .  
 **Reto:** El LED solo debe encenderse mientras el pulsador esté presionado.  
-**Solución:** ```if (digitalRead(2) == HIGH) { digitalWrite(13, HIGH); }``` 
-
+**Solución:** 
  
 ```cpp
 if (digitalRead(2) == HIGH) {
@@ -120,9 +119,7 @@ void loop() {
 **Componentes:** 1 Fotorresistencia (LDR), 1 LED, 1 Resistencia (), 1 Resistencia ().  
 **Esquema:** Divisor de tensión con LDR en Pin . LED en Pin.  
 **Reto:** Que el LED se encienda solo cuando "anochezca" (poca luz en el LDR).  
-**Solución:** if (analogRead(A0) < 500) { digitalWrite(9, HIGH); }  
-
-
+**Solución:** 
 ```cpp
 
 if (analogRead(A0) < 500) {
@@ -138,8 +135,7 @@ if (analogRead(A0) < 500) {
 **Componentes:** Sensor de temperatura TMP36, 1 LED.  
 **Esquema:** TMP36 a , y Pin .  
 **Reto:** Que el brillo del LED aumente proporcionalmente a la temperatura (usando PWM).  
-**Solución:** int brillo = map(analogRead(A1), min, max, 0, 255); analogWrite(9, brillo);  
-
+**Solución:** 
 ```cpp
 int valorSensor = analogRead(A1);
 int brillo = map(valorSensor, 20, 358, 0, 255);
@@ -153,8 +149,7 @@ analogWrite(9, brillo);
 **Componentes:** 1 Micro Servomotor, 1 Pulsador.  
 **Esquema:** Servo (Pin ), Pulsador (Pin ).  
 **Reto:** Al pulsar, el servo gira a 90° (abre). Al soltar, vuelve a 0° (cierra).  
-**Solución:** #include <Servo.h> ... myservo.write(90);  
-
+**Solución:** 
 ```cpp
 
 #include <Servo.h>
@@ -202,8 +197,7 @@ int calcularDistancia() {
 **Componentes:** Pantalla LCD 16x2, Potenciómetro ().  
 **Esquema:** Conexión estándar de 6 hilos (RS, E, D4, D5, D6, D7).  
 **Reto:** Mostrar "HOLA [NOMBRE ALUMNO]" y en la segunda línea los segundos que lleva encendido el PC.  
-**Solución:** lcd.print("Hola Alumno"); lcd.setCursor(0,1); lcd.print(millis()/1000);  
-
+**Solución:** 
 ```cpp
 lcd.print("Hola Alumno");
 lcd.setCursor(0, 1);
