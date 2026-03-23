@@ -279,6 +279,8 @@ Encender un LED amarillo si **ambas condiciones** se cumplen, y un LED verde si 
 - Pin 9 → resistencia 220Ω → ánodo LED amarillo → cátodo LED amarillo → GND
 - Pin 10 → resistencia 220Ω → ánodo LED verde → cátodo LED verde → GND
 
+![if-cond-doble-circuit](figuras-imagenes/if-doble-cond-led-test-circuit.png)
+
 ### Código
 
 ```cpp
@@ -340,6 +342,8 @@ Encender un LED diferente según el rango en el que se encuentre una variable si
 - Pin 9 → resistencia 220Ω → ánodo LED rojo → cátodo LED rojo → GND
 - Pin 10 → resistencia 220Ω → ánodo LED amarillo → cátodo LED amarillo → GND
 - Pin 11 → resistencia 220Ω → ánodo LED verde → cátodo LED verde → GND
+
+![if-else-multiple-circuit](figuras-imagenes/if-else-multiple-led-test-circuit.png)
 
 ### Código
 
