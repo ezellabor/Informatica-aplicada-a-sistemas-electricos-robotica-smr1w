@@ -306,23 +306,23 @@ void parar() {
 
 ### 1.8 Serial Monitor: Comunicación serie en Arduino  
 
-### ¿Qué es?
+#### ¿Qué es?
 
 La comunicación serie (Serial) en Arduino es una forma de enviar y recibir datos **bit a bit** (uno detrás de otro) a través de pines o USB. Es un sistema de comunicación donde la información se transmite en secuencia por un solo canal (no en paralelo).
 
-### ¿Para qué sirve?
+#### ¿Para qué sirve?
 
 - Enviar datos del Arduino al ordenador (ej: ver valores en el monitor serie).
 - Recibir datos desde el ordenador o otros dispositivos.
 - Comunicar Arduinos entre sí o con sensores, módulos (Bluetooth, WiFi, etc.).
 
-### Idea clave
+#### Idea clave
 
 Es el **"idioma" básico** que usa Arduino para hablar con otros dispositivos.  
 
 ---  
 
-#### Serial.begin(velocidad)
+### Serial.begin(velocidad)
 
 Inicia la comunicación serie.
 
@@ -336,7 +336,7 @@ Serial.begin(9600);
 
 ---
 
-#### Serial.print(dato)
+### Serial.print(dato)
 
 Envía datos sin salto de línea.
 
@@ -353,7 +353,7 @@ Salida: `Hola 123`
 
 ---
 
-#### Serial.println(dato)
+### Serial.println(dato)
 
 Envía datos con salto de línea.
 
@@ -375,7 +375,7 @@ Hola
 
 ---
 
-#### Serial.available()
+### Serial.available()
 
 Indica cuántos bytes hay disponibles para leer.
 
@@ -391,7 +391,7 @@ if (Serial.available() > 0) {
 
 ---
 
-#### Serial.read()
+### Serial.read()
 
 Lee un byte recibido.
 
@@ -405,7 +405,7 @@ char dato = Serial.read();
 
 ---
 
-#### Serial.write(dato)
+### Serial.write(dato)
 
 Envía datos en formato binario.
 
@@ -421,7 +421,7 @@ Envía: `A` (ASCII 65)
 
 ---
 
-#### Serial.readString()
+### Serial.readString()
 
 Lee una cadena completa desde el buffer.
 
@@ -435,7 +435,7 @@ String texto = Serial.readString();
 
 ---
 
-#### Ejemplo completo
+### Ejemplo completo
 
 ```cpp
 void setup() {
