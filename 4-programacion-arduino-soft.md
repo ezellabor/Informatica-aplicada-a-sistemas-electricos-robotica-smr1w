@@ -36,7 +36,37 @@ void loop() {
 }
 ```
 
-### 1.3 Funciones básicas
+### 1.3 Funciones básicas  
+  
+### Variables  
+
+Espacio en memoria donde se almacena un **valor que puede cambiar** durante la ejecución del programa.
+
+```cpp
+int ledPin = 13;     // variable: su valor puede cambiar
+int contador = 0;    // variable: se incrementará después
+```
+
+ ### Constantes  
+
+ Valor que no cambia durante la ejecución. Se define con ```const``` y su valor se fija al inicio.  
+
+```cpp
+const int ledPin = 13;   // constante: su valor no cambia
+const float PI = 3.1416; // constante
+```  
+
+### Tipos de datos
+
+| Tipo | Tamaño | Rango | Uso |
+|------|--------|-------|-----|
+| boolean | 1 bit | true / false | Estados, banderas |
+| byte | 8 bits | 0 a 255 | Valores pequeños sin signo |
+| int | 16 bits | -32768 a 32767 | Números enteros |
+| unsigned int | 16 bits | 0 a 65535 | Enteros positivos |
+| long | 32 bits | -2147483648 a 2147483647 | Números grandes |
+| float | 32 bits | -3.4e38 a 3.4e38 | Decimales |
+| char | 8 bits | -128 a 127 | Caracteres ASCII |  
 
 #### Entrada/Salida Digital
 
@@ -454,13 +484,13 @@ void loop() {
 
 ### Resumen de funciones 
 
-* `begin(velocidad)` → inicia comunicación
-* `print(dato)` → muestra sin salto
-* `println(dato)` → muestra con salto
-* `available()` → datos disponibles
-* `read()` → leer 1 byte
-* `write(dato)` → enviar en binario
-* `readString()` → leer texto completo
+* `begin(velocidad)` → inicia la comunicación serie.
+* `print(dato)` → muestra dato sin salto de línea.
+* `println(dato)` → muestra dato con salto de línea.
+* `available()` → devuelve true si hay datos disponibles, false en otro caso.
+* `read()` → leer 1 byte.
+* `write(dato)` → enviar dato en binario.
+* `readString()` → leer texto completo.
 
 
 ### 1.9 Ejercicios propuestos
