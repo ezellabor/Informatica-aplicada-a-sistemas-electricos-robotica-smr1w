@@ -21,16 +21,15 @@
 ### Sintaxis  
 
 - Los principales elementos  de sintaxis son el punto y coma **;** y las llaves **{ }**.
-- Toda instrucción debe terminar con un “punto  y  coma”  (;). Podrían ir varias instrucciones en un mismo renglón, siempre que vayan separadas por “;”.
-- Las llaves { } se usan para delimitar el inicio y el fin de un bloque de instrucciones (funciones, bucles de repetición y condicionales).
+- Toda instrucción debe terminar con un “punto  y  coma”  ```;```. 
+- Las llaves ```{ }``` se usan para delimitar el inicio y el fin de un bloque de instrucciones (funciones, bucles de repetición y condicionales).
 
-#### Comentarios   
-Serán	comentarios	todas	las líneas incluidas entre ```/*``` y ```*/``` o 	todo	lo	que siga a ```//``` hasta el final de línea.
-Elementos de sintaxis
+#### Comentarios     
+Será interpretado como comentarios todas	las líneas incluidas entre ```/*``` y ```*/``` o 	todo	lo	que siga a ```//``` hasta el final de línea.
 
 #### Funciones  
 
-- Una función es un bloque de código que tiene un conjunto de instrucciones que realizan una tarea específica.
+- Una función es un **bloque de código** que tiene un conjunto de instrucciones que realizan una tarea específica.
 - Estas instrucciones son ejecutadas cuando la función es invocada dentro de un programa principal.
 - Todos los **sketches** (programas de Arduino) deben contener **como mínimo** las funciones _setup()_ y _loop()_, aunque éstas estén vacías. 
 
