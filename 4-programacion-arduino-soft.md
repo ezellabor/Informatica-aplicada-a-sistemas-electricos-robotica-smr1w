@@ -224,7 +224,9 @@ Estos ejercicios están diseñados para aprender el uso de la estructura condici
 | LED 1 (rojo) | Pin 9 |
 | Resistencia 220Ω | En serie con cada LED a GND |
 
-*Conexión:* Pin 9 → resistencia 220Ω → ánodo LED → cátodo LED → GND
+*Conexión:* Pin 9 → resistencia 220Ω → ánodo LED → cátodo LED → GND  
+
+![if-simple-circuito](figuras-imagenes/if-simple-con-led-test-circuit.png)
 
 ### Código
 
