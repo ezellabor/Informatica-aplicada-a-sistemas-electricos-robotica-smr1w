@@ -34,7 +34,7 @@ Será interpretado como comentarios todas	las líneas incluidas entre ```/*``` y
 - Todos los **sketches** (programas de Arduino) deben contener **como mínimo** las funciones _setup()_ y _loop()_, aunque éstas estén vacías. 
 
 ### Función setup()
-La primera función es ```void setup()``` es la parte encargada de las configuraciones. Es la **primera función a ejecutar** al correr el programa en el microcontrolador, se ejecuta **sólo una vez**, y se utiliza para configurar o inicializar los pines en un modo de trabajo específico, de entrada, o salida, además de la configuración de la comunicación y otras.  
+La primera función es ```void setup()``` y es la **primera función que se ejecuta** en un programa del microcontrolador. Se ejecuta **sólo una vez**, y se utiliza para **configurar o inicializar** los pines en un modo de trabajo específico, de entrada, o salida, además de la configuración de la comunicación y otras.  
 
 ```cpp
 void setup ()
@@ -46,7 +46,7 @@ void setup ()
 
 ### Función loop()  
 
-La segunda es ```void loop()```,  contiene las instrucciones que se ejecutaran **continuamente** como, lectura de entradas, señales de salida, etc. Esta función es el núcleo de todos los programas de Arduino y la que realiza la mayor parte de las tareas.  
+La segunda función es ```void loop()``` y contiene las instrucciones que se ejecutaran **continuamente** como, lectura de entradas, señales de salida, etc. Esta función es el núcleo de todos los programas de Arduino y la que realiza la mayor parte de las tareas.  
 
 ```cpp
 void loop ()
@@ -54,6 +54,7 @@ void loop ()
   Instrucción 2;
   Instrucción 3;
 }
+```
 
 #### Ejemplo:  
 
