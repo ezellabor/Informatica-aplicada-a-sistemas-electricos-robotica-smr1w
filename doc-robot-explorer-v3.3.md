@@ -50,3 +50,6 @@
   - Límites del grid (0-9 en ambos ejes)
   - Colisión con obstáculos
 - Mensajes informativos cuando movimiento no es posible
+
+## 7. Simulador
+[simulador](/robot-explorer-v33.html)
