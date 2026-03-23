@@ -77,7 +77,7 @@ void loop() {
 }
 ```
 
-### 1.3 Funciones básicas  
+### 1.3 Elementos básicos de un programa  
   
 ### Variables  
 
