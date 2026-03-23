@@ -192,7 +192,7 @@ void loop() {
 }
 ```
 
-### 1.6 Proyecto integrador: Robot Seguidor de Línea
+### 1.6 Proyecto integrador: Robot seguidor de línea
 
 #### Componentes 
 
@@ -302,9 +302,166 @@ void parar() {
 |No compila   |Error de sintaxis     |Revisar ; { } ()    |
 |No funciona  |Conexiones incorrectas|Verificar esquema   |
 |Valores raros|Pin mal configurado   |Revisar pinMode()   |
-|Se reinicia  |Consumo excesivo      |Alimentación externa|
+|Se reinicia  |Consumo excesivo      |Alimentación externa|  
 
-### 1.8 Ejercicios propuestos
+### 1.8 Serial Monitor: Comunicación serie en Arduino  
+
+### ¿Qué es?
+
+La comunicación serie (Serial) en Arduino es una forma de enviar y recibir datos **bit a bit** (uno detrás de otro) a través de pines o USB. Es un sistema de comunicación donde la información se transmite en secuencia por un solo canal (no en paralelo).
+
+### ¿Para qué sirve?
+
+- Enviar datos del Arduino al ordenador (ej: ver valores en el monitor serie).
+- Recibir datos desde el ordenador o otros dispositivos.
+- Comunicar Arduinos entre sí o con sensores, módulos (Bluetooth, WiFi, etc.).
+
+### Idea clave
+
+Es el **"idioma" básico** que usa Arduino para hablar con otros dispositivos.
+
+#### Serial.begin(velocidad)
+
+Inicia la comunicación serie.
+
+* **velocidad**: número de bits por segundo (baudios), por ejemplo `9600` o `115200`.
+
+Ejemplo:
+
+```cpp
+Serial.begin(9600);
+```
+
+---
+
+#### Serial.print(dato)
+
+Envía datos sin salto de línea.
+
+* **dato**: información a enviar (texto, número, variable, etc.).
+
+Ejemplo:
+
+```cpp
+Serial.print("Hola ");
+Serial.print(123);
+```
+
+Salida: `Hola 123`
+
+---
+
+#### Serial.println(dato)
+
+Envía datos con salto de línea.
+
+* **dato**: información a enviar.
+
+Ejemplo:
+
+```cpp
+Serial.println("Hola");
+Serial.println(123);
+```
+
+Salida:
+
+```
+Hola
+123
+```
+
+---
+
+#### Serial.available()
+
+Indica cuántos bytes hay disponibles para leer.
+
+* **sin parámetros**
+
+Ejemplo:
+
+```cpp
+if (Serial.available() > 0) {
+  // hay datos disponibles
+}
+```
+
+---
+
+#### Serial.read()
+
+Lee un byte recibido.
+
+* **sin parámetros**
+
+Ejemplo:
+
+```cpp
+char dato = Serial.read();
+```
+
+---
+
+#### Serial.write(dato)
+
+Envía datos en formato binario.
+
+* **dato**: valor numérico (0–255) o byte a enviar.
+
+Ejemplo:
+
+```cpp
+Serial.write(65);
+```
+
+Envía: `A` (ASCII 65)
+
+---
+
+#### Serial.readString()
+
+Lee una cadena completa desde el buffer.
+
+* **sin parámetros**
+
+Ejemplo:
+
+```cpp
+String texto = Serial.readString();
+```
+
+---
+
+#### Ejemplo completo
+
+```cpp
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    String texto = Serial.readString();
+    Serial.println(texto);
+  }
+}
+```
+
+---
+
+### Resumen de funciones 
+
+* `begin(velocidad)` → inicia comunicación
+* `print(dato)` → muestra sin salto
+* `println(dato)` → muestra con salto
+* `available()` → datos disponibles
+* `read()` → leer 1 byte
+* `write(dato)` → enviar en binario
+* `readString()` → leer texto completo
+
+
+### 1.9 Ejercicios propuestos
 
 1. Programa un semáforo con LEDs (rojo, ámbar, verde) con tiempos realistas
 1. Crea un sistema de alarma con sensor PIR y buzzer
