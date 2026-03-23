@@ -376,10 +376,10 @@ Ejemplo:
 
 ```cpp
 Serial.print("Hola ");
-Serial.print(123);
+Serial.print("mundo");
 ```
 
-Salida: `Hola 123`
+Salida: `Hola mundo`
 
 ---
 
