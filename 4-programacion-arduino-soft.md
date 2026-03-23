@@ -348,7 +348,7 @@ La comunicación serie (Serial) en Arduino es una forma de enviar y recibir dato
 
 #### Idea clave
 
-Es el **"idioma" básico** que usa Arduino para hablar con otros dispositivos.  
+Es el **"idioma"** básico que usa Arduino para **hablar** con otros dispositivos.  
 
 ---  
 
