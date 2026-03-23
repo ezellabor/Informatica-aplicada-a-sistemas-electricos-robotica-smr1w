@@ -9,13 +9,54 @@
 
 ```Programación de sistemas electrónicos```  
 
-### 1.1. ¿Qué es Arduino?  
+### 1.1. Entorno de programación (IDE). Arduino y Tinkercad  
 
-- Plataforma de hardware libre basada en microcontroladores
-- Incluye entorno de programación (IDE) sencillo
-- Amplia comunidad y documentación
+- Un entorno de programación es un software donde se escribe y prueba código para controlar dispositivos electrónicos, como Arduino.
+- Tinkercad permite simular placas y circuitos de Arduino directamente en el navegador, facilitando el aprendizaje sin riesgo, y sirve como paso previo a programar placas físicas (se puede trabajar con sensores y actuadores, y después pasar a Arduino para cargar los programas en proyectos reales con placas compatibles con sus microcontroladores).
+- En Tinkercad se tiene la opción de descargar el código del programa en **lenguaje C++** en formato archivo **.ino** que es el que lee el SW de Arduino que hace de **compilador e interfaz** de carga del programa al microcontrolador de la placa a través del puerto USB de esta.
 
-### 1.2 Estructura de un programa Arduino
+
+### 1.2 Estructura de un programa Arduino  
+
+### Sintaxis  
+
+- Los principales elementos  de sintaxis son el punto y coma **;** y las llaves **{ }**.
+- Toda instrucción debe terminar con un “punto  y  coma”  (;). Podrían ir varias instrucciones en un mismo renglón, siempre que vayan separadas por “;”.
+- Las llaves { } se usan para delimitar el inicio y el fin de un bloque de instrucciones (funciones, bucles de repetición y condicionales).
+
+#### Comentarios   
+Serán	comentarios	todas	las líneas incluidas entre ```/*``` y ```*/``` o 	todo	lo	que siga a ```//``` hasta el final de línea.
+Elementos de sintaxis
+
+#### Funciones  
+
+- Una función es un bloque de código que tiene un conjunto de instrucciones que realizan una tarea específica.
+- Estas instrucciones son ejecutadas cuando la función es invocada dentro de un programa principal.
+- Todos los **sketches** (programas de Arduino) deben contener **como mínimo** las funciones _setup()_ y _loop()_, aunque éstas estén vacías. 
+
+### Función setup()
+La primera función es ```void setup()``` es la parte encargada de las configuraciones. Es la **primera función a ejecutar** al correr el programa en el microcontrolador, se ejecuta **sólo una vez**, y se utiliza para configurar o inicializar los pines en un modo de trabajo específico, de entrada, o salida, además de la configuración de la comunicación y otras.  
+
+```cpp
+void setup ()
+{
+  Configuración 1;
+  Instrucción 1;
+}
+```
+
+### Función loop()  
+
+La segunda es ```void loop()```,  contiene las instrucciones que se ejecutaran **continuamente** como, lectura de entradas, señales de salida, etc. Esta función es el núcleo de todos los programas de Arduino y la que realiza la mayor parte de las tareas.  
+
+```cpp
+void loop ()
+{
+  Instrucción 2;
+  Instrucción 3;
+}
+
+#### Ejemplo:  
 
 ```cpp
 // Declaración de variables globales
