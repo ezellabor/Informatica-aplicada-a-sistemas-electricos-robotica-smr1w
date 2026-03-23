@@ -132,191 +132,109 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-### 1.5 Ejemplos 
+### 1.5 Ejercicios de Estructura Condicional `if` en Arduino con LEDs
 
-#### Ejemplo 1: Lectura de Sensor LDR
+Estos ejercicios están diseñados para aprender el uso de la estructura condicional `if` en Arduino utilizando **únicamente LEDs y resistencias**.
+
+### Ejercicio 1: LED encendido según valor de una variable
+
+**Objetivo:** Encender un LED si una variable supera un valor determinado.
+
+### Circuito
+
+| Componente | Pin Arduino |
+|------------|-------------|
+| LED 1 (rojo) | Pin 9 |
+| Resistencia 220Ω | En serie con cada LED a GND |
+
+*Conexión:* Pin 9 → resistencia 220Ω → ánodo LED → cátodo LED → GND
+
+### Código
 
 ```cpp
-int ldrPin = A0;
-int ledPin = 9;
+// Ejercicio 1: LED se enciende si la temperatura simulada supera los 25 grados
+// Solo se usan LEDs y resistencias
+
+const int ledPin = 9;
+int temperaturaSimulada = 30;  // valor que simula un sensor
 
 void setup() {
   pinMode(ledPin, OUTPUT);
-  Serial.begin(9600);
 }
 
 void loop() {
-  int valorLuz = analogRead(ldrPin);
-  Serial.print("Luz: ");
-  Serial.println(valorLuz);
-
-  // Encender LED si hay poca luz
-  if (valorLuz < 300) {
-    digitalWrite(ledPin, HIGH);
+  // Estructura condicional if
+  if (temperaturaSimulada > 25) {
+    digitalWrite(ledPin, HIGH);  // enciende LED si condición se cumple
   } else {
-    digitalWrite(ledPin, LOW);
+    digitalWrite(ledPin, LOW);   // apaga LED si no se cumple
   }
-
-  delay(100);
+  
+  // Pequeña pausa para visualizar
+  delay(1000);
 }
 ```
 
-#### Ejemplo 2: Control de Servomotor
+# Ejercicio 2: Dos LEDs con condición combinada (AND)
+
+## Objetivo
+Encender un LED amarillo si **ambas condiciones** se cumplen, y un LED verde si no se cumplen.
+
+## Material necesario
+- Placa Arduino (Uno, Nano o similar)
+- LED amarillo
+- LED verde
+- 2 resistencias de 220Ω
+- Protoboard
+- Cables jumper
+
+## Circuito
+
+| Componente | Pin Arduino |
+|------------|-------------|
+| LED amarillo | Pin 9 |
+| LED verde | Pin 10 |
+| Resistencia 220Ω | En serie con cada LED a GND |
+
+### Conexiones
+- Pin 9 → resistencia 220Ω → ánodo LED amarillo → cátodo LED amarillo → GND
+- Pin 10 → resistencia 220Ω → ánodo LED verde → cátodo LED verde → GND
+
+## Código
 
 ```cpp
-#include <Servo.h>
+// Ejercicio 2: LED amarillo se enciende si la temperatura es mayor a 20 
+// Y el nivel de luz es menor a 100
+// Si no se cumplen ambas, se enciende LED verde
 
-Servo miServo;
-int servoPin = 9;
+const int ledAmarillo = 9;
+const int ledVerde = 10;
+
+int temperatura = 25;   // valor simulado
+int nivelLuz = 80;      // valor simulado (0-255)
 
 void setup() {
-  miServo.attach(servoPin);
+  pinMode(ledAmarillo, OUTPUT);
+  pinMode(ledVerde, OUTPUT);
 }
 
 void loop() {
-  // Barrer de 0° a 180°
-  for (int angulo = 0; angulo <= 180; angulo++) {
-    miServo.write(angulo);
-    delay(15);
-  }
-
-  // Barrer de 180° a 0°
-  for (int angulo = 180; angulo >= 0; angulo--) {
-    miServo.write(angulo);
-    delay(15);
-  }
-}
-```
-
-#### Ejemplo 3: Sensor Ultrasónico HC-SR04
-
-```cpp
-int trigPin = 7;
-int echoPin = 8;
-
-void setup() {
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
-  Serial.begin(9600);
-}
-
-void loop() {
-  // Enviar pulso de trigger
-  digitalWrite(trigPin, LOW);
-  delayMicroseconds(2);
-  digitalWrite(trigPin, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
-
-  // Leer duración del echo
-  long duracion = pulseIn(echoPin, HIGH);
-
-  // Calcular distancia (velocidad del sonido = 343 m/s)
-  float distancia = duracion * 0.0343 / 2;
-
-  Serial.print("Distancia: ");
-  Serial.print(distancia);
-  Serial.println(" cm");
-
-  delay(200);
-}
-```
-
-### 1.6 Proyecto integrador: Robot seguidor de línea
-
-#### Componentes 
-
-- Arduino UNO
-- 2 sensores infrarrojos TCRT5000
-- Driver de motores L298N
-- 2 motores DC con ruedas
-- Chasis de robot
-- Batería/pilas
-
-#### Esquema de conexión
-
-```
-Sensores IR → Pines analógicos A0, A1
-Motor izquierdo → IN1, IN2, ENA del L298N
-Motor derecho → IN3, IN4, ENB del L298N
-L298N → Alimentación de batería
-```
-
-#### Código básico
-
-```cpp
-// Pines de sensores
-int sensorIzq = A0;
-int sensorDer = A1;
-
-// Pines de motores
-int motorIzq1 = 5;
-int motorIzq2 = 6;
-int motorDer1 = 9;
-int motorDer2 = 10;
-
-int velocidad = 150;  // 0-255
-
-void setup() {
-  pinMode(motorIzq1, OUTPUT);
-  pinMode(motorIzq2, OUTPUT);
-  pinMode(motorDer1, OUTPUT);
-  pinMode(motorDer2, OUTPUT);
-  Serial.begin(9600);
-}
-
-void loop() {
-  int valorIzq = analogRead(sensorIzq);
-  int valorDer = analogRead(sensorDer);
-
-  // Umbral para detectar línea negra
-  int umbral = 500;
-
-  if (valorIzq > umbral && valorDer > umbral) {
-    // Ambos en línea: avanzar
-    avanzar();
-  } else if (valorIzq > umbral) {
-    // Solo izquierdo en línea: girar izquierda
-    girarIzquierda();
-  } else if (valorDer > umbral) {
-    // Solo derecho en línea: girar derecha
-    girarDerecha();
+  // Condición compuesta con AND (&&)
+  if (temperatura > 20 && nivelLuz < 100) {
+    // Si ambas condiciones son verdaderas
+    digitalWrite(ledAmarillo, HIGH);
+    digitalWrite(ledVerde, LOW);
   } else {
-    // Ninguno en línea: parar
-    parar();
+    // Si alguna condición es falsa
+    digitalWrite(ledAmarillo, LOW);
+    digitalWrite(ledVerde, HIGH);
   }
+  
+  delay(1000);
 }
+```  
 
-void avanzar() {
-  analogWrite(motorIzq1, velocidad);
-  analogWrite(motorIzq2, 0);
-  analogWrite(motorDer1, velocidad);
-  analogWrite(motorDer2, 0);
-}
-
-void girarIzquierda() {
-  analogWrite(motorIzq1, 0);
-  analogWrite(motorIzq2, 0);
-  analogWrite(motorDer1, velocidad);
-  analogWrite(motorDer2, 0);
-}
-
-void girarDerecha() {
-  analogWrite(motorIzq1, velocidad);
-  analogWrite(motorIzq2, 0);
-  analogWrite(motorDer1, 0);
-  analogWrite(motorDer2, 0);
-}
-
-void parar() {
-  analogWrite(motorIzq1, 0);
-  analogWrite(motorIzq2, 0);
-  analogWrite(motorDer1, 0);
-  analogWrite(motorDer2, 0);
-}
-```
-
-### 1.7 Depuración y resolución de problemas
+### 1.6 Depuración y resolución de problemas
 
 #### Técnicas de depuración
 
@@ -334,7 +252,7 @@ void parar() {
 |Valores raros|Pin mal configurado   |Revisar pinMode()   |
 |Se reinicia  |Consumo excesivo      |Alimentación externa|  
 
-### 1.8 Serial Monitor: Comunicación serie en Arduino  
+### 1.7 Serial Monitor: Comunicación serie en Arduino  
 
 #### ¿Qué es?
 
@@ -493,7 +411,192 @@ void loop() {
 * `readString()` → leer texto completo.
 
 
-### 1.9 Ejercicios propuestos
+### 1.8 Ejemplos con Serial
+
+#### Ejemplo 1: Lectura de Sensor LDR
+
+```cpp
+int ldrPin = A0;
+int ledPin = 9;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int valorLuz = analogRead(ldrPin);
+  Serial.print("Luz: ");
+  Serial.println(valorLuz);
+
+  // Encender LED si hay poca luz
+  if (valorLuz < 300) {
+    digitalWrite(ledPin, HIGH);
+  } else {
+    digitalWrite(ledPin, LOW);
+  }
+
+  delay(100);
+}
+```
+
+#### Ejemplo 2: Control de Servomotor
+
+```cpp
+#include <Servo.h>
+
+Servo miServo;
+int servoPin = 9;
+
+void setup() {
+  miServo.attach(servoPin);
+}
+
+void loop() {
+  // Barrer de 0° a 180°
+  for (int angulo = 0; angulo <= 180; angulo++) {
+    miServo.write(angulo);
+    delay(15);
+  }
+
+  // Barrer de 180° a 0°
+  for (int angulo = 180; angulo >= 0; angulo--) {
+    miServo.write(angulo);
+    delay(15);
+  }
+}
+```
+
+#### Ejemplo 3: Sensor Ultrasónico HC-SR04
+
+```cpp
+int trigPin = 7;
+int echoPin = 8;
+
+void setup() {
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  // Enviar pulso de trigger
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  // Leer duración del echo
+  long duracion = pulseIn(echoPin, HIGH);
+
+  // Calcular distancia (velocidad del sonido = 343 m/s)
+  float distancia = duracion * 0.0343 / 2;
+
+  Serial.print("Distancia: ");
+  Serial.print(distancia);
+  Serial.println(" cm");
+
+  delay(200);
+}
+```
+
+### 1.9 Proyecto integrador: Robot seguidor de línea
+
+#### Componentes 
+
+- Arduino UNO
+- 2 sensores infrarrojos TCRT5000
+- Driver de motores L298N
+- 2 motores DC con ruedas
+- Chasis de robot
+- Batería/pilas
+
+#### Esquema de conexión
+
+```
+Sensores IR → Pines analógicos A0, A1
+Motor izquierdo → IN1, IN2, ENA del L298N
+Motor derecho → IN3, IN4, ENB del L298N
+L298N → Alimentación de batería
+```
+
+#### Código básico
+
+```cpp
+// Pines de sensores
+int sensorIzq = A0;
+int sensorDer = A1;
+
+// Pines de motores
+int motorIzq1 = 5;
+int motorIzq2 = 6;
+int motorDer1 = 9;
+int motorDer2 = 10;
+
+int velocidad = 150;  // 0-255
+
+void setup() {
+  pinMode(motorIzq1, OUTPUT);
+  pinMode(motorIzq2, OUTPUT);
+  pinMode(motorDer1, OUTPUT);
+  pinMode(motorDer2, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int valorIzq = analogRead(sensorIzq);
+  int valorDer = analogRead(sensorDer);
+
+  // Umbral para detectar línea negra
+  int umbral = 500;
+
+  if (valorIzq > umbral && valorDer > umbral) {
+    // Ambos en línea: avanzar
+    avanzar();
+  } else if (valorIzq > umbral) {
+    // Solo izquierdo en línea: girar izquierda
+    girarIzquierda();
+  } else if (valorDer > umbral) {
+    // Solo derecho en línea: girar derecha
+    girarDerecha();
+  } else {
+    // Ninguno en línea: parar
+    parar();
+  }
+}
+
+void avanzar() {
+  analogWrite(motorIzq1, velocidad);
+  analogWrite(motorIzq2, 0);
+  analogWrite(motorDer1, velocidad);
+  analogWrite(motorDer2, 0);
+}
+
+void girarIzquierda() {
+  analogWrite(motorIzq1, 0);
+  analogWrite(motorIzq2, 0);
+  analogWrite(motorDer1, velocidad);
+  analogWrite(motorDer2, 0);
+}
+
+void girarDerecha() {
+  analogWrite(motorIzq1, velocidad);
+  analogWrite(motorIzq2, 0);
+  analogWrite(motorDer1, 0);
+  analogWrite(motorDer2, 0);
+}
+
+void parar() {
+  analogWrite(motorIzq1, 0);
+  analogWrite(motorIzq2, 0);
+  analogWrite(motorDer1, 0);
+  analogWrite(motorDer2, 0);
+}
+```
+
+
+### 1.10 Ejercicios propuestos
 
 1. Programa un semáforo con LEDs (rojo, ámbar, verde) con tiempos realistas
 1. Crea un sistema de alarma con sensor PIR y buzzer
