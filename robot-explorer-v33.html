@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Explorer 3.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: #f5f7fa;
+            color: #333;
+            min-height: 100vh;
+            padding: 10px;
+            overflow: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            height: 97vh;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            color: white;
+            padding: 8px 15px;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h1 {
+            font-size: 1.4rem;
+            margin-bottom: 2px;
+        }
+        
+        .version {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        .main-content {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+        }
+        
+        .left-panel {
+            flex: 1;
+            background: #f8f9fa;
+            padding: 12px;
+            border-right: 1px solid #e9ecef;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        .right-panel {
+            flex: 0.8;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .panel {
+            margin-bottom: 12px;
+        }
+        
+        .editor textarea {
+            width: 100%;
+            height: 130px;
+            padding: 10px;
+            border: 2px solid #e9ecef;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            resize: none;
+            margin-bottom: 10px;
+            background: white;
+        }
+        
+        .status-bar {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .status-label {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .status-value {
+            color: #34495e;
+        }
+        
+        .consola {
+            width: 100%;
+            height: 180px;
+            background-color: #2c3e50;
+            color: #2ecc71;
+            padding: 10px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            overflow-y: auto;
+            font-size: 12px;
+            line-height: 1.4;
+            flex: 1;
+            border: 1px solid #34495e;
+        }
+        
+        .comandos {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+            margin-bottom: 10px;
+        }
+        
+        .comandos h3 {
+            color: #2c3e50;
+            margin-bottom: 6px;
+            font-size: 1rem;
+        }
+        
+        .comando {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            margin: 2px;
+            font-family: 'Courier New', monospace;
+            font-size: 11px;
+        }
+        
+        .comando-avanzado {
+            background: #e67e22;
+        }
+        
+        .ejemplos {
+            background: white;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+            margin-bottom: 10px;
+        }
+        
+        .ejemplos h3 {
+            color: #2c3e50;
+            margin-bottom: 6px;
+            font-size: 1rem;
+        }
+        
+        .ejemplo-btn {
+            background: #9b59b6;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 2px;
+            cursor: pointer;
+            font-size: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .ejemplo-btn:hover {
+            background: #8e44ad;
+            transform: translateY(-1px);
+        }
+        
+        .grid-container {
+            border: 2px solid #2c3e50;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            margin-bottom: 10px;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            background-color: #ecf0f1;
+        }
+        
+        .cell {
+            width: 35px;
+            height: 35px;
+            background-color: #ecf0f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: 1px solid #bdc3c7;
+        }
+        
+        .robot {
+            background-color: #3498db;
+            color: white;
+            border-radius: 3px;
+            border: 1px solid #2980b9;
+        }
+        
+        .obstaculo {
+            background-color: #8e44ad;
+            color: white;
+            border: 1px solid #732d91;
+        }
+        
+        .meta {
+            background-color: #2ecc71;
+            color: white;
+            border: 1px solid #27ae60;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .status-ejecutando {
+            background: #2ecc71;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .status-detendio {
+            background: #e74c3c;
+        }
+        
+        .status-listo {
+            background: #3498db;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .controls-vertical {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .controls-vertical button {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            font-size: 11px;
+            width: 100px;
+        }
+        
+        .ejecutar {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+        }
+        
+        .ejecutar:hover {
+            background: linear-gradient(135deg, #219653, #27ae60);
+            transform: translateY(-1px);
+        }
+        
+        .paso, .reiniciar {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+        }
+        
+        .paso:hover, .reiniciar:hover {
+            background: linear-gradient(135deg, #2980b9, #2471a3);
+            transform: translateY(-1px);
+        }
+        
+        @media (max-width: 1024px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .left-panel {
+                border-right: none;
+                border-bottom: 1px solid #e9ecef;
+            }
+            
+            .cell {
+                width: 25px;
+                height: 25px;
+                font-size: 12px;
+            }
+            
+            body {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Simulador Robot Explorer</h1>
+            <div class="version">Robótica | Prof. Ezequiel Llarena Borges</div>
+        </header>
+        
+        <div class="main-content">
+            <div class="left-panel">
+                <div class="panel editor">
+                    <textarea id="codigo" placeholder="Escribe tus comandos aquí...">
+# Trayectoria activada: Cuadrado
+repetir 4 veces
+  avanzar
+  avanzar
+  girar_derecha
+fin_repetir
+                    </textarea>
+                </div>
+                
+                <div class="ejemplos">
+                    <h3>Trayectorias predefinidas</h3>
+                    <button class="ejemplo-btn" onclick="cargarEjemplo('cuadrado')">Cuadrado</button>
+                    <button class="ejemplo-btn" onclick="cargarEjemplo('escalera')">Escalera</button>
+                    <button class="ejemplo-btn" onclick="cargarEjemplo('zigzag')">ZigZag</button>
+                    <button class="ejemplo-btn" onclick="cargarEjemplo('buscar_meta')">Buscar Meta</button>
+                </div>
+                
+                <div class="comandos">
+                    <h3>Movimientos y comandos disponibles</h3>
+                    <span class="comando">Avanzar</span>
+                    <span class="comando">Retroceder</span>
+                    <span class="comando">Girar_Derecha</span>
+                    <span class="comando">Girar_Izquierda</span>
+                    <span class="comando comando-avanzado">Repetir X veces</span>
+                    <span class="comando comando-avanzado">Fin_repetir</span>
+                    <span class="comando comando-avanzado"># Comentario</span>
+                </div>
+                
+                <div class="panel" style="flex: 1; display: flex; flex-direction: column;">
+                    <div class="consola" id="consola">
+                        > Robot Explorer 3.2: Sistema iniciado.
+                        > Esperando instrucciones...
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="status-bar">
+                    <div class="status-item">
+                        <span class="status-label">Pos:</span>
+                        <span class="status-value" id="posicion">(1,1)</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Dir:</span>
+                        <span class="status-value" id="direccion">Este</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Estado:</span>
+                        <span class="status-value" id="estado">
+                            <span class="status-indicator status-listo"></span>
+                            Listo
+                        </span>
+                    </div>
+                    <div class="status-item">
+                        <span class="status-label">Cmd:</span>
+                        <span class="status-value" id="contador-comandos">0</span>
+                    </div>
+                </div>
+                
+                <div class="grid-container">
+                    <div id="grid" class="grid"></div>
+                </div>
+                
+                <div class="controls-vertical">
+                    <button class="ejecutar" onclick="ejecutar()">Ejecutar</button>
+                    <button class="paso" onclick="ejecutarPaso()">Paso a Paso</button>
+                    <button class="reiniciar" onclick="reiniciar()">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuración del grid
+        const gridSize = 10;
+        let robot = {
+            x: 1,
+            y: 1,
+            direction: 0 // 0: Este, 1: Sur, 2: Oeste, 3: Norte
+        };
+        
+        let obstaculos = [
+            {x: 3, y: 2},
+            {x: 5, y: 4},
+            {x: 7, y: 6},
+            {x: 2, y: 8},
+            {x: 8, y: 3}
+        ];
+        
+        let meta = {x: 8, y: 8};
+        let ejecutando = false;
+        let comandos = [];
+        let indiceComando = 0;
+        let pilaBucles = [];
+        
+        // Ejemplos de código
+        const ejemplos = {
+            cuadrado: `# Dibujar un cuadrado
+repetir 4 veces
+  avanzar
+  avanzar
+  avanzar
+  girar_derecha
+fin_repetir`,
+
+            escalera: `# Patrón de escalera
+repetir 3 veces
+  avanzar
+  avanzar
+  girar_derecha
+  avanzar
+  girar_izquierda
+fin_repetir`,
+
+            zigzag: `# Patrón zigzag
+repetir 4 veces
+  avanzar
+  avanzar
+  girar_derecha
+  avanzar
+  girar_izquierda
+  avanzar
+fin_repetir`,
+
+            buscar_meta: `# Buscar la meta evitando obstáculos
+repetir 10 veces
+  si_puede_avanzar entonces
+    avanzar
+  sino
+    girar_derecha
+  fin_si
+fin_repetir`
+        };
+
+        // Cargar ejemplo
+        function cargarEjemplo(nombre) {
+            if (ejemplos[nombre]) {
+                document.getElementById('codigo').value = ejemplos[nombre];
+                agregarMensajeConsola(`> Ejemplo "${nombre}" cargado.`);
+            }
+        }
+
+        // Inicializar el grid
+        function inicializarGrid() {
+            const grid = document.getElementById('grid');
+            grid.innerHTML = '';
+            grid.style.gridTemplateColumns = `repeat(${gridSize}, 1fr)`;
+            
+            for (let y = 0; y < gridSize; y++) {
+                for (let x = 0; x < gridSize; x++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    cell.id = `cell-${x}-${y}`;
+                    
+                    // Verificar si es la posición del robot
+                    if (x === robot.x && y === robot.y) {
+                        cell.classList.add('robot');
+                        cell.textContent = getRobotIcon();
+                    }
+                    // Verificar si es un obstáculo
+                    else if (obstaculos.some(obs => obs.x === x && obs.y === y)) {
+                        cell.classList.add('obstaculo');
+                    }
+                    // Verificar si es la meta
+                    else if (x === meta.x && y === meta.y) {
+                        cell.classList.add('meta');
+                    }
+                    
+                    grid.appendChild(cell);
+                }
+            }
+            
+            actualizarEstado();
+        }
+        
+        // Obtener icono del robot según dirección
+        function getRobotIcon() {
+            const icons = ['→', '↓', '←', '↑'];
+            return icons[robot.direction];
+        }
+        
+        // Actualizar estado del robot en la UI
+        function actualizarEstado() {
+            document.getElementById('posicion').textContent = `(${robot.x},${robot.y})`;
+            
+            const direcciones = ['Este', 'Sur', 'Oeste', 'Norte'];
+            document.getElementById('direccion').textContent = direcciones[robot.direction];
+            
+            // Actualizar estado del sistema
+            const estadoElement = document.getElementById('estado');
+            estadoElement.innerHTML = '';
+            const indicator = document.createElement('span');
+            
+            if (ejecutando) {
+                indicator.className = 'status-indicator status-ejecutando';
+                estadoElement.appendChild(indicator);
+                estadoElement.appendChild(document.createTextNode('Ejecutando'));
+            } else if (indiceComando > 0) {
+                indicator.className = 'status-indicator status-detendio';
+                estadoElement.appendChild(indicator);
+                estadoElement.appendChild(document.createTextNode('Detenido'));
+            } else {
+                indicator.className = 'status-indicator status-listo';
+                estadoElement.appendChild(indicator);
+                estadoElement.appendChild(document.createTextNode('Listo'));
+            }
+            
+            // Actualizar contador de comandos
+            document.getElementById('contador-comandos').textContent = comandos.length;
+        }
+        
+        // Procesar código y expandir bucles
+        function procesarCodigo(codigo) {
+            const lineas = codigo.split('\n').map(l => l.trim()).filter(l => l.length > 0 && !l.startsWith('#'));
+            const comandosExpandidos = [];
+            const pilaBucles = [];
+            
+            for (let i = 0; i < lineas.length; i++) {
+                const linea = lineas[i];
+                
+                // Detectar inicio de bucle
+                if (linea.startsWith('repetir') && linea.includes('veces')) {
+                    const veces = parseInt(linea.match(/\d+/)[0]);
+                    pilaBucles.push({
+                        tipo: 'repetir',
+                        veces: veces,
+                        comandos: [],
+                        indiceInicio: comandosExpandidos.length
+                    });
+                }
+                // Detectar fin de bucle
+                else if (linea === 'fin_repetir') {
+                    if (pilaBucles.length === 0) {
+                        throw new Error('fin_repetir sin repetir correspondiente');
+                    }
+                    
+                    const bucle = pilaBucles.pop();
+                    const comandosBucle = bucle.comandos;
+                    
+                    // Expandir el bucle
+                    for (let j = 0; j < bucle.veces; j++) {
+                        comandosExpandidos.push(...comandosBucle);
+                    }
+                }
+                // Comando normal
+                else if (pilaBucles.length > 0) {
+                    // Agregar comando al bucle actual
+                    pilaBucles[pilaBucles.length - 1].comandos.push(linea);
+                } else {
+                    // Comando fuera de bucle
+                    comandosExpandidos.push(linea);
+                }
+            }
+            
+            if (pilaBucles.length > 0) {
+                throw new Error('Bucle sin cerrar: falta fin_repetir');
+            }
+            
+            return comandosExpandidos;
+        }
+        
+        // Ejecutar todos los comandos
+        function ejecutar() {
+            try {
+                const codigo = document.getElementById('codigo').value;
+                comandos = procesarCodigo(codigo);
+                indiceComando = 0;
+                ejecutando = true;
+                
+                document.getElementById('consola').innerHTML = '> Procesando bucles...<br>> Iniciando ejecución automática...<br>';
+                actualizarEstado();
+                
+                ejecutarSiguienteComando();
+            } catch (error) {
+                agregarMensajeConsola(`> ERROR: ${error.message}`);
+                ejecutando = false;
+                actualizarEstado();
+            }
+        }
+        
+        // Ejecutar paso a paso
+        function ejecutarPaso() {
+            if (!ejecutando) {
+                try {
+                    const codigo = document.getElementById('codigo').value;
+                    comandos = procesarCodigo(codigo);
+                    indiceComando = 0;
+                    ejecutando = true;
+                    document.getElementById('consola').innerHTML = '> Procesando bucles...<br>> Modo paso a paso activado<br>';
+                    actualizarEstado();
+                } catch (error) {
+                    agregarMensajeConsola(`> ERROR: ${error.message}`);
+                    return;
+                }
+            }
+            
+            if (indiceComando < comandos.length) {
+                ejecutarComando(comandos[indiceComando]);
+                indiceComando++;
+                
+                if (indiceComando >= comandos.length) {
+                    agregarMensajeConsola('> Ejecución completada.');
+                    ejecutando = false;
+                    actualizarEstado();
+                }
+            }
+        }
+        
+        // Ejecutar siguiente comando en modo automático
+        function ejecutarSiguienteComando() {
+            if (indiceComando < comandos.length && ejecutando) {
+                ejecutarComando(comandos[indiceComando]);
+                indiceComando++;
+                
+                if (indiceComando < comandos.length) {
+                    setTimeout(ejecutarSiguienteComando, 600);
+                } else {
+                    agregarMensajeConsola('> Ejecución completada.');
+                    ejecutando = false;
+                    actualizarEstado();
+                }
+            }
+        }
+        
+        // Ejecutar un comando específico
+        function ejecutarComando(comando) {
+            agregarMensajeConsola(`> Ejecutando: ${comando}`);
+            
+            switch(comando) {
+                case 'avanzar':
+                    avanzar();
+                    break;
+                case 'retroceder':
+                    retroceder();
+                    break;
+                case 'girar_derecha':
+                    girarDerecha();
+                    break;
+                case 'girar_izquierda':
+                    girarIzquierda();
+                    break;
+                default:
+                    if (comando.startsWith('repetir') || comando === 'fin_repetir') {
+                        // Estos comandos ya fueron procesados
+                    } else {
+                        agregarMensajeConsola(`> Comando desconocido: ${comando}`);
+                    }
+            }
+            
+            // Verificar si llegó a la meta
+            if (robot.x === meta.x && robot.y === meta.y) {
+                agregarMensajeConsola('¡Felicidades! El robot ha llegado a la meta.');
+                ejecutando = false;
+                actualizarEstado();
+            }
+        }
+        
+        // Mover el robot hacia adelante
+        function avanzar() {
+            let newX = robot.x;
+            let newY = robot.y;
+            
+            switch(robot.direction) {
+                case 0: // Este
+                    newX++;
+                    break;
+                case 1: // Sur
+                    newY++;
+                    break;
+                case 2: // Oeste
+                    newX--;
+                    break;
+                case 3: // Norte
+                    newY--;
+                    break;
+            }
+            
+            // Verificar límites del grid y obstáculos
+            if (newX >= 0 && newX < gridSize && newY >= 0 && newY < gridSize && 
+                !obstaculos.some(obs => obs.x === newX && obs.y === newY)) {
+                // Limpiar celda anterior
+                document.getElementById(`cell-${robot.x}-${robot.y}`).classList.remove('robot');
+                document.getElementById(`cell-${robot.x}-${robot.y}`).textContent = '';
+                
+                // Actualizar posición
+                robot.x = newX;
+                robot.y = newY;
+                
+                // Actualizar celda nueva
+                const nuevaCelda = document.getElementById(`cell-${robot.x}-${robot.y}`);
+                nuevaCelda.classList.add('robot');
+                nuevaCelda.textContent = getRobotIcon();
+                
+                actualizarEstado();
+            } else {
+                agregarMensajeConsola('> No se puede avanzar: obstáculo o límite del grid');
+            }
+        }
+        
+        // Mover el robot hacia atrás
+        function retroceder() {
+            let newX = robot.x;
+            let newY = robot.y;
+            
+            switch(robot.direction) {
+                case 0: // Este
+                    newX--;
+                    break;
+                case 1: // Sur
+                    newY--;
+                    break;
+                case 2: // Oeste
+                    newX++;
+                    break;
+                case 3: // Norte
+                    newY++;
+                    break;
+            }
+            
+            // Verificar límites del grid y obstáculos
+            if (newX >= 0 && newX < gridSize && newY >= 0 && newY < gridSize && 
+                !obstaculos.some(obs => obs.x === newX && obs.y === newY)) {
+                // Limpiar celda anterior
+                document.getElementById(`cell-${robot.x}-${robot.y}`).classList.remove('robot');
+                document.getElementById(`cell-${robot.x}-${robot.y}`).textContent = '';
+                
+                // Actualizar posición
+                robot.x = newX;
+                robot.y = newY;
+                
+                // Actualizar celda nueva
+                const nuevaCelda = document.getElementById(`cell-${robot.x}-${robot.y}`);
+                nuevaCelda.classList.add('robot');
+                nuevaCelda.textContent = getRobotIcon();
+                
+                actualizarEstado();
+            } else {
+                agregarMensajeConsola('> No se puede retroceder: obstáculo o límite del grid');
+            }
+        }
+        
+        // Girar el robot a la derecha
+        function girarDerecha() {
+            robot.direction = (robot.direction + 1) % 4;
+            document.getElementById(`cell-${robot.x}-${robot.y}`).textContent = getRobotIcon();
+            actualizarEstado();
+        }
+        
+        // Girar el robot a la izquierda
+        function girarIzquierda() {
+            robot.direction = (robot.direction + 3) % 4;
+            document.getElementById(`cell-${robot.x}-${robot.y}`).textContent = getRobotIcon();
+            actualizarEstado();
+        }
+        
+        // Reiniciar simulación
+        function reiniciar() {
+            robot = { x: 1, y: 1, direction: 0 };
+            ejecutando = false;
+            indiceComando = 0;
+            comandos = [];
+            pilaBucles = [];
+            inicializarGrid();
+            document.getElementById('consola').innerHTML = '> Sistema reiniciado. Robot Explorer 3.0 listo.';
+            actualizarEstado();
+        }
+        
+        // Agregar mensaje a la consola
+        function agregarMensajeConsola(mensaje) {
+            const consola = document.getElementById('consola');
+            consola.innerHTML += mensaje + '<br>';
+            consola.scrollTop = consola.scrollHeight;
+        }
+        
+        // Inicializar la aplicación
+        document.addEventListener('DOMContentLoaded', inicializarGrid);
+    </script>
+</body>
+</html>
