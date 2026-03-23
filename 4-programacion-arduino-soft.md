@@ -175,12 +175,12 @@ void loop() {
 }
 ```
 
-# Ejercicio 2: Dos LEDs con condición combinada (AND)
+### Ejercicio 2: Dos LEDs con condición combinada (AND)
 
-## Objetivo
+### Objetivo
 Encender un LED amarillo si **ambas condiciones** se cumplen, y un LED verde si no se cumplen.
 
-## Material necesario
+### Material necesario
 - Placa Arduino (Uno, Nano o similar)
 - LED amarillo
 - LED verde
@@ -188,7 +188,7 @@ Encender un LED amarillo si **ambas condiciones** se cumplen, y un LED verde si 
 - Protoboard
 - Cables jumper
 
-## Circuito
+### Circuito
 
 | Componente | Pin Arduino |
 |------------|-------------|
@@ -200,7 +200,7 @@ Encender un LED amarillo si **ambas condiciones** se cumplen, y un LED verde si 
 - Pin 9 → resistencia 220Ω → ánodo LED amarillo → cátodo LED amarillo → GND
 - Pin 10 → resistencia 220Ω → ánodo LED verde → cátodo LED verde → GND
 
-## Código
+### Código
 
 ```cpp
 // Ejercicio 2: LED amarillo se enciende si la temperatura es mayor a 20 
