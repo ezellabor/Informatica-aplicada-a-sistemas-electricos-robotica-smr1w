@@ -118,6 +118,42 @@ switch (variable) {
 }
 ```
 
+#### Operadores Lógicos
+
+| Operador | Nombre | Ejemplo | Descripción |
+|----------|--------|---------|-------------|
+| `&&` | AND (Y) | `if (x > 5 && y < 10)` | Devuelve `true` si **ambas** condiciones son verdaderas. |
+| `\|\|` | OR (O) | `if (x > 5 \|\| y < 10)` | Devuelve `true` si **al menos una** de las condiciones es verdadera. |
+| `!` | NOT (NO) | `if (!presionado)` | Invierte el valor: `true` se convierte en `false` y viceversa. |
+
+#### Tabla de verdad
+
+| A | B | `A && B` | `A \|\| B` | `!A` |
+|---|---|----------|------------|------|
+| true | true | true | true | false |
+| true | false | false | true | false |
+| false | true | false | true | true |
+| false | false | false | false | true |
+
+#### Ejemplos prácticos en Arduino
+
+```cpp
+// Ejemplo AND (&&) - ambas condiciones deben cumplirse
+if (temperatura > 20 && humedad < 80) {
+  digitalWrite(ledVerde, HIGH);  // se enciende solo si ambas son verdaderas
+}
+
+// Ejemplo OR (||) - al menos una condición debe cumplirse
+if (boton1 == LOW || boton2 == LOW) {
+  digitalWrite(ledRojo, HIGH);   // se enciende si alguno de los botones está presionado
+}
+
+// Ejemplo NOT (!) - invierte el valor
+if (!digitalRead(botonPin)) {
+  digitalWrite(led, HIGH);       // se enciende cuando el botón NO está presionado
+}
+```
+
 #### Bucles
 
 ```cpp
