@@ -232,7 +232,111 @@ void loop() {
   
   delay(1000);
 }
-```  
+```
+
+### Ejercicio 3: Tres LEDs con condición múltiple (if - else if - else)
+
+### Objetivo
+Encender un LED diferente según el rango en el que se encuentre una variable simulada.
+
+### Materiales necesarios
+- Placa Arduino (Uno, Nano o similar)
+- LED rojo
+- LED amarillo
+- LED verde
+- 3 resistencias de 220Ω
+- Protoboard
+- Cables jumper
+
+### Circuito
+
+| Componente | Pin Arduino |
+|------------|-------------|
+| LED rojo | Pin 9 |
+| LED amarillo | Pin 10 |
+| LED verde | Pin 11 |
+| Resistencia 220Ω | En serie con cada LED a GND |
+
+### Conexiones
+- Pin 9 → resistencia 220Ω → ánodo LED rojo → cátodo LED rojo → GND
+- Pin 10 → resistencia 220Ω → ánodo LED amarillo → cátodo LED amarillo → GND
+- Pin 11 → resistencia 220Ω → ánodo LED verde → cátodo LED verde → GND
+
+### Código
+
+```cpp
+// Ejercicio 3: LEDs que indican diferentes rangos de temperatura
+// Rojo = temperatura alta (mayor a 30)
+// Amarillo = temperatura media (entre 20 y 30 inclusive)
+// Verde = temperatura baja (menor a 20)
+
+const int ledRojo = 9;
+const int ledAmarillo = 10;
+const int ledVerde = 11;
+
+int temperatura = 35;   // valor simulado (puede cambiar)
+
+void setup() {
+  pinMode(ledRojo, OUTPUT);
+  pinMode(ledAmarillo, OUTPUT);
+  pinMode(ledVerde, OUTPUT);
+}
+
+void loop() {
+  // Estructura if - else if - else
+  if (temperatura > 30) {
+    // Temperatura alta: enciende solo LED rojo
+    digitalWrite(ledRojo, HIGH);
+    digitalWrite(ledAmarillo, LOW);
+    digitalWrite(ledVerde, LOW);
+  } 
+  else if (temperatura >= 20 && temperatura <= 30) {
+    // Temperatura media: enciende solo LED amarillo
+    digitalWrite(ledRojo, LOW);
+    digitalWrite(ledAmarillo, HIGH);
+    digitalWrite(ledVerde, LOW);
+  } 
+  else {
+    // Temperatura baja (menor a 20): enciende solo LED verde
+    digitalWrite(ledRojo, LOW);
+    digitalWrite(ledAmarillo, LOW);
+    digitalWrite(ledVerde, HIGH);
+  }
+  
+  delay(1000);
+}
+```
+## Explicación del código
+
+| Elemento | Descripción |
+|----------|-------------|
+| `if (temperatura > 30)` | Primera condición: si la temperatura es mayor a 30, se enciende el LED rojo. |
+| `else if (temperatura >= 20 && temperatura <= 30)` | Segunda condición: si la temperatura está entre 20 y 30 (inclusive), se enciende el LED amarillo. |
+| `else` | Si ninguna de las condiciones anteriores se cumple (temperatura < 20), se enciende el LED verde. |
+
+### Pruebas sugeridas
+
+| Temperatura | Condición que se cumple | LED que se enciende |
+|-------------|-------------------------|---------------------|
+| 35 | `temperatura > 30` | Rojo |
+| 25 | `temperatura >= 20 && temperatura <= 30` | Amarillo |
+| 15 | `else` (ninguna anterior) | Verde |
+| 30 | `temperatura >= 20 && temperatura <= 30` | Amarillo |
+| 20 | `temperatura >= 20 && temperatura <= 30` | Amarillo |
+
+### Conceptos aprendidos
+- Estructura condicional `if - else if - else`
+- Evaluación de múltiples condiciones en orden jerárquico
+- Operador lógico `&&` (AND) combinado con comparadores
+- Uso de rangos en condiciones
+- Control de tres LEDs con una sola estructura condicional
+
+### Variante para practicar
+Modifica el código para:
+- Cambiar los rangos de temperatura
+- Agregar un cuarto LED con una nueva condición
+- Hacer que la temperatura varíe automáticamente con el tiempo
+- Utilizar un potenciómetro (si se desea agregar más componentes) para controlar la temperatura en tiempo real
 
 ### 1.6 Depuración y resolución de problemas
 
