@@ -54,47 +54,12 @@ Weight	25 g
 
 ### Tipos de memoria en Arduino Uno (ATmega328P)
 
-#### Flash Memory (32 KB)
-**Finalidad:**  Almacenar el **programa (sketch)** del Arduino.
+| Tipo de memoria | Tamaño | Finalidad | Volátil | Características clave | Ejemplo |
+|----------------|--------|----------|--------|----------------------|---------|
+| Flash          | 32 KB  | Almacenar el programa (sketch) | No | Se mantiene sin energía, se escribe al cargar el programa | Código `setup()` y `loop()` |
+| SRAM           | 2 KB   | Almacenar variables temporales | Sí | Muy rápida, se borra al apagar, muy limitada | `int contador = 0;` |
+| EEPROM         | 1 KB   | Almacenar datos permanentes | No | Escritura limitada, más lenta, conserva datos sin energía | Configuración del usuario |
 
-**Características:**
-- No volátil (no se borra al apagar).
-- Se escribe al cargar el programa.
-
-**Ejemplo:**
-El código de `setup()` y `loop()` se guarda aquí.
-
----
-
-#### SRAM (2 KB)
-**Finalidad:**  Almacenar **variables y datos temporales** durante la ejecución.
-
-**Características:**
-- Volátil (se borra al apagar).
-- Muy limitada (2 KB).
-
-**Ejemplo:**
-```cpp
-int contador = 0;
-La variable se guarda en SRAM.
-```
-
-#### EEPROM (1 KB)
-
-**Finalidad:**  Almacenar datos permanentes que deben conservarse tras apagar.
-
-**Características:** 
-- No volátil.
-- Escritura limitada (ciclos finitos).
-- Más lenta que SRAM.
-
-_Ejemplo: Guardar configuraciones (ej: valores de usuario).
-
-💡 Idea clave
-
-* Flash → programa
-* SRAM → datos temporales
-* EEPROM → datos permanentes
 
 ### 2 - Descripción general de los componentes de Arduino UNO  
 ##   
