@@ -11,7 +11,26 @@
 
 Las placas Arduino detectan el entorno al recibir información de numerosos sensores e influyen en su entorno controlando luces, motores y otros actuadores.
 Arduino es la plataforma de desarrollo de microcontroladores que será la base de tus proyectos.
-Construirás los circuitos e interfaces para la interacción y le indicarás al microcontrolador cómo interactuar con otros componentes.
+Construirás los circuitos e interfaces para la interacción y le indicarás al microcontrolador cómo interactuar con otros componentes.  
+
+Tech specs
+Microcontroller	ATmega328P
+Operating Voltage	5V
+Input Voltage (recommended)	7-12V
+Input Voltage (limit)	6-20V
+Digital I/O Pins	14 (of which 6 provide PWM output)
+PWM Digital I/O Pins	6
+Analog Input Pins	6
+DC Current per I/O Pin	20 mA
+DC Current for 3.3V Pin	50 mA
+Flash Memory	32 KB (ATmega328P) of which 0.5 KB used by bootloader
+SRAM	2 KB (ATmega328P)
+EEPROM	1 KB (ATmega328P)
+Clock Speed	16 MHz
+LED_BUILTIN	13
+Length	68.6 mm
+Width	53.4 mm
+Weight	25 g
 
 
 
@@ -31,8 +50,51 @@ Construirás los circuitos e interfaces para la interacción y le indicarás al 
 | **7** | `Conector de alimentación (Jack DC)` | Entrada recomendada: 7–12V | *Permite alimentar la placa externamente. Incluye regulador de voltaje.* | Alimentación externa |
 | **8** | `LED TX y RX` | Indicadores de comunicación serie | *Parpadean durante la transmisión y recepción de datos UART.* | Comunicación Serial |
 | **9** | `Puerto USB Tipo B` | Comunicación USB-Serial | *Permite alimentar la placa, cargar programas y comunicación con el PC.* | `Serial.begin()`, `Serial.println()` |
-| **10** | `Botón RESET` | Reinicio hardware | *Reinicia el microcontrolador y vuelve a ejecutar el programa desde el inicio.* | Reset manual |
+| **10** | `Botón RESET` | Reinicio hardware | *Reinicia el microcontrolador y vuelve a ejecutar el programa desde el inicio.* | Reset manual |  
 
+### Tipos de memoria en Arduino Uno (ATmega328P)
+
+#### Flash Memory (32 KB)
+**Finalidad:**  Almacenar el **programa (sketch)** del Arduino.
+
+**Características:**
+- No volátil (no se borra al apagar).
+- Se escribe al cargar el programa.
+
+**Ejemplo:**
+El código de `setup()` y `loop()` se guarda aquí.
+
+---
+
+#### SRAM (2 KB)
+**Finalidad:**  Almacenar **variables y datos temporales** durante la ejecución.
+
+**Características:**
+- Volátil (se borra al apagar).
+- Muy limitada (2 KB).
+
+**Ejemplo:**
+```cpp
+int contador = 0;
+La variable se guarda en SRAM.
+```
+
+#### EEPROM (1 KB)
+
+**Finalidad:**  Almacenar datos permanentes que deben conservarse tras apagar.
+
+**Características:** 
+- No volátil.
+- Escritura limitada (ciclos finitos).
+- Más lenta que SRAM.
+
+_Ejemplo: Guardar configuraciones (ej: valores de usuario).
+
+💡 Idea clave
+
+* Flash → programa
+* SRAM → datos temporales
+* EEPROM → datos permanentes
 
 ### 2 - Descripción general de los componentes de Arduino UNO  
 ##   
