@@ -1,7 +1,7 @@
 ![Módulo](https://img.shields.io/badge/Módulo-Informática_aplicada_a_sistemas_electrónicos_(Robótica)-orange?style=for-the-badge)
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
-![Práctica](https://img.shields.io/badge/Práctica-Programación_de_Arduino._Uso_de_condicional_múltiple-green?style=for-the-badge)    
+![Práctica 5](https://img.shields.io/badge/Práctica_5-Programación_de_Arduino._Uso_de_condicional_múltiple-green?style=for-the-badge)    
 
 ```Programación de sistemas electrónicos```  
 
@@ -31,8 +31,6 @@
 - Pin 9 → resistencia 220Ω → ánodo LED rojo → cátodo LED rojo → GND
 - Pin 10 → resistencia 220Ω → ánodo LED amarillo → cátodo LED amarillo → GND
 - Pin 11 → resistencia 220Ω → ánodo LED verde → cátodo LED verde → GND
-
-![if-else-multiple-circuit](figuras-imagenes/if-else-multiple-led-test-circuit.png)
 
 ### 5. Código C++ (Sketch Arduino)
 
@@ -95,13 +93,6 @@ void loop() {
 | 15 | `else` (ninguna anterior) | Verde |
 | 30 | `temperatura >= 20 && temperatura <= 30` | Amarillo |
 | 20 | `temperatura >= 20 && temperatura <= 30` | Amarillo |
-
-### Conceptos aprendidos
-- Estructura condicional `if - else if - else`
-- Evaluación de múltiples condiciones en orden jerárquico
-- Operador lógico `&&` (AND) combinado con comparadores
-- Uso de rangos en condiciones
-- Control de tres LEDs con una sola estructura condicional
 
 ### 8. Ejercicios prácticos a realizar
 Modifica el código para:
