@@ -97,9 +97,9 @@ void loop() {
 ### 8. Ejercicios prácticos a realizar
 Modifica el código para:
 1. Cambiar los rangos de temperatura siguientes:
-    - Led Rojo: temperatura superior a 40ºC (inclusive)
-    - Led Amarillo: temperatura entre 25ºC y 40ºC
-    - Led Verde: temperatura por debajo de los 25ºC
+    1.1 LED rojo: temperatura superior a 40ºC (inclusive)
+    1.2 LED amarillo: temperatura entre 25ºC y 40ºC
+    1.3 LED verde: temperatura por debajo de los 25ºC
 2. Agregar un cuarto LED con una nueva condición (temperatura <= 0) conservando los rangos cambiados en el punto anterior.
 <!-- 4. Hacer que la temperatura varíe automáticamente con el tiempo -->
 3. Añadir al circuito un potenciómetro para controlar la temperatura en tiempo real
