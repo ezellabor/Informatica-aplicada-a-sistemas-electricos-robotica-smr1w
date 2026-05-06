@@ -7,8 +7,7 @@
 
 ### 1. Objetivo de la práctica
 - Usar la estructura condicional `if` en Arduino utilizando tres LEDs con `if` múltiple (if - else if - else)
-- Encender un LED diferente según el rango en el que se encuentre el valor de una variable simulada
-- .
+- Encender un LED diferente según el rango en el que se encuentre el valor de una variable simulada.
 
 ### 2. Elementos necesarios
 - Placa Arduino (Uno, Nano o similar)
