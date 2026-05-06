@@ -7,7 +7,8 @@
 
 ### 1. Objetivo de la práctica
 - Usar la estructura condicional `if` en Arduino utilizando tres LEDs con `if` múltiple (if - else if - else)
-- Encender un LED diferente según el rango en el que se encuentre una variable simulada.
+- Encender un LED diferente según el rango en el que se encuentre el valor de una variable simulada
+- .
 
 ### 2. Elementos necesarios
 - Placa Arduino (Uno, Nano o similar)
@@ -96,11 +97,57 @@ void loop() {
 
 ### 8. Ejercicios prácticos a realizar
 Modifica el código para:
-1. Cambiar los rangos de temperatura
-2. Agregar un cuarto LED con una nueva condición (temperatura <= 0)
-3. Hacer que la temperatura varíe automáticamente con el tiempo
-4. Utilizar un potenciómetro (si se desea agregar más componentes) para controlar la temperatura en tiempo real
+1. Cambiar los rangos de temperatura siguientes:
+    - Led Rojo: temperatura superior a 40ºC (inclusive)
+    - Led Amarillo: temperatura entre 25ºC y 40ºC
+    - Led Verde: temperatura por debajo de los 25ºC
+2. Agregar un cuarto LED con una nueva condición (temperatura <= 0) conservando los rangos cambiados en el punto anterior.
+<!-- 4. Hacer que la temperatura varíe automáticamente con el tiempo -->
+3. Añadir al circuito un potenciómetro para controlar la temperatura en tiempo real
 
+#### Criterios de calificación
+- Hasta el apartado 5 (funcionando el código y circuito) --> 5 puntos
+- Apartado 8.1 --> 1'5 puntos
+- Apartado 8.2 --> 1 punto
+- Apartado 8.3 --> 2,5 puntos  
+
+<!--
+SOLUCIÓN:
+2.
+void loop() {
+  // Estructura if - else if - else
+  if (temperatura > 30) {
+    // Temperatura alta: enciende solo LED rojo
+    digitalWrite(ledRojo, HIGH);
+    digitalWrite(ledAmarillo, LOW);
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledBlanco, LOW);
+  } 
+  else if (temperatura >= 20 && temperatura <= 30) {
+    // Temperatura media: enciende solo LED amarillo
+    digitalWrite(ledRojo, LOW);
+    digitalWrite(ledAmarillo, HIGH);
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledBlanco, LOW);
+  } 
+  else if (temperatura > 0 && temperatura < 20) {
+  Temperatura baja (menor a 20 y mayor que cero): enciende solo LED verde
+    // Temperatura media: enciende solo LED amarillo
+    digitalWrite(ledRojo, LOW);
+    digitalWrite(ledAmarillo, LOW);
+    digitalWrite(ledVerde, HIGH);
+    digitalWrite(ledBlanco, LOW);
+  }   
+  else {
+    // Temperatura baja extrema (menor a 0): enciende solo LED blanco
+    digitalWrite(ledRojo, LOW);
+    digitalWrite(ledAmarillo, LOW);
+    digitalWrite(ledVerde, LOW);
+    digitalWrite(ledBlanco, HIGH);
+  }
+  delay(1000);
+}
+-->
 ### 9. Recursos de apoyo y consulta
 
 ### Bibliografía recomendada
