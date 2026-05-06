@@ -101,6 +101,7 @@ Modifica el código para:
     - LED amarillo: temperatura entre 25ºC y 40ºC
     - LED verde: temperatura por debajo de los 25ºC
 2. Agregar un cuarto LED con una nueva condición (temperatura <= 0) conservando los rangos cambiados en el punto anterior.
+   Hacer pruebas como mínimo con los valores de tempatura 0, -5, 25 y -9.
 <!-- 4. Hacer que la temperatura varíe automáticamente con el tiempo -->
 3. Añadir al circuito un potenciómetro para controlar la temperatura en tiempo real.
 
