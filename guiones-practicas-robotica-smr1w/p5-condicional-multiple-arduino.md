@@ -1,7 +1,7 @@
 ![Módulo](https://img.shields.io/badge/Módulo-Informática_aplicada_a_sistemas_electrónicos_(Robótica)-orange?style=for-the-badge)
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
-![Práctica 5](https://img.shields.io/badge/Práctica_5-Programación_de_Arduino._Uso_de_condicional_múltiple-green?style=for-the-badge)    
+![Práctica 5](https://img.shields.io/badge/Práctica_5-Programación_de_Arduino._Uso_de_condicional_múltiple-orange?style=for-the-badge)    
 
 ```Programación de sistemas electrónicos```  
 
