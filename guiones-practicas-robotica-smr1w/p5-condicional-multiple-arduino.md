@@ -150,20 +150,20 @@ void loop() {
 -->
 ### 9. Recursos de apoyo y consulta
 
-### Bibliografía recomendada
+#### Bibliografía 
 
 - “Arduino Cookbook” - Michael Margolis
 - “Getting Started with Arduino” - Massimo Banzi
 - “Practical Electronics for Inventors” - Paul Scherz
 
-### Recursos online
+#### Recursos online
 
 - [Arduino.cc](https://www.arduino.cc) - Documentación oficial
 - [Tinkercad Circuits](https://www.tinkercad.com) - Simulador online
 - [Instructables](https://www.instructables.com) - Proyectos paso a paso
 - [SparkFun](https://learn.sparkfun.com) - Tutoriales de electrónica
 
-### Canales de YouTube recomendados
+#### Canales de YouTube 
 
 - ElectroBOOM (explicaciones con humor)
 - GreatScott! (proyectos DIY)
