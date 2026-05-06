@@ -6,7 +6,7 @@
 ```Programación de sistemas electrónicos```  
 
 ### 1. Objetivo de la práctica
-- Usar la estructura condicional `if` en Arduino utilizando tres LEDs con condición múltiple (if - else if - else)
+- Usar la estructura condicional `if` en Arduino utilizando tres LEDs con `if` múltiple (if - else if - else)
 - Encender un LED diferente según el rango en el que se encuentre una variable simulada.
 
 ### 2. Elementos necesarios
