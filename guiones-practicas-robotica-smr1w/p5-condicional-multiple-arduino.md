@@ -6,7 +6,7 @@
 ```Programación de sistemas electrónicos```  
 
 ### 1. Objetivo de la práctica
-- Usar la estructura condicional `if` en Arduino utilizando tres LEDs con `if` múltiple (if - else if - else)
+- Usar la estructura condicional `if` en Arduino utilizando tres LEDs con `if` múltiple (if - else if - else).  
 - Encender un LED diferente según el rango en el que se encuentre el valor de una variable simulada.
 
 ### 2. Elementos necesarios
@@ -102,7 +102,7 @@ Modifica el código para:
     - LED verde: temperatura por debajo de los 25ºC
 2. Agregar un cuarto LED con una nueva condición (temperatura <= 0) conservando los rangos cambiados en el punto anterior.
 <!-- 4. Hacer que la temperatura varíe automáticamente con el tiempo -->
-3. Añadir al circuito un potenciómetro para controlar la temperatura en tiempo real
+3. Añadir al circuito un potenciómetro para controlar la temperatura en tiempo real.
 
 #### Criterios de calificación
 - Hasta el apartado 5 (funcionando el código y circuito) --> 5 puntos
