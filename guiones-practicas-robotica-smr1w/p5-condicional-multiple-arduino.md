@@ -103,7 +103,7 @@ Modifica el código para:
 2. Agregar un cuarto LED con una nueva condición (temperatura <= 0) conservando los rangos cambiados en el punto anterior.
    Probar el correcto funcionamiento del circuito con el nuevo LED y condición añadidos, como mínimo con los valores de temperatura 0, -5, 25 y -9.
 <!-- 4. Hacer que la temperatura varíe automáticamente con el tiempo -->
-3. Añadir al circuito un potenciómetro para controlar la temperatura en tiempo real.
+3. Añadir al circuito un potenciómetro para controlar la temperatura en tiempo real (Opcional).
 
 #### Criterios de calificación
 - Hasta el apartado 5 (funcionando el código y circuito) --> 5 puntos
