@@ -71,7 +71,7 @@ Comenzando en el sentido de las agujas del reloj desde el centro superior:
 |-------------------|---------------------------|----------------------------|
 | `Pin de referencia analógica (AREF)` | Referencia ADC | *Define el voltaje de referencia para las entradas analógicas mediante analogReference().* |
 | `Tierra digital (GND)` | 0V referencia | *Proporciona referencia de tierra para el sistema digital.* |
-| `Pines digitales 2–13` | 12 pines I/O | *Entradas y salidas digitales configurables mediante pinMode(), digitalRead() y digitalWrite().* |
+| `Pines digitales 1–13` | 14 pines I/O | *Entradas y salidas digitales configurables mediante pinMode(), digitalRead() y digitalWrite().* |
 | `Pines 0 (RX) y 1 (TX)` | UART TTL | *Comunicación serie. No deben usarse como I/O digital si se utiliza Serial.* |
 | `Botón de reinicio (RESET)` | Reset hardware | *Reinicia el microcontrolador forzando la ejecución desde el inicio.* |
 | `Programador ICSP` | SPI programación | *Permite programar el microcontrolador directamente mediante interfaz SPI (Interfaz Periférica Serie) que es un protocolo de comunicación que permite a Arduino intercambiar datos de forma rápida y eficiente con otros dispositivos..* |
