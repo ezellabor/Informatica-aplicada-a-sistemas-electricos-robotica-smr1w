@@ -58,7 +58,7 @@ Weight	25 g
 |----------------|--------|----------|--------|----------------------|---------|
 | **Flash**      | 32 KB  | Almacenar el programa (sketch) | No | _Se mantiene sin energía, se escribe al cargar el programa_ | Código `setup()` y `loop()` |
 | **SRAM**       | 2 KB   | Almacenar variables temporales | Sí | _Muy rápida, se borra al apagar, muy limitada_ | `int contador = 0;` |
-| **EEPROM**     | 1 KB   | Almacenar datos permanentes | No | Escritura limitada, más lenta, conserva datos sin energía_ | Configuración del usuario |
+| **EEPROM**     | 1 KB   | Almacenar datos permanentes | No | _Escritura limitada, más lenta, conserva datos sin energía_ | Configuración del usuario |
 
 
 ### 2 - Descripción general de los componentes de Arduino UNO  
