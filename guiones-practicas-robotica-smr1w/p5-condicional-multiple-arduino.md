@@ -98,7 +98,7 @@ void loop() {
 Modifica el código para:
 1. Cambiar los rangos de temperatura siguientes:
     - LED rojo: temperatura superior a 40ºC (inclusive)
-    - LED amarillo: temperatura entre 25ºC (incluído) y 40ºC
+    - LED amarillo: temperatura entre 25ºC (inclusive) y 40ºC
     - LED verde: temperatura por debajo de los 25ºC
 2. Agregar un cuarto LED con una nueva condición (temperatura <= 0) conservando los rangos cambiados en el punto anterior.
    Probar el correcto funcionamiento del circuito con el nuevo LED y condición añadidos, como mínimo con los valores de temperatura 0, -5, 25 y -9.
