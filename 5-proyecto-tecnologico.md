@@ -148,4 +148,30 @@ flowchart TD
 
 ```
 
+### 3 - Diagrama UML de COmponentes n
+
+```mermaid
+
+classDiagram
+    class SensorHumedad {
+        +pinAnalogico
+        +leerValor()
+    }
+
+    class Arduino {
+        +procesarDatos()
+        +enviarSerial()
+    }
+
+    class Servomotor {
+        +posicion
+        +mover()
+    }
+
+    SensorHumedad --> Arduino : envía datos
+    Arduino --> Servomotor : controla
+
+```
+
+
 
