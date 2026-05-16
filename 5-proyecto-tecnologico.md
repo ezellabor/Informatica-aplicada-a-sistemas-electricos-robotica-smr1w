@@ -198,7 +198,7 @@ flowchart TB
 ---  
 
 
-# EcoDrop SMR  
+<!--# EcoDrop SMR  
 ### Sistema Inteligente de Riego Automatizado
 
 <p align="center">
@@ -244,4 +244,4 @@ Diseñado como proyecto educativo para **1º SMR**, integra:
 - Bajo coste de implementación  
 
 ---
-
+-->
