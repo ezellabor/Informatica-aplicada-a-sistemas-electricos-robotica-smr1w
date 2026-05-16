@@ -176,6 +176,23 @@ sequenceDiagram
     end
 
 ```
+### Diagrama de Despliegue (Deyploment)  
+
+```mermaid
+
+flowchart TB
+    subgraph Dispositivo
+        Arduino
+        Sensor
+        Servo
+    end
+
+    Usuario -->|Observa| Dispositivo
+    Arduino -->|USB| PC[Ordenador]
+
+```
+
+---  
 
 
 
