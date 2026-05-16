@@ -195,4 +195,50 @@ flowchart TB
 ---  
 
 
+# EcoDrop SMR  
+### Sistema Inteligente de Riego Automatizado
+
+<p align="center">
+  <img src="images/boceto.png" width="400" alt="EcoDrop SMR">
+</p>
+
+<p align="center">
+  <b>Automatiza el cuidado de tus plantas con tecnología accesible</b><br>
+  Proyecto educativo de electrónica, programación y diseño 3D
+</p>
+
+---
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-active-success" />
+  <img src="https://img.shields.io/badge/version-1.0-blue" />
+  <img src="https://img.shields.io/badge/license-MIT-green" />
+  <img src="https://img.shields.io/badge/platform-Arduino-lightgrey" />
+  <img src="https://img.shields.io/badge/3D%20Printing-ready-orange" />
+</p>
+
+---
+
+## Descripción
+
+**EcoDrop SMR** es un sistema automatizado que monitoriza la humedad del suelo y activa un mecanismo de riego simulado mediante un servomotor.
+
+Diseñado como proyecto educativo para **1º SMR**, integra:
+
+- Electrónica básica
+- Programación en Arduino
+- Diseño e impresión 3D
+- Metodologías ágiles
+
+---
+
+## Características
+
+- Lectura de humedad en tiempo real  
+- Activación automática del sistema de riego  
+- Diseño modular y escalable  
+- Carcasa personalizada en 3D  
+- Bajo coste de implementación  
+
+---
 
