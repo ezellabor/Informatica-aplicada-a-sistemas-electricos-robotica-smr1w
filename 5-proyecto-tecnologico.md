@@ -197,6 +197,39 @@ flowchart TB
 
 ---  
 
+## Justificación del proyecto
+
+El problema identificado es la falta de mantenimiento adecuado de plantas en entornos domésticos o de oficina debido a descuidos o falta de tiempo.
+
+Este sistema aporta:
+
+- Automatización
+- Ahorro de recursos
+- Mejora del mantenimiento vegetal
+- Introducción a tecnologías IoT
+
+Además, tiene valor educativo al integrar múltiples áreas técnicas en un único proyecto.
+
+## Metodología
+
+Se ha utilizado una combinación de:
+
+## 1. Design Thinking
+
+- Empatía: Identificación del problema
+- Definición: Necesidad de automatización
+- Ideación: Diseño del sistema
+- Prototipado: Construcción del dispositivo
+- Testeo: Validación del funcionamiento
+
+## 2. Metodologías Ágiles (Scrum simplificado)
+
+El desarrollo se ha dividido en sprints:
+
+- **Sprint 1:** Electrónica y programación
+- **Sprint 2:** Diseño 3D
+- **Sprint 3:** Integración final
+
 
 <!--# EcoDrop SMR  
 ### Sistema Inteligente de Riego Automatizado
