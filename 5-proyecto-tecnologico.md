@@ -212,7 +212,7 @@ Además, tiene valor educativo al integrar múltiples áreas técnicas en un ún
 
 ## Metodología
 
-Se ha utilizado una combinación de:
+Se utilizará una combinación de:
 
 ## 1. Design Thinking
 
@@ -224,7 +224,7 @@ Se ha utilizado una combinación de:
 
 ## 2. Metodologías Ágiles (Scrum simplificado)
 
-El desarrollo se ha dividido en sprints:
+El desarrollo del sistema de riego inteligente se dividirá en los siguientes sprints:
 
 - **Sprint 1:** Electrónica y programación
 - **Sprint 2:** Diseño 3D
