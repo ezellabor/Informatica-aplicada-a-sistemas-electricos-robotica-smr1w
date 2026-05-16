@@ -116,3 +116,23 @@ flowchart LR
     end
 ```
 
+### 2 - Diagrama de FLujo (Lógica del programa)  
+
+```mermaid
+flowchart TD
+    Inicio --> LeerSensor[Leer valor del sensor]
+    LeerSensor --> Decision{¿Humedad > 700?}
+
+    Decision -- Sí --> ActivarServo[Activar servomotor (90°)]
+    ActivarServo --> Espera1[Esperar 2s]
+
+    Decision -- No --> DesactivarServo[Desactivar servomotor (0°)]
+
+    Espera1 --> Espera2[Esperar 1s]
+    DesactivarServo --> Espera2
+
+    Espera2 --> LeerSensor
+
+```
+
+
