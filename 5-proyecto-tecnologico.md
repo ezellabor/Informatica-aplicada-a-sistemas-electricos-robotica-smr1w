@@ -315,9 +315,16 @@ Aquí tienes la estructura del desarrollo técnico organizada en una tabla compa
 | **Entregable / Hito** | Circuito funcional en la protoboard que reacciona a la humedad. | Pieza física real recién salida de la impresora 3D. | "EcoDrop SMR" funcionando, protegido y listo para producción. |  
 
 
+--  
+| Por Hacer (To Do) | En Progreso (In Progress) | Hecho (Done) |
+|-------------------|--------------------------|--------------|
+| **Sprint 1: Electrónica y Código**<br>- [ ] Cablear el sensor de humedad y el servo a la placa Arduino.<br>- [ ] Escribir y cargar el código en el Arduino IDE.<br>- [ ] Calibrar el sensor (apuntar el valor en seco y en húmedo). | El equipo está montando el circuito o depurando los fallos del código en el ordenador. | **Hito 1:** El servo se mueve automáticamente al meter el sensor en un vaso seco. |
+| **Sprint 2: Diseño e Impresión 3D**<br>- [ ] Tomar medidas con calibre de la placa Arduino y el servo.<br>- [ ] Diseñar la carcasa en Tinkercad (con agujeros para cables).<br>- [ ] Laminar el diseño (.STL) en Cura/PrusaSlicer a 0.28mm.<br>- [ ] Lanzar la pieza a la impresora 3D. | El equipo está modelando en 3D o la impresora está fabricando la carcasa en tiempo real. | **Hito 2:** La pieza física está impresa y los componentes encajan en ella. |
+| **Sprint 3: Integración y Cierre**<br>- [ ] Ensamblar el Arduino y el servo dentro de la caja 3D.<br>- [ ] Hacer el test final del sistema completo en la maceta.<br>- [ ] Redactar la documentación técnica obligatoria. | El equipo está atornillando los componentes y preparando la presentación del proyecto. | **Hito 3 (¡Éxito!):** El dispositivo "EcoDrop SMR" funciona de forma autónoma. |
 
 
---# EcoDrop SMR  
+
+<!-- EcoDrop SMR  
 ### Sistema Inteligente de Riego Automatizado
 
 <p align="center">
