@@ -68,11 +68,6 @@ EcoDrop SMR es una solución IoT básica orientada a la monitorización de humed
 
 ## Arquitectura del sistema
 
-
-
-
----
-
 ### 1 - Diagrama de Arquitectura  
 
 ```mermaid  
@@ -101,31 +96,6 @@ flowchart TD
     Activar --> Espera
     Reposo --> Espera
     Espera --> Leer
-```
-
-### 3 - Diagrama UML de Componentes  
-
-```mermaid
-
-classDiagram
-    class SensorHumedad {
-        +pinAnalogico
-        +leerValor()
-    }
-
-    class Arduino {
-        +procesarDatos()
-        +enviarSerial()
-    }
-
-    class Servomotor {
-        +posicion
-        +mover()
-    }
-
-    SensorHumedad --> Arduino : envía datos
-    Arduino --> Servomotor : controla
-
 ```
 
 ### Sketch
@@ -160,6 +130,33 @@ void loop() {
 }
 
 ```
+
+### 3 - Diagrama UML de Componentes  
+
+```mermaid
+
+classDiagram
+    class SensorHumedad {
+        +pinAnalogico
+        +leerValor()
+    }
+
+    class Arduino {
+        +procesarDatos()
+        +enviarSerial()
+    }
+
+    class Servomotor {
+        +posicion
+        +mover()
+    }
+
+    SensorHumedad --> Arduino : envía datos
+    Arduino --> Servomotor : controla
+
+```
+
+
 
 ### 4 - Diagrama de Secuencia  
 
