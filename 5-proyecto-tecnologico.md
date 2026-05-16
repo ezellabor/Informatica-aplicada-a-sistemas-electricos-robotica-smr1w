@@ -100,7 +100,7 @@ EcoDrop SMR es una solución IoT básica orientada a la monitorización de humed
 
 ---
 
-### 1 - Diagrama de  Arquitectura  
+### 1 - Diagrama de Arquitectura  
 
 ```mermaid  
 
@@ -116,9 +116,21 @@ flowchart LR
     end
 ```
 
-### 2 - Diagrama de FLujo (Lógica del programa)  
+### 2 - Diagrama de FLujo (Lógica del Sistema)  
 
 ```mermaid
+
+flowchart TD
+    Inicio --> Leer
+    Leer --> Decision{¿Seco?}
+    Decision -- Sí --> Activar
+    Decision -- No --> Reposo
+    Activar --> Espera
+    Reposo --> Espera
+    Espera --> Leer
+```
+
+```mermaid  
 
 flowchart TD
     Inicio --> LeerSensor[Leer valor del sensor]
