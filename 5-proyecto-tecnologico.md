@@ -301,8 +301,23 @@ void loop() {
   }
   delay(1000);
 }
+```
 
-<!--# EcoDrop SMR  
+## 
+
+Aquí tienes la estructura del desarrollo técnico organizada en una tabla comparativa. De esta forma, los alumnos pueden ver de un solo vistazo el objetivo, las tareas y el resultado esperado de cada etapa del proyecto.
+
+| Fase Técnica | Sprint 1: Electrónica y Código | Sprint 2: Contenedor Físico (3D) | Sprint 3: Integración y Test |
+|-------------|-------------------------------|----------------------------------|------------------------------|
+| **Objetivo Principal** | Crear el "cerebro" y la lógica del sistema de riego. | Diseñar y fabricar la carcasa protectora del dispositivo. | Ensamblar todos los componentes y validar el producto final. |
+| **Herramientas clave** | Arduino IDE, componentes electrónicos, protoboard. | Tinkercad (Diseño 3D), Cura/PrusaSlicer (Laminado). | Destornillador/pegamento, vaso con tierra seca y húmeda. |
+| **Tareas del Alumno** | - Conectar el sensor de humedad y el servo al Arduino.<br>- Picar el código base.<br>- Calibrar los valores del sensor en el monitor serie. | - Medir el Arduino y el servo.<br>- Diseñar la caja con ranuras para cables y soporte del motor.<br>- Configurar el laminador (perfil rápido) e imprimir. | - Alojar el Arduino en la caja 3D.<br>- Fijar el servomotor en su anclaje exterior.<br>- Realizar la prueba real de funcionamiento (seco vs. húmedo). |
+| **Entregable / Hito** | Circuito funcional en la protoboard que reacciona a la humedad. | Pieza física real recién salida de la impresora 3D. | "EcoDrop SMR" funcionando, protegido y listo para producción. |  
+
+
+
+
+--# EcoDrop SMR  
 ### Sistema Inteligente de Riego Automatizado
 
 <p align="center">
@@ -349,3 +364,4 @@ Diseñado como proyecto educativo para **1º SMR**, integra:
 
 ---
 -->
+
