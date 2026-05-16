@@ -130,25 +130,7 @@ flowchart TD
     Espera --> Leer
 ```
 
-```mermaid  
-
-flowchart TD
-    Inicio --> LeerSensor[Leer valor del sensor]
-    LeerSensor --> Decision{¿Humedad > 700?}
-
-    Decision -- Sí --> ActivarServo[Activar servomotor (90°)]
-    ActivarServo --> Espera1[Esperar 2s]
-
-    Decision -- No --> DesactivarServo[Desactivar servomotor (0°)]
-
-    Espera1 --> Espera2[Esperar 1s]
-    DesactivarServo --> Espera2
-
-    Espera2 --> LeerSensor
-
-```
-
-### 3 - Diagrama UML de COmponentes n
+### 3 - Diagrama UML de Componentes  
 
 ```mermaid
 
