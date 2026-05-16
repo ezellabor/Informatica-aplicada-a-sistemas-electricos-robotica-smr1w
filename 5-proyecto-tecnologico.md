@@ -119,6 +119,7 @@ flowchart LR
 ### 2 - Diagrama de FLujo (Lógica del programa)  
 
 ```mermaid
+
 flowchart TD
     Inicio --> LeerSensor[Leer valor del sensor]
     LeerSensor --> Decision{¿Humedad > 700?}
