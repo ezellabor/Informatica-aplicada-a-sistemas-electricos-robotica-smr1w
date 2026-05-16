@@ -9,9 +9,16 @@
 
 ```Circuito electrónico (Arduino) + Lógica programable (C++) + Impresión 3D + Integración en proyecto ágil```  
 
-## EcoDrop SMR
+## EcoDrop SMR: Sistema de riego automatizado para plantas basado en Arduino. 
 
-Sistema de riego automatizado para plantas basado en Arduino.
+**EcoDrop SMR** es un sistema automatizado que monitoriza la humedad del suelo y activa un mecanismo de riego simulado mediante un servomotor.
+
+Diseñado como proyecto educativo para **1º SMR**, integra:
+
+- Electrónica básica
+- Programación en Arduino
+- Diseño e impresión 3D
+- Metodologías ágiles
 
 ### Objetivo
 Dispositivo que mide la humedad del suelo y simula el riego mediante un servomotor o LEDs.
