@@ -42,40 +42,6 @@ Dispositivo que mide la humedad del suelo y simula el riego mediante un servomot
 2. Si el suelo está seco → activa servo
 3. Si está húmedo → permanece en reposo
 
-### Sketch
-
-```cpp
-
-#include <Servo.h>
-
-const int sensorPin = A0;
-int valorHumedad = 0;
-Servo miServo;
-
-void setup() {
-  Serial.begin(9600);
-  miServo.attach(9);
-  miServo.write(0);
-}
-
-void loop() {
-  valorHumedad = analogRead(sensorPin);
-  Serial.print("Humedad del suelo: ");
-  Serial.println(valorHumedad);
-
-  if (valorHumedad > 700) {
-    miServo.write(90);
-    delay(2000);
-  } else {
-    miServo.write(0);
-  }
-
-  delay(1000);
-}
-
-```
-
-
 ---
 
 # EcoDrop SMR
@@ -159,6 +125,39 @@ classDiagram
 
     SensorHumedad --> Arduino : envía datos
     Arduino --> Servomotor : controla
+
+```
+
+### Sketch
+
+```cpp
+
+#include <Servo.h>
+
+const int sensorPin = A0;
+int valorHumedad = 0;
+Servo miServo;
+
+void setup() {
+  Serial.begin(9600);
+  miServo.attach(9);
+  miServo.write(0);
+}
+
+void loop() {
+  valorHumedad = analogRead(sensorPin);
+  Serial.print("Humedad del suelo: ");
+  Serial.println(valorHumedad);
+
+  if (valorHumedad > 700) {
+    miServo.write(90);
+    delay(2000);
+  } else {
+    miServo.write(0);
+  }
+
+  delay(1000);
+}
 
 ```
 
