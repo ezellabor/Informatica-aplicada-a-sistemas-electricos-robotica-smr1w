@@ -412,6 +412,25 @@ La siguiente tabla permite a los alumnos visualizar, de un solo vistazo, el obje
 
 ---
 
+---
+
+## Tablero Kanban del Proyecto
+
+Este tablero divide las fases en tareas específicas y estados de desarrollo. Sirve para que el equipo gestione el día a día del proyecto, moviendo las tareas desde la columna de la izquierda hacia la derecha a medida que se completan.
+
+| Por Hacer (To Do) | En Progreso (In Progress) | Hecho (Done) |
+| :--- | :--- | :--- |
+| **Sprint 1: Electrónica y Código**<br>  *   [ ] Cablear el sensor de humedad y el servo a la placa Arduino.<br>  *   [ ] Escribir y cargar el código en el Arduino IDE.<br>  *   [ ] Calibrar el sensor (apuntar el valor en seco y en húmedo). | El equipo está montando el circuito o depurando los fallos del código en el ordenador. | **Hito 1:** El servo se mueve automáticamente al meter el sensor en un vaso seco. |
+| **Sprint 2: Diseño e Impresión 3D**<br>  *   [ ] Tomar medidas con calibre de la placa Arduino y el servo.<br>  *   [ ] Diseñar la carcasa en Tinkercad (con agujeros para cables).<br>  *   [ ] Laminar el diseño (`.STL`) en Cura/PrusaSlicer a 0.28mm.<br>  *   [ ] Lanzar la pieza a la impresora 3D. | El equipo está modelando en 3D o la impresora está fabricando la carcasa en tiempo real. | **Hito 2:** La pieza física está impresa y los componentes encajan en ella. |
+| **Sprint 3: Integración y Cierre**<br>  *   [ ] Ensamblar el Arduino y el servo dentro de la caja 3D.<br>  *   [ ] Hacer el test final del sistema completo en la maceta.<br>  *   [ ] Redactar la documentación técnica obligatoria. | El equipo está atornillando los componentes y preparando la presentación del proyecto. | **Hito 3 (¡Éxito!):** El dispositivo "EcoDrop SMR" funciona de forma autónoma. |
+
+---
+
+### 💡 Consejo de aplicación para el Aula
+
+Si dispones de una pizarra física en el taller, dibuja estas tres columnas (**Por Hacer**, **En Progreso**, **Hecho**). Pide a los alumnos que apunten cada una de las subtareas de la tabla en notas adhesivas (Post-its). 
+
+Visualizar físicamente cómo las tareas avanzan hacia la derecha refuerza la cultura Agile, mantiene al equipo enfocado y les aporta una gran satisfacción visual al ver completado su propio progreso.  
 ## Cómo usar esta tabla en el aula (Consejo Kanban)
 
 Puedes proyectar esta tabla en clase o imprimirla en gran formato. 
