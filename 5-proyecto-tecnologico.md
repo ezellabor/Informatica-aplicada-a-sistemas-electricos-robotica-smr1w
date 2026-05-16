@@ -66,7 +66,19 @@ EcoDrop SMR es una solución IoT básica orientada a la monitorización de humed
 
 ---
 
-## Arquitectura del sistema
+## Arquitectura del sistema  
+
+# Tabla resumen de diagramas UML aplicados al proyecto
+
+| Diagrama UML | Propósito | Aplicación en el proyecto |
+|--------------|-----------|----------------------------|
+| **Diagrama de casos de uso** | Representar interacciones entre actores y el sistema | Usuario (riego manual/monitoreo) y sistema (lectura de sensores, activación de bomba) |
+| **Diagrama de clases** | Modelar estructura estática del software | Clases: `SensorHumedad`, `BombaRiego`, `Controlador`, `LED_Estado` |
+| **Diagrama de secuencia** | Mostrar interacciones temporales entre objetos | Secuencia de lectura del sensor → envío a controlador → activación de bomba |
+| **Diagrama de actividades** | Flujo de control del sistema | Ciclo: leer humedad → comparar umbral → regar si es necesario → esperar |
+| **Diagrama de estados** | Estados posibles de un objeto | Estados del sistema: `Reposo`, `Midiendo`, `Regando`, `Alerta` |
+| **Diagrama de despliegue** | Arquitectura física del sistema | Nodo: ESP32/Arduino, sensores, bomba, servidor IoT (opcional) |
+
 
 ### 1 - Diagrama de Arquitectura  
 
@@ -230,6 +242,65 @@ El desarrollo del sistema de riego inteligente se dividirá en los siguientes sp
 - **Sprint 2:** Diseño 3D
 - **Sprint 3:** Integración final
 
+- # Proyecto Final de Módulo: "EcoDrop SMR"
+
+**Objetivo:** Crear un dispositivo que mida la humedad de una planta y, mediante un servomotor (físico) o LED, simule la apertura de una válvula de agua, protegido por una carcasa diseñada e impresa en 3D.
+
+---
+
+## Fase 1: Empatía y Diseño de la Solución (Metodología Design Thinking)
+
+Antes de tocar un cable, hay que entender qué vamos a construir.
+
+* **El Problema:** A los informáticos del centro se les mueren las plantas de la oficina por falta de tiempo o descuidos.
+* **La Solución:** Un dispositivo compacto que avise visualmente cuando la planta necesite agua y simule el riego.
+* **El Boceto (Scrapbooking):** Pide a los alumnos que dibujen en un papel cómo se imaginan la caja contenedora del Arduino y dónde irá el sensor.
+
+---
+
+## Fase 2: Desarrollo Técnico por "Sprints" (Metodología Agile)
+
+Dividiremos el proyecto en 3 "Sprints" (tareas cortas con un objetivo funcional). Si algo falla, es más fácil saber en qué fase nos hemos quedado.
+
+### Sprint 1: La Electrónica y el Código (Arduino)
+Montaremos el cerebro del proyecto en una protoboard.
+
+#### Componentes necesarios:
+* 1 Arduino Uno (o Nano)
+* 1 Sensor de humedad de suelo (YL-69 o similar)
+* 1 Servomotor (SG90) o en su defecto 2 LEDs (Verde = Ok, Rojo = Agua)
+* Cables de salto (Jumpers)
+
+#### El Código (Simplificado):
+```cpp
+#include <Servo.h>
+
+const int sensorPin = A0;
+int valorHumedad = 0;
+Servo miServo;
+
+void setup() {
+  Serial.begin(9600);
+  miServo.attach(9); // Servomotor al pin 9
+  miServo.write(0);  // Posición inicial (Cerrado)
+}
+
+void loop() {
+  valorHumedad = analogRead(sensorPin);
+  Serial.print("Humedad del suelo: ");
+  Serial.println(valorHumedad);
+
+  // NOTA: Los sensores analógicos dan valores más bajos cuanto más húmedos están
+  if (valorHumedad > 700) { 
+    // Suelo seco -> "Abrimos válvula"
+    miServo.write(90); 
+    delay(2000); // Mantiene abierto 2 segundos
+  } else {
+    // Suelo húmedo -> "Cerramos válvula"
+    miServo.write(0);
+  }
+  delay(1000);
+}
 
 <!--# EcoDrop SMR  
 ### Sistema Inteligente de Riego Automatizado
