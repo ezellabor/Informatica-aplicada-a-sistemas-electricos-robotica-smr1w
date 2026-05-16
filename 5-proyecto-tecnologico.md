@@ -155,5 +155,27 @@ classDiagram
 
 ```
 
+### 4 - Diagrama de Secuencia  
+
+```mermaid
+
+sequenceDiagram
+    participant Sensor
+    participant Arduino
+    participant Servo
+
+    loop Cada 1 segundo
+        Sensor->>Arduino: Valor de humedad
+        Arduino->>Arduino: Evaluar condición
+
+        alt Suelo seco
+            Arduino->>Servo: Mover a 90°
+        else Suelo húmedo
+            Arduino->>Servo: Mover a 0°
+        end
+    end
+
+```
+
 
 
