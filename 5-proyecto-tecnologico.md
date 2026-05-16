@@ -35,5 +35,80 @@ Dispositivo que mide la humedad del suelo y simula el riego mediante un servomot
 2. Si el suelo está seco → activa servo
 3. Si está húmedo → permanece en reposo
 
-### Autor
-Alumno/a SM
+### Sketch
+
+```cpp
+
+#include <Servo.h>
+
+const int sensorPin = A0;
+int valorHumedad = 0;
+Servo miServo;
+
+void setup() {
+  Serial.begin(9600);
+  miServo.attach(9);
+  miServo.write(0);
+}
+
+void loop() {
+  valorHumedad = analogRead(sensorPin);
+  Serial.print("Humedad del suelo: ");
+  Serial.println(valorHumedad);
+
+  if (valorHumedad > 700) {
+    miServo.write(90);
+    delay(2000);
+  } else {
+    miServo.write(0);
+  }
+
+  delay(1000);
+}  
+
+```cpp
+
+
+---
+
+# EcoDrop SMR
+
+Sistema automatizado de riego inteligente basado en Arduino para entornos educativos y oficinas.
+
+---
+
+## Descripción
+
+EcoDrop SMR es una solución IoT básica orientada a la monitorización de humedad del suelo y activación automática de riego simulado. El sistema integra hardware, software embebido y diseño físico mediante impresión 3D.
+
+---
+
+## Características
+
+- Monitorización de humedad en tiempo real
+- Activación automática mediante servomotor
+- Diseño modular y escalable
+- Carcasa personalizada mediante impresión 3D
+- Bajo coste de implementación
+
+---
+
+## Arquitectura del sistema
+
+
+
+
+---
+
+###
+
+flowchart LR
+    Sensor[Sensor de Humedad] -->|Señal analógica| Arduino[Arduino]
+    Arduino -->|PWM| Servo[Servomotor]
+    Arduino -->|Serial| Monitor[Monitor Serie]
+
+    subgraph Sistema EcoDrop
+        Sensor
+        Arduino
+        Servo
+    end
