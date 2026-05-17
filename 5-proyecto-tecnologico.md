@@ -62,7 +62,7 @@ Dispositivo que mide la humedad del suelo y simula el riego mediante un servomot
 
 ## Arquitectura del sistema  
 
-# Tabla resumen de diagramas UML aplicados al proyecto
+### Tabla resumen de diagramas UML aplicados al proyecto
 
 | Diagrama UML | Propósito | Aplicación en el proyecto |
 |--------------|-----------|----------------------------|
