@@ -78,7 +78,7 @@ EcoDrop SMR es una solución IoT básica orientada a la monitorización de humed
 | **Diagrama de actividades** | Flujo de control del sistema | Ciclo: leer humedad → comparar umbral → regar si es necesario → esperar |
 | **Diagrama de estados** | Estados posibles de un objeto | Estados del sistema: `Reposo`, `Midiendo`, `Regando`, `Alerta` |
 | **Diagrama de despliegue** | Arquitectura física del sistema | Nodo: ESP32/Arduino, sensores, bomba, servidor IoT (opcional) |  
-| **Diagrama de flujo** | Secuencia lógica de decisiones y acciones ! Ciclo principal: medición → comparación → activación de riego → espera |  
+| **Diagrama de flujo** | Secuencia lógica de decisiones y acciones | Ciclo principal: medición → comparación → activación de riego → espera |  
 
 
 
