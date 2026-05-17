@@ -314,14 +314,11 @@ Aquí tienes la estructura del desarrollo técnico organizada en una tabla compa
 | **Tareas del Alumno** | - Conectar el sensor de humedad y el servo al Arduino.<br>- Picar el código base.<br>- Calibrar los valores del sensor en el monitor serie. | - Medir el Arduino y el servo.<br>- Diseñar la caja con ranuras para cables y soporte del motor.<br>- Configurar el laminador (perfil rápido) e imprimir. | - Alojar el Arduino en la caja 3D.<br>- Fijar el servomotor en su anclaje exterior.<br>- Realizar la prueba real de funcionamiento (seco vs. húmedo). |
 | **Entregable / Hito** | Circuito funcional en la protoboard que reacciona a la humedad. | Pieza física real recién salida de la impresora 3D. | "EcoDrop SMR" funcionando, protegido y listo para producción. |  
 
-
----  ç
-
 ---
 
-## Estructura del Desarrollo Técnico (Tabla Comparativa)
+## Estructura del Desarrollo Técnico 
 
-La siguiente tabla permite a los alumnos visualizar, de un solo vistazo, el objetivo, las herramientas, las tareas y el resultado esperado de cada etapa del proyecto.
+La siguiente tabla permite visualizar, de un solo vistazo, **el objetivo, las herramientas, las tareas** y el **resultado** esperado de cada etapa del proyecto.
 
 | Fase Técnica | Sprint 1: Electrónica y Código | Sprint 2: Contenedor Físico (3D) | Sprint 3: Integración y Test |
 | :--- | :--- | :--- | :--- |
@@ -332,7 +329,7 @@ La siguiente tabla permite a los alumnos visualizar, de un solo vistazo, el obje
 
 ---
 
-## Cómo usar esta tabla en el aula (Consejo Kanban)
+## Cómo usar la tabla Kanban en el aula
 
 Puedes proyectar esta tabla en clase o imprimirla en gran formato. 
 
@@ -340,6 +337,7 @@ A medida que los grupos de trabajo avancen en el aula, pueden colocar un **post-
 1. Visualizar el flujo de trabajo real que se encontrarán en cualquier empresa tecnológica.
 2. Fomentar la autogestión y el trabajo en equipo dentro del aula taller.
 3. Permitir al docente identificar rápidamente qué equipos necesitan asistencia en cada una de las fases.
+
 | Por Hacer (To Do) | En Progreso (In Progress) | Hecho (Done) |
 |-------------------|--------------------------|--------------|
 | **Sprint 1: Electrónica y Código**<br>- [ ] Cablear el sensor de humedad y el servo a la placa Arduino.<br>- [ ] Escribir y cargar el código en el Arduino IDE.<br>- [ ] Calibrar el sensor (apuntar el valor en seco y en húmedo). | El equipo está montando el circuito o depurando los fallos del código en el ordenador. | **Hito 1:** El servo se mueve automáticamente al meter el sensor en un vaso seco. |
@@ -426,7 +424,7 @@ Este tablero divide las fases en tareas específicas y estados de desarrollo. Si
 
 ---
 
-### 💡 Consejo de aplicación para el Aula
+### 💡 Recomendaciones de aplicación
 
 Si dispones de una pizarra física en el taller, dibuja estas tres columnas (**Por Hacer**, **En Progreso**, **Hecho**). Pide a los alumnos que apunten cada una de las subtareas de la tabla en notas adhesivas (Post-its). 
 
