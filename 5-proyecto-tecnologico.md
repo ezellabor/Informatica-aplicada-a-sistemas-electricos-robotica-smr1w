@@ -8,6 +8,28 @@
 
 </div>  
 
+## EcoDrop SMR
+
+Sistema automatizado de riego inteligente basado en Arduino para entornos educativos y oficinas.
+
+---
+
+## Descripción
+
+EcoDrop SMR es una solución IoT básica orientada a la monitorización de humedad del suelo y activación automática de riego simulado. El sistema integra hardware, software embebido y diseño físico mediante impresión 3D.
+
+---
+
+## Características
+
+- Monitorización de humedad en tiempo real
+- Activación automática mediante servomotor
+- Diseño modular y escalable
+- Carcasa personalizada mediante impresión 3D
+- Bajo coste de implementación
+
+---
+
 **EcoDrop SMR** es un sistema automatizado que monitoriza la humedad del suelo y activa un mecanismo de riego simulado mediante un servomotor.
 
 Diseñado como proyecto de enseñanza para **1º SMR**, integra:
@@ -41,27 +63,7 @@ Dispositivo que mide la humedad del suelo y simula el riego mediante un servomot
 
 ---
 
-# EcoDrop SMR
 
-Sistema automatizado de riego inteligente basado en Arduino para entornos educativos y oficinas.
-
----
-
-## Descripción
-
-EcoDrop SMR es una solución IoT básica orientada a la monitorización de humedad del suelo y activación automática de riego simulado. El sistema integra hardware, software embebido y diseño físico mediante impresión 3D.
-
----
-
-## Características
-
-- Monitorización de humedad en tiempo real
-- Activación automática mediante servomotor
-- Diseño modular y escalable
-- Carcasa personalizada mediante impresión 3D
-- Bajo coste de implementación
-
----
 
 ## Arquitectura del sistema  
 
@@ -77,7 +79,7 @@ EcoDrop SMR es una solución IoT básica orientada a la monitorización de humed
 | **Diagrama de despliegue** | Arquitectura física del sistema | Nodo: ESP32/Arduino, sensores, bomba, servidor IoT (opcional) |  
 | **Diagrama de flujo** | Secuencia lógica de decisiones y acciones | Ciclo principal: medición → comparación → activación de riego → espera |  
 
-
+---  
 
 ### 1 - Diagrama de Arquitectura  
 
