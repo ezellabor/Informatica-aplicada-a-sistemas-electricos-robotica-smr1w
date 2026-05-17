@@ -412,8 +412,6 @@ La siguiente tabla permite a los alumnos visualizar, de un solo vistazo, el obje
 
 ---
 
----
-
 ## Tablero Kanban del Proyecto
 
 Este tablero divide las fases en tareas específicas y estados de desarrollo. Sirve para que el equipo gestione el día a día del proyecto, moviendo las tareas desde la columna de la izquierda hacia la derecha a medida que se completan.
