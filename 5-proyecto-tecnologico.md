@@ -2,11 +2,6 @@
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
 ![Proyecto Tecnológico](https://img.shields.io/badge/Proyecto_Tecnológico-EcoDrop:_Sistema_de_riego_automatizado_para_plantas_basado_en_Arduino-brown?style=for-the-badge)  
-<div align="center">   
- 
-## Proyecto tecnológico 
-
-</div>  
 
 ## EcoDrop SMR
 
