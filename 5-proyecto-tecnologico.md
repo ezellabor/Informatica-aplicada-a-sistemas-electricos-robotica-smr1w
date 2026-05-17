@@ -1,6 +1,7 @@
 ![Módulo](https://img.shields.io/badge/Módulo-Informática_aplicada_a_sistemas_electrónicos_(Robótica)-orange?style=for-the-badge)
 ![Grupo](https://img.shields.io/badge/Grupo-SMR1-blue?style=for-the-badge)
 ![Profesor](https://img.shields.io/badge/Profesor-Ezequiel_Llarena_Borges-blue?style=for-the-badge)  
+![Proyecto Tecnológico](https://img.shields.io/badge/Sistema_de_riego_automatizado_para_plantas_basado_en_Arduino-brown?style=for-the-badge)  
 <div align="center">   
  
 # Proyecto tecnológico 
@@ -9,7 +10,7 @@
 
 ```Circuito electrónico (Arduino) + Lógica programable (C++) + Impresión 3D + Integración en proyecto ágil```  
 
-## EcoDrop SMR: Sistema de riego automatizado para plantas basado en Arduino. 
+## EcoDrop SMR: S 
 
 **EcoDrop SMR** es un sistema automatizado que monitoriza la humedad del suelo y activa un mecanismo de riego simulado mediante un servomotor.
 
