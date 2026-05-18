@@ -19,6 +19,7 @@ graph TD
 ``` 
 ---
 
+```mermaid
 graph LR
     A[Product Backlog<br>Lista de tareas globales] --> B[Sprint Backlog<br>Tareas del Sprint actual]
     B --> C(Sprint de Trabajo<br>1-2 semanas)
@@ -31,9 +32,10 @@ graph LR
     style A fill:#fdd,stroke:#333
     style C fill:#dfd,stroke:#333,stroke-width:2px
     style E fill:#ddf,stroke:#333,stroke-width:2px
+``` 
+---  
 
----
-
+```mermaid
 graph TD
     subgraph Enfoque Tradicional Cascada
         A1[Requisitos] --> A2[Diseño completo] --> A3[Construcción total] --> A4[Pruebas finales] --> A5[Entrega final única]
@@ -47,3 +49,7 @@ graph TD
 
     style A5 fill:#ffb,stroke:#333
     style B7 fill:#bfb,stroke:#333,stroke-width:2px
+
+```
+
+
