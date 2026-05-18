@@ -1,15 +1,15 @@
 ---
 
-## 1. Etapas de un Proyecto Tecnológico Estándar
+## 1. Etapas de un Proyecto Tecnológico 
 
 Este diagrama de flujo muestra el ciclo de vida lineal que sigue cualquier proyecto tecnológico, adaptado a la metodología de diseño que usamos en el aula.
 
 ```mermaid
 graph TD
     A[1. Detección del Problema / Necesidad] --> B[2. Búsqueda de Información y Brainstorming]
-    B --> C[3. Diseño de la Solución Boceto/Planos]
+    B --> C[3. Diseño de la Solución Boceto/Planos/Diagramas]
     C --> D[4. Planificación y Gestión de Tareas]
-    D --> E[5. Construcción / Desarrollo Electrónica y 3D]
+    D --> E[5. Construcción del producto/servicio]
     E --> F[6. Pruebas, Evaluación y Depuración]
     F --> G[7. Documentación Técnica y Presentación]
     
