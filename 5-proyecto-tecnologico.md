@@ -290,7 +290,7 @@ El desarrollo del sistema de riego inteligente se dividirá en los siguientes sp
 - **Sprint 2:** Diseño 3D
 - **Sprint 3:** Integración final
 
-- # Proyecto Final de Módulo: "EcoDrop SMR"
+- ## Fases del Proyecto: EcoDrop SMR
 
 **Objetivo:** Crear un dispositivo que mida la humedad de una planta y, mediante un servomotor (físico) o LED, simule la apertura de una válvula de agua, protegido por una carcasa diseñada e impresa en 3D.
 
