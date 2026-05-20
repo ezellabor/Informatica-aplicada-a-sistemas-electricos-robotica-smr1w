@@ -60,7 +60,7 @@ Dispositivo que mide la humedad del suelo y simula el riego mediante un servomot
 
 ## 1. Etapas o Fases de un Proyecto Tecnológico 
 
-Este diagrama de flujo muestra el ciclo de vida lineal que sigue cualquier proyecto tecnológico, adaptado a la metodología de diseño que usamos en el aula.
+Este diagrama de flujo muestra el ciclo de vida lineal que sigue cualquier proyecto tecnológico, adaptado a la metodología de diseño que se utilice.
 
 ```mermaid
 graph TD
@@ -270,7 +270,7 @@ Este sistema aporta:
 
 Además, tiene valor educativo al integrar múltiples áreas técnicas en un único proyecto.
 
-## Metodología
+## Metodología de Desarrollo del Proyecto
 
 Se utilizará una combinación de:
 
