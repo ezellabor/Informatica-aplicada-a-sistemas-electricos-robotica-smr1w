@@ -274,7 +274,7 @@ Además, tiene valor educativo al integrar múltiples áreas técnicas en un ún
 
 Se utilizará una combinación de:
 
-## 1. Design Thinking
+### 1. Design Thinking
 
 - Empatía: Identificación del problema
 - Definición: Necesidad de automatización
@@ -282,7 +282,7 @@ Se utilizará una combinación de:
 - Prototipado: Construcción del dispositivo
 - Testeo: Validación del funcionamiento
 
-## 2. Metodologías Ágiles (Scrum simplificado)
+### 2. Metodologías Ágiles (Scrum simplificado)
 
 El desarrollo del sistema de riego inteligente se dividirá en los siguientes sprints:
 
