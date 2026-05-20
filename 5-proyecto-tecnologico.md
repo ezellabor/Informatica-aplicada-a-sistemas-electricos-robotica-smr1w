@@ -58,7 +58,7 @@ Dispositivo que mide la humedad del suelo y simula el riego mediante un servomot
 
 ---
 
-## 1. Etapas de un Proyecto Tecnológico 
+## 1. Etapas o Fases de un Proyecto Tecnológico 
 
 Este diagrama de flujo muestra el ciclo de vida lineal que sigue cualquier proyecto tecnológico, adaptado a la metodología de diseño que usamos en el aula.
 
