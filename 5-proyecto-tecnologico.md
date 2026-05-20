@@ -294,7 +294,7 @@ El desarrollo del sistema de riego inteligente se dividirá en los siguientes sp
 
 **Objetivo:** Crear un dispositivo que mida la humedad de una planta y, mediante un servomotor (físico) o LED, simule la apertura de una válvula de agua, protegido por una carcasa diseñada e impresa en 3D.
 
-## Fase 1: Empatía y Diseño de la Solución (Metodología Design Thinking)
+### Fase 1: Empatía y Diseño de la Solución (Metodología Design Thinking)
 
 Antes de tocar un cable, hay que entender qué vamos a construir.
 
@@ -304,14 +304,14 @@ Antes de tocar un cable, hay que entender qué vamos a construir.
 
 ---
 
-## Fase 2: Desarrollo Técnico por "Sprints" (Metodología Agile)
+### Fase 2: Desarrollo Técnico por "Sprints" (Metodología Agile)
 
 Dividiremos el proyecto en 3 "Sprints" (tareas cortas con un objetivo funcional). Si algo falla, es más fácil saber en qué fase nos hemos quedado.
 
-### Sprint 1: La Electrónica y el Código (Arduino)
+#### Sprint 1: La Electrónica y el Código (Arduino)
 Montaremos el cerebro del proyecto en una protoboard.
 
-#### Componentes necesarios:
+**Componentes necesarios:**
 * 1 Arduino Uno (o Nano)
 * 1 Sensor de humedad de suelo (YL-69 o similar)
 * 1 Servomotor (SG90) o en su defecto 2 LEDs (Verde = Ok, Rojo = Agua)
