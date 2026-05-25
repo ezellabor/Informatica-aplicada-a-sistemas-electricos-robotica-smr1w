@@ -379,7 +379,27 @@ A medida que los grupos de trabajo avancen en el aula, pueden colocar un **post-
 |-------------------|--------------------------|--------------|
 | **Sprint 1: Electrónica y Código**<br>- [ ] Cablear el sensor de humedad y el servo a la placa Arduino.<br>- [ ] Escribir y cargar el código en el Arduino IDE.<br>- [ ] Calibrar el sensor (apuntar el valor en seco y en húmedo). | El equipo está montando el circuito o depurando los fallos del código en el ordenador. | **Hito 1:** El servo se mueve automáticamente al meter el sensor en un vaso seco. |
 | **Sprint 2: Diseño e Impresión 3D**<br>- [ ] Tomar medidas con calibre de la placa Arduino y el servo.<br>- [ ] Diseñar la carcasa en Tinkercad (con agujeros para cables).<br>- [ ] Laminar el diseño (.STL) en Cura/PrusaSlicer a 0.28mm.<br>- [ ] Lanzar la pieza a la impresora 3D. | El equipo está modelando en 3D o la impresora está fabricando la carcasa en tiempo real. | **Hito 2:** La pieza física está impresa y los componentes encajan en ella. |
-| **Sprint 3: Integración y Cierre**<br>- [ ] Ensamblar el Arduino y el servo dentro de la caja 3D.<br>- [ ] Hacer el test final del sistema completo en la maceta.<br>- [ ] Redactar la documentación técnica obligatoria. | El equipo está atornillando los componentes y preparando la presentación del proyecto. | **Hito 3 (¡Éxito!):** El dispositivo "EcoDrop SMR" funciona de forma autónoma. |
+| **Sprint 3: Integración y Cierre**<br>- [ ] Ensamblar el Arduino y el servo dentro de la caja 3D.<br>- [ ] Hacer el test final del sistema completo en la maceta.<br>- [ ] Redactar la documentación técnica obligatoria. | El equipo está atornillando los componentes y preparando la presentación del proyecto. | **Hito 3 (¡Éxito!):** El dispositivo "EcoDrop SMR" funciona de forma autónoma. |  ç
+
+---
+
+
+### Ejemplos de Proyectos Tecnológicos de Robótica  
+
+1. Sistema de riego automático inteligente
+2. Controlador automático de persianas según luminosidad
+3. Termostato digital para radiadores
+4. Sistema de iluminación inteligente con detección de presencia
+5. Sistema de control de acceso básico
+6. Parking inteligente con sensores de distancia 
+7. Sistema de alarma doméstica básica 
+8. Robot dibujante / plotter sencillo 
+9. Grúa controlada por joystick 
+10. Estación meteorológica simple de aula 
+11. Casa domótica a pequeña escala 
+12. Mini-cinta transportadora o carrusel de clasificación
+
+---  
 
 
 
