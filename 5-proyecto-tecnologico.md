@@ -381,27 +381,6 @@ A medida que los grupos de trabajo avancen en el aula, pueden colocar un **post-
 | **Sprint 2: Diseño e Impresión 3D**<br>- [ ] Tomar medidas con calibre de la placa Arduino y el servo.<br>- [ ] Diseñar la carcasa en Tinkercad (con agujeros para cables).<br>- [ ] Laminar el diseño (.STL) en Cura/PrusaSlicer a 0.28mm.<br>- [ ] Lanzar la pieza a la impresora 3D. | El equipo está modelando en 3D o la impresora está fabricando la carcasa en tiempo real. | **Hito 2:** La pieza física está impresa y los componentes encajan en ella. |
 | **Sprint 3: Integración y Cierre**<br>- [ ] Ensamblar el Arduino y el servo dentro de la caja 3D.<br>- [ ] Hacer el test final del sistema completo en la maceta.<br>- [ ] Redactar la documentación técnica obligatoria. | El equipo está atornillando los componentes y preparando la presentación del proyecto. | **Hito 3 (¡Éxito!):** El dispositivo "EcoDrop SMR" funciona de forma autónoma. |  ç
 
----
-
-
-### Ejemplos de Proyectos Tecnológicos de Robótica  
-
-1. Sistema de riego automático inteligente
-2. Controlador automático de persianas según luminosidad
-3. Termostato digital para radiadores
-4. Sistema de iluminación inteligente con detección de presencia
-5. Sistema de control de acceso básico
-6. Parking inteligente con sensores de distancia 
-7. Sistema de alarma doméstica básica 
-8. Robot dibujante / plotter sencillo 
-9. Grúa controlada por joystick 
-10. Estación meteorológica simple de aula 
-11. Casa domótica a pequeña escala 
-12. Mini-cinta transportadora o carrusel de clasificación
-
----  
-
-
 
 <!-- EcoDrop SMR  
 ### Sistema Inteligente de Riego Automatizado
@@ -481,5 +460,22 @@ A medida que los grupos de trabajo avancen en el aula, pueden colocar un **post-
 3. Permitir al docente identificar rápidamente qué equipos necesitan asistencia en cada una de las fases.
 
 ---   
+
+### Ejemplos de Proyectos Tecnológicos de Robótica  
+
+1. Sistema de riego automático inteligente
+2. Controlador automático de persianas según luminosidad
+3. Termostato digital para radiadores
+4. Sistema de iluminación inteligente con detección de presencia
+5. Sistema de control de acceso básico
+6. Parking inteligente con sensores de distancia 
+7. Sistema de alarma doméstica básica 
+8. Robot dibujante / plotter sencillo 
+9. Grúa controlada por joystick 
+10. Estación meteorológica simple de aula 
+11. Casa domótica a pequeña escala 
+12. Mini-cinta transportadora o carrusel de clasificación
+
+--- 
 
 
