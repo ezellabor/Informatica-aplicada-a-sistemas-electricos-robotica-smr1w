@@ -6,7 +6,7 @@
 
 ### 1. Robot
 _Máquina programable capaz de realizar tareas de forma autónoma o semiautónoma._
-> Ejemplo: Un brazo robótico en una fábrica que ensambla piezas, o un robot aspirador como el Roomba.
+> Ejemplo: Un brazo robótico en una fábrica que ensambla piezas, o un robot aspirador o un sistema de regulación automática de luz y temperatura de una habitación.
 
 ### 2. Sensor
 _Dispositivo que detecta cambios en el entorno y envía datos al robot._
