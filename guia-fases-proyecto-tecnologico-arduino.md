@@ -1,6 +1,6 @@
-# Guía del alumno — Fases del Proyecto Tecnológico
+# Guión del Proyecto Tecnológico
 
-**Módulo:** Informática aplicada a sistemas electrónicos (Robótica) · 1º SMR
+**Módulo:** Informática aplicada a sistemas electrónicos (Robótica) · 1º SMR  
 **Profesor:** Ezequiel Llarena Borges
 
 ---
