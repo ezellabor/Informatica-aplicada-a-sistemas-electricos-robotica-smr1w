@@ -89,7 +89,7 @@ Estas 5 fases se reparten en **3 trimestres**, con **una entrega por trimestre**
 
 **Objetivo del proyecto:** medir continuamente la temperatura de una habitación con un sensor y encender uno de tres LEDs según el rango: 🔴 rojo si supera 30 ºC, 🟡 amarillo si está entre 23 ºC y 30 ºC, 🟢 verde si es inferior a 23 ºC.
 
-### Fase 1 — Análisis
+### Fase 1: Análisis
 
 **Requisitos funcionales:**
 - El sistema debe leer la temperatura de forma continua (no una sola vez).
@@ -113,7 +113,7 @@ Estas 5 fases se reparten en **3 trimestres**, con **una entrega por trimestre**
 | Protoboard | 1 | Montaje del circuito |
 | Cables jumper | Varios | Conexiones entre componentes |
 
-### Fase 2 — Diseño
+### Fase 2: Diseño
 
 **Diagrama de flujo de la lógica:**
 
@@ -147,7 +147,7 @@ flowchart LR
 - LED amarillo: ánodo al pin digital **9** a través de una resistencia de 220 Ω; cátodo a GND.
 - LED verde: ánodo al pin digital **10** a través de una resistencia de 220 Ω; cátodo a GND.
 
-### Fase 3 — Desarrollo
+### Fase 3: Desarrollo
 
 **Montaje:** conectar el sensor y los tres LEDs según el diseño anterior sobre la protoboard, y cargar el siguiente sketch en el Arduino Uno.
 
@@ -196,7 +196,7 @@ void loop() {
 }
 ```
 
-### Fase 4 — Pruebas
+### Fase 4: Pruebas
 
 **Documento de pruebas — parámetros, criterios de validación y resultados:**
 
@@ -210,7 +210,7 @@ void loop() {
 
 > El alumno debe repetir cada prueba, anotar la temperatura real observada en el monitor serie y marcar si el resultado obtenido coincide con el criterio de validación.
 
-### Fase 5 — Entrega final
+### Fase 5: Entrega final
 
 **Qué debe incluir la entrega final de este ejemplo:**
 - Circuito montado y funcionando (o simulación en Tinkercad si no hay componentes físicos disponibles).
