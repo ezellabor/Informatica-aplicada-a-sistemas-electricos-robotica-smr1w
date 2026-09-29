@@ -85,7 +85,7 @@ Estas 5 fases se reparten en **3 trimestres**, con **una entrega por trimestre**
 
 ---
 
-## Ejemplo completo: Semáforo de temperatura con Arduino Uno
+## Ejemplo de proyecto: Semáforo de Temperatura con Arduino Uno
 
 **Objetivo del proyecto:** medir continuamente la temperatura de una habitación con un sensor y encender uno de tres LEDs según el rango:  
 🔴 rojo si supera 30 ºC,  
