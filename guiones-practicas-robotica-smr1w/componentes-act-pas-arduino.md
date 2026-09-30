@@ -17,16 +17,10 @@ Son componentes que **no introducen energía** neta en el circuito ni pueden con
 
 ### 1.2. Componentes Activos
 Son aquellos que pueden **controlar el flujo eléctrico** o modificar la señal. Requieren una fuente de alimentación externa para realizar su función.
-* **El LED (Diodo Emisor de Luz):** Es un semiconductor que emite luz cuando pasa corriente a través de él. 
+* **El LED (Diodo Emisor de Luz):** Es un semiconductor que emite luz cuando pasa corriente a través de él. Transforma la energía eléctrica en luz y controla la dirección de la corriente.
 * **Dato técnico:** ¡Tienen polaridad! La pata larga (Ánodo) es el positivo y la pata corta (Cátodo) es el negativo.
 
 ---  
-
-## Ejemplo: circuito del LED
-
-- **Pila (Fuente)**: proporciona 9 V.
-- **Resistencia (Pasiva)**: disipa energía como calor y limita la corriente.
-- **LED (Activo)**: transforma la energía eléctrica en luz y controla la dirección de la corriente.
 
 ## 2. Proyecto: Control de salida digital
 
