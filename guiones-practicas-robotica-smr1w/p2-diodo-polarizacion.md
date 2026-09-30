@@ -85,5 +85,36 @@ Responde a las siguientes preguntas en tu informe:
 2.  Sube el documento **PDF de tu informe** al aula virtual.
 3.  Además deberás subir **3 capturas del diseño final** en Tinkercad: vista circuito, vista esquema y lista de componentes.
 
----
+---  
+
+## El diodo: componente pasivo
+
+El diodo se clasifica estrictamente como un **componente pasivo**.
+
+Aunque su comportamiento es **no lineal** (a diferencia de una resistencia pura, que es lineal) y tiene la capacidad de modificar o rectificar una señal eléctrica mediante la polarización, **no aporta ganancia de potencia** ni genera energía por sí mismo. Esta es una característica fundamental de los componentes activos, como los transistores o los amplificadores operacionales.
+
+### ¿Por qué es un componente pasivo?
+
+1. **No tiene ganancia**
+
+   No puede amplificar la amplitud de una señal eléctrica. Toda la energía que sale de un circuito con diodos es igual o menor que la que entra, debido, entre otros factores, a la caída de tensión propia del diodo (aproximadamente **0,7 V en los diodos de silicio**).
+
+2. **No necesita una señal de control independiente**
+
+   Su estado, de conducción o bloqueo, depende de las condiciones de tensión y corriente que le imponen los componentes externos del circuito. No funciona mediante una señal de control independiente, como ocurre, por ejemplo, con la corriente de base de un transistor.
+
+### El matiz técnico: componente no lineal
+
+En los manuales o en la teoría de circuitos avanzada, el diodo puede definirse como un **componente pasivo no lineal**, ya que su comportamiento eléctrico no sigue una relación lineal entre tensión y corriente.
+
+Su resistencia no es constante, sino que varía según la tensión y la corriente aplicadas.
+
+Sin embargo, sigue siendo un componente pasivo porque:
+
+- **No proporciona ganancia de potencia.**
+- **No genera energía por sí mismo.**
+- Puede **consumir o disipar energía**.
+- En el caso de un LED, parte de la energía eléctrica se transforma en **luz** y calor.
+
+> **Idea clave:** el diodo puede controlar, rectificar o modificar una señal eléctrica, pero **no la amplifica ni genera energía**, por lo que se clasifica como un **componente pasivo no lineal**.
 
