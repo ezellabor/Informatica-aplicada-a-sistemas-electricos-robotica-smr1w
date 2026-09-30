@@ -1,12 +1,12 @@
-# Guión de prácticas — Módulo CM0313 Robótica (1º SMR)
+# Módulo CM0313 Robótica (1º SMR)
 
-## Diseño, análisis y medición de circuitos de CC resistivos
+## Diseño, análisis y medición de circuitos de CC 
 
 **Profesor:** Ezequiel Llarena Borges
 
 ---
 
-## 1. Objetivos de la práctica
+## 1. Objetivos
 
 - Diseñar y montar tres circuitos de corriente continua con resistencias: **serie**, **paralelo** y **mixto**.
 - Calcular teóricamente las tensiones, intensidades y resistencia equivalente de cada circuito.
